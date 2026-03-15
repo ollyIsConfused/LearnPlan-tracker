@@ -1,0 +1,188 @@
+{
+  "weeks": [
+    {
+        "week":1,
+        "title": "Projekt & Geschäftsprozesse",
+        "tasks":[
+            {"id": "w1t1", "text": "Projektmanagement (Wasserfall, Scrum, SMART, Gantt)"},
+            {"id": "w1t2", "text": "Wirtschaftlichkeit, Kostenrechnung; Angebotsvergleich; Vertragsarten (SLA, Leasing, Kauf)"},
+            {"id": "w1t3", "text": "Abnahmeprotokolle; Change-Prozesse"},
+            {"id": "w1t4", "text": "Qualitätsmanagement(PDCA, Tests, Dokumentation)"}
+        ]
+    },
+    {
+      "week": 2,
+      "title": "Netzwerk & Infrastruktur",
+      "tasks": [
+        { "id": "w2t1", "text": "OSI vs TCP/IP erklären können" },
+        { "id": "w2t2", "text": "DNS vs DHCP vs Proxy: Unterschiede + Einsatz" },
+        { "id": "w2t3", "text": "Routing, Switching, VLAN" }
+      ],
+      "traps": [
+        "DNS/DHCP vermischen (Punktkiller).",
+        "OSI nur aufsagen statt einem Problem zuordnen.",
+        "Wie viele bits hat ein VLAN",
+        "Trunk? was ist das",
+        "unterschied ping vs. TCP",
+        "TCP / UDP? Was ist das "
+      ]
+    },
+    {
+      "week": 3,
+      "title": "Netzwerk & Infrastruktur",
+      "tasks": [
+        { "id": "w3t1", "text": "VPN & verschiedene Tunnel" },
+        { "id": "w3t2", "text": "IPSec, Firewall, DMZ, IDS/IPS" },
+        { "id": "w3t3", "text": "WLAN-Sicherheit" }
+      ],
+      "traps": [
+        "Hostanzahl vs Adressanzahl verwechseln.",
+        "Rechnen ohne Plausibilitätscheck."
+      ]
+    },
+    {
+        "week": 4,
+        "title": "Netzwerk & Infrastruktur",
+        "tasks":[
+            {"id": "w4t1", "text": "Datenspeicherung und securety grundsätze"},
+            {"id": "w4t2", "text": "NAS, SAN, RAID"},
+            {"id": "w4t3", "text":"Verschiedene RAID level deren vor- & nachteile"}
+        ],
+        "traps":[
+            "Datensicherheit grundsätze",
+            "Was gibt es neben raid noch?",
+            "errechnen von speicherplatz GiB vs GB",
+            "RAID mit backup vermischen/verwechseln"
+        ]
+    },
+    {
+        "week": 5,
+        "title": "Netzwerk & Infrastruktur",
+        "tasks":[
+            {"id": "w5t1", "text": "Backup & Snapshoot & Restore"},
+            {"id": "w5t2", "text": "Diaster Recovery"},
+            {"id": "w5t3", "text": "MTBF / MTTR"},
+            {"id": "w5t4", "text": "RTO & RPO"}
+        ],
+        "traps":[
+            "Snapshoot ≠ Backup. Unterschiede?",
+            "RTO; RPO. Maximal 1 Std Ausfallzeit vs. Maximal 10 min Datenverlust",
+            "RAID reduziert MTTR"
+        ]
+    },
+    {
+        "week":6,
+        "title": "IP & Subnetting & Sicherheit",
+        "tasks":[
+            {"id": "w6t1", "text": "CIDR sicher lesen und interpretieren z.B.(/24, /26)"},
+            {"id": "w6t2", "text": "Netz-/Broadkastadresse bestimmen"},
+            {"id": "w6t3", "text": "Subnetting aufgaben lösen klein und große sufixe"}
+        ],
+        "traps":[
+            "IHK Fragt nach nutzbaren Hosts nicht nach Gesamtadressen.",
+            "2^n rechnen aber -2 vergessen Wegen Broadcast & Netzadresse"
+        ]
+    },
+    {
+        "week":7,
+        "title": "IT Sicherheit & Datenschutz",
+        "tasks":[
+            {"id": "w7t1", "text": "BSI-Grundschutz"},
+            {"id": "w7t2", "text": "DSGVO"},
+            {"id": "w7t3", "text": "CIA-Triade"},
+            {"id": "w7t4", "text": "TOM(Technisch-organisatorische Maßnahmen)"},
+            {"id": "w7t5", "text": "Schutzbedarfsanalyse"}
+        ],
+        "traps":[
+            "DSGVO mit IT-Sicherheit vermischen",
+            "BSI-Grundschutz ≠ ISO 27001",
+            "BSI ist ein Deutsches Framework und ISO internatinale standards",
+            "welche CIA-Maßnahmen schützen welchen aspekt?"
+        ]
+    },
+    {
+        "week": 8,
+        "title": "IT-Sicherheit & Datenschutz",
+        "tasks":[
+            {"id": "w8t1", "text": "Rollen- & Berechtigungskonzepte(RBAC,LDAP)"},
+            {"id": "w8t2", "text": "Authentifizierung(MFA, Zertifikate, SSO)"},
+            {"id": "w8t3", "text": "Security by Design"},
+            {"id": "w8t4", "text": "Penetration Tests"},
+            {"id": "w8t5", "text": "Risikoanalyse"}
+        ],
+        "traps":[
+            "Rechte werden Rollen zugewiesen",
+            "LDAP Speichert identitäten",
+            "Minimalprinzip nur so viel rechte wie nötig",
+            "Authentifizierung vs. Autorisierung verwelchseln"
+        ]
+    },
+    {
+        "week": 9,
+        "title": "Systemintegration & Betrieb",
+        "tasks":[
+            {"id": "w9t1", "text": "Serverinstallation"},
+            {"id": "w9t2", "text": "Virtualisierung"},
+            {"id": "w9t3", "text": "Cloud (IaaS, SaaS, PaaS)"},
+            {"id": "w9t4", "text": "On-Prem vs Cloud"},
+            {"id": "w9t5", "text": "Lifecycle-Betrachtung"},
+            {"id": "w9t6", "text": "Updatestrategien"},
+            {"id": "w9t7", "text": "Incident Management"},
+            {"id": "w9t8", "text": "Eskalationsstufen"}
+        ],
+        "traps":[
+            "Dokumentieren sie die Konfiguration",
+            "Lifecycle-Betrachtung Planung, Betrieb, Wartung, Updates, Entsorgung",
+            "Incident ist die störung nicht die ursache hinter mehreren Incidents",
+            "Technische vs. Hierachische Eskalation verwechseln"
+        ]
+    },
+    {
+        "week": 10,
+        "title": "Programmierung & Datenbanken",
+        "tasks":[
+            {"id": "w10t1", "text": "Ticketsysteme"},
+            {"id": "w10t1", "text": "Monitoring(SNMP etc.)"},
+            {"id": "w10t2", "text": "Algorithmen"},
+            {"id": "w10t3", "text": "UML"},
+            {"id": "w10t4", "text": "ERM"},
+            {"id": "w10t5", "text": "REST, JSON, XML"}
+        ],
+        "traps":[
+            "Ticket muss sauber Dokumentiert werden"
+        ]
+    },
+    {
+        "week": 11,
+        "title": "Programmierung & Datenbanken",
+        "tasks":[
+            {"id":"w11t1", "text": "SQL (JOIN, GROUP BY, Normalisierung)"},
+            {"id":"w11t2", "text": "Tests (Blackbox, Whitebox, TDD"},
+            {"id":"w11t3", "text": "Versionskontrolle"}
+        ]
+    },
+    {
+        "week": 12,
+        "title": "Wirtschaft-& Sozialkunde(WISO)",
+        "tasks": [
+            {"id": "w12t1", "text": "Arbeitsrecht"},
+            {"id": "w12t2", "text": "Tarifrecht"},
+            {"id": "w12t3", "text": "Betriebsrat"},
+            {"id": "w12t4", "text": "Rechte & Pflichten"}
+        ],
+        "traps":[
+            "Tarifvertrag steht NICHT über dem Gesetz"
+        ]
+    },
+    {
+        "week": 13,
+        "title": "Wirtschaft-& Sozialkunde(WISO)",
+        "tasks":[
+            {"id": "w12t5", "text": "Sozialversicherung"},
+            {"id": "w12t6", "text": "Lohnabrechnung"},
+            {"id": "w12t7", "text": "Umweltschutz"},
+            {"id": "w12t8", "text": "Arbeitsschutz"}
+        ]
+    }
+  ]
+}
