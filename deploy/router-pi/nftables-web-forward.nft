@@ -1,0 +1,36 @@
+#!/usr/sbin/nft -f
+
+define wan_if = "eth0"
+define lan30_if = "br30"
+define web_ip = 192.168.30.20
+
+table ip nat {
+    chain prerouting {
+        type nat hook prerouting priority dstnat; policy accept;
+        iifname $wan_if tcp dport 80 dnat to $web_ip:80
+        iifname $wan_if tcp dport 443 dnat to $web_ip:443
+    }
+
+    chain postrouting {
+        type nat hook postrouting priority srcnat; policy accept;
+        oifname $wan_if masquerade
+    }
+}
+
+table inet filter {
+    chain input {
+        type filter hook input priority filter; policy drop;
+        iifname "lo" accept
+        ct state established,related accept
+        tcp dport 22 accept
+        icmp type echo-request accept
+        ip6 nexthdr icmpv6 accept
+    }
+
+    chain forward {
+        type filter hook forward priority filter; policy drop;
+        ct state established,related accept
+        iifname $wan_if oifname $lan30_if ip daddr $web_ip tcp dport { 80, 443 } accept
+        iifname $lan30_if oifname $wan_if accept
+    }
+}

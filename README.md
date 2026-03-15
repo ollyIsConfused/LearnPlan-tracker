@@ -14,3 +14,14 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Deployment
+
+Dieses Projekt kann jetzt sowohl im Root (`/`) als auch unter einem Subpfad wie `/lernen/hebendanz/` gebaut werden.
+
+- Root-Deployment: `npm run build:root`
+- Subpfad-Deployment: `npm run build:subpath`
+- Frei konfigurierbar: `VITE_BASE_PATH=/dein/pfad/ npm run build`
+- Komplettes Repo auf einen Server deployen: `scripts/deploy-origin.sh --help`
+
+Die komplette Server-, Nginx- und Router-Pi-Anleitung liegt in `DEPLOYMENT.md`.
