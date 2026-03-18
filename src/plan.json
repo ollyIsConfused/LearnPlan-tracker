@@ -2,768 +2,850 @@
   "weeks": [
     {
       "week": 1,
-      "title": "Projekt & Geschäftsprozesse",
+      "title": "AP1 – Projektmanagement",
       "tasks": [
         {
           "id": "w1t1",
           "area": "Projektmanagement",
-          "exam": "AP1/AP2",
+          "exam": "AP1",
           "topic": "Projektmethoden",
-          "subtopic": "Wasserfall, Scrum, SMART, Gantt",
-          "detail": "Verschiedene Projektmodelle kennen und anwenden können. Phasen des Wasserfallmodells vs. Sprints bei Scrum. SMART-Kriterien für Zieldefinition.",
+          "subtopic": "Wasserfall, Scrum, Gantt, Netzplan, kritischer Weg, Pufferzeiten, SMART, Meilensteine",
+          "detail": "Unterschied Wasserfall (sequenziell) vs. Scrum (iterativ/Sprints). Netzplan: Vorgänger/Nachfolger, Puffer berechnen. Kritischer Weg = längster Pfad ohne Puffer. SMART für Zieldefinition.",
           "relevance": "hoch",
-          "typicalQuestion": "Welches Modell eignet sich für welches Projekt? Vorteile/Nachteile Wasserfall vs. Scrum.",
+          "typicalQuestion": "Kritischen Weg im Netzplan bestimmen. Pufferzeit berechnen. Wasserfall vs. Scrum vergleichen.",
           "difficulty": "mittel"
         },
         {
           "id": "w1t2",
           "area": "Projektmanagement",
-          "exam": "AP1/AP2",
-          "topic": "Wirtschaftlichkeit",
-          "subtopic": "Kostenrechnung, Angebotsvergleich, Vertragsarten (SLA, Leasing, Kauf)",
-          "detail": "Kosten-Nutzen-Analyse durchführen, Angebote vergleichen, Vertragsarten gegenüberstellen. Nutzwertanalyse.",
+          "exam": "AP1",
+          "topic": "Wirtschaftlichkeit & Machbarkeit",
+          "subtopic": "Machbarkeitsanalyse, Vor-/Nachkalkulation, Budgetvorgaben, Stakeholder, Risikoanalyse",
+          "detail": "Vor-Kalkulation (Planung) vs. Nach-Kalkulation (Auswertung). Stakeholder identifizieren und einbinden. Risikoanalyse: Eintrittswahrscheinlichkeit × Schadenshöhe. Nutzwertanalyse bei Entscheidungen.",
           "relevance": "hoch",
-          "typicalQuestion": "Wirtschaftlichkeitsberechnung oder Angebotsvergleich mit Nutzwertanalyse.",
+          "typicalQuestion": "Nutzwertanalyse durchführen. Vor- vs. Nachkalkulation erklären. Stakeholder-Analyse beschreiben.",
           "difficulty": "mittel"
         },
         {
           "id": "w1t3",
           "area": "Projektmanagement",
-          "exam": "AP2",
-          "topic": "Qualitätssicherung",
-          "subtopic": "Abnahmeprotokoll, Change-Management",
-          "detail": "Abnahmen korrekt dokumentieren, Änderungsanfragen steuern. Was gehört in ein Abnahmeprotokoll?",
-          "relevance": "mittel",
-          "typicalQuestion": "Was gehört in ein Abnahmeprotokoll? Change-Request-Prozess beschreiben.",
+          "exam": "AP1",
+          "topic": "Qualitätsmanagement",
+          "subtopic": "PDCA-Zyklus, Testprotokoll, Abnahmeprotokoll, QM-Normen",
+          "detail": "PDCA: Plan-Do-Check-Act als Verbesserungskreislauf. Testprotokoll dokumentiert Testergebnis. Abnahmeprotokoll: Übergabe an Kunden. QM-Normen: ISO 9001 Grundverständnis.",
+          "relevance": "hoch",
+          "typicalQuestion": "PDCA-Schritte beschreiben. Was gehört in ein Abnahmeprotokoll?",
           "difficulty": "leicht"
         },
         {
           "id": "w1t4",
           "area": "Projektmanagement",
-          "exam": "AP1/AP2",
-          "topic": "Qualitätsmanagement",
-          "subtopic": "PDCA, Tests, Dokumentation",
-          "detail": "PDCA-Zyklus (Plan-Do-Check-Act) anwenden. Testarten unterscheiden: Unit-, Integrations-, Systemtest.",
-          "relevance": "hoch",
-          "typicalQuestion": "PDCA-Zyklus erklären oder Testarten einem Szenario zuordnen.",
-          "difficulty": "mittel"
+          "exam": "AP1",
+          "topic": "Change-Management & Teamarbeit",
+          "subtopic": "Change-Request, Lessons Learned, Teambildung, Feedback",
+          "detail": "Change-Request-Prozess: Antrag → Bewertung → Entscheidung → Umsetzung. Lessons Learned am Projektende: Was lief gut/schlecht? Teambildungsphasen (Tuckman: Forming, Storming, Norming, Performing).",
+          "relevance": "mittel",
+          "typicalQuestion": "Change-Request-Prozess beschreiben. Lessons Learned erklären.",
+          "difficulty": "leicht"
         }
       ],
       "traps": [
-        "Wasserfall ≠ Scrum – Unterschiede in der Praxis nennen können.",
-        "SMART: alle 5 Kriterien kennen (Spezifisch, Messbar, Attraktiv, Realistisch, Terminiert).",
-        "Nutzwertanalyse: Gewichtung × Punkte = gewichteter Wert – rechnen üben!"
+        "SMART: alle 5 Kriterien können (Spezifisch, Messbar, Attraktiv, Realistisch, Terminiert).",
+        "Kritischer Weg hat Puffer = 0 – nicht der längste Weg per se, sondern der ohne Puffer.",
+        "Nutzwertanalyse: Gewichtung × Punkte = gewichteter Wert – immer ausrechnen!"
       ]
     },
     {
       "week": 2,
-      "title": "Netzwerk & Infrastruktur",
+      "title": "AP1 – Kunden, Markt & IT-Systeme",
       "tasks": [
         {
           "id": "w2t1",
-          "area": "Netzwerk & Infrastruktur",
-          "exam": "AP1/AP2",
-          "topic": "Netzwerkmodelle",
-          "subtopic": "OSI-Modell (7 Schichten), TCP/IP-Modell",
-          "detail": "Alle 7 OSI-Schichten benennen und Protokolle zuordnen. Unterschied OSI (theoretisch) vs. TCP/IP (praxisnah).",
-          "relevance": "hoch",
-          "typicalQuestion": "Welche OSI-Schicht ist für was zuständig? Protokoll einer Schicht zuordnen.",
-          "difficulty": "mittel"
+          "area": "Kundenberatung",
+          "exam": "AP1",
+          "topic": "Kundenberatung & Kommunikation",
+          "subtopic": "4-Ohren-Modell, Sender-Empfänger, Bedarfsanalyse, Angebote unterbreiten",
+          "detail": "4-Ohren-Modell (Schulz von Thun): Sachebene, Selbstoffenbarung, Beziehung, Appell. Bedarfsanalyse: Kundenbefragung, Daten auswerten. Angebote vergleichen mit Nutzwertanalyse. Marktformen: Monopol, Oligopol, Polypol.",
+          "relevance": "mittel",
+          "typicalQuestion": "4-Ohren-Modell an einem Beispiel erklären. Bedarfsanalyse beschreiben.",
+          "difficulty": "leicht"
         },
         {
           "id": "w2t2",
-          "area": "Netzwerk & Infrastruktur",
-          "exam": "AP1/AP2",
-          "topic": "Netzwerkdienste",
-          "subtopic": "DNS, DHCP, Proxy",
-          "detail": "DNS: Namensauflösung. DHCP: IP-Zuweisung. Proxy: Stellvertreter/Filter. Funktion und Unterschiede der Dienste.",
+          "area": "IT-Systeme",
+          "exam": "AP1",
+          "topic": "Marktgängige IT-Systeme beurteilen",
+          "subtopic": "Hardware, Software, Cloud, virtuelle Desktops, KI-Software, Energieeffizienz",
+          "detail": "Funktionale, ökonomische und ökologische Bewertungskriterien. Leistungsfähigkeit (CPU, RAM, Speicher) vs. Energieeffizienz (TDP, PUE). Cloud vs. On-Prem: Kosten, Skalierbarkeit, Datenschutz.",
           "relevance": "hoch",
-          "typicalQuestion": "DNS oder DHCP erklären, Unterschied benennen. Was passiert bei DNS-Ausfall?",
+          "typicalQuestion": "IT-System für ein Szenario auswählen und begründen. Kriterien für Systembewertung nennen.",
           "difficulty": "mittel"
         },
         {
           "id": "w2t3",
-          "area": "Netzwerk & Infrastruktur",
-          "exam": "AP2",
-          "topic": "Switching & Routing",
-          "subtopic": "Routing, Switching, VLAN, Trunk-Port",
-          "detail": "Schicht 2 (Switch/VLAN) vs. Schicht 3 (Router). VLAN-Tagging (802.1Q), Trunk-Port überträgt mehrere VLANs. VLANs = 12 Bit → 4094 mögliche VLANs.",
+          "area": "IT-Systeme",
+          "exam": "AP1/AP2",
+          "topic": "Lizenzmodelle & Urheberrecht",
+          "subtopic": "Open Source, Abo vs. Kauf, CAL, Pay-per-Use, Rahmenverträge, Audit",
+          "detail": "Urheberrechtsgesetz: Software darf nicht einfach kopiert werden. Open Source: GPL, MIT, Apache. CAL: Client Access License für Server-Software. Abo-Modell vs. Einmalkauf. Lizenzaudit: Übereinstimmung prüfen.",
           "relevance": "hoch",
-          "typicalQuestion": "VLAN konfigurieren oder Routing erklären. Wie viele VLANs sind möglich?",
+          "typicalQuestion": "Lizenzmodelle unterscheiden. Was ist eine CAL? Open Source Lizenzen erklären.",
+          "difficulty": "mittel"
+        },
+        {
+          "id": "w2t4",
+          "area": "Vertragsrecht",
+          "exam": "AP1/AP2",
+          "topic": "Vertragsarten",
+          "subtopic": "Kauf, Miete, Leasing, SLA, Werkvertrag, Dienstvertrag",
+          "detail": "Kaufvertrag: Eigentümerübergang sofort. Mietvertrag: Nutzungsüberlassung. Leasing: Finanzierungsform, kein Eigentum. SLA: Service Level Agreement mit definierten KPIs. Werkvertrag: Erfolg geschuldet. Dienstvertrag: Tätigkeit geschuldet.",
+          "relevance": "hoch",
+          "typicalQuestion": "Vertragsart einem Szenario zuordnen. Unterschied Werkvertrag vs. Dienstvertrag.",
           "difficulty": "mittel"
         }
       ],
       "traps": [
-        "DNS/DHCP vermischen – DNS = Namen, DHCP = IP-Adressen (Punktkiller!).",
-        "OSI nur aufsagen statt einem konkreten Problem zuordnen.",
-        "VLAN-ID ist 12 Bit → 4094 nutzbare VLANs (0 und 4095 reserviert).",
-        "Trunk-Port ≠ Access-Port: Trunk trägt mehrere VLANs, Access nur eines.",
-        "Ping nutzt ICMP (kein TCP/UDP). TCP = verbindungsorientiert, UDP = verbindungslos."
+        "Werkvertrag = Erfolg geschuldet (z.B. fertige Software). Dienstvertrag = nur Tätigkeit (z.B. Beratung).",
+        "Leasing ≠ Kauf: Eigentum bleibt beim Leasinggeber. Am Ende kein automatischer Übergang.",
+        "Open Source ≠ kostenlos: Open Source bedeutet offener Quellcode, kann trotzdem Kosten haben."
       ]
     },
     {
       "week": 3,
-      "title": "Netzwerk – VPN & Sicherheit",
+      "title": "AP1 – IT-Sicherheit & Datenschutz",
       "tasks": [
         {
           "id": "w3t1",
-          "area": "Netzwerk & Infrastruktur",
-          "exam": "AP2",
-          "topic": "VPN",
-          "subtopic": "Site-to-Site, Remote-Access, Tunnel-Protokolle",
-          "detail": "Site-to-Site VPN verbindet Netzwerke, Remote-Access verbindet Einzelgeräte. Protokolle: IPSec, OpenVPN, WireGuard.",
+          "area": "IT-Sicherheit",
+          "exam": "AP1/AP2",
+          "topic": "CIA-Triade & BSI IT-Grundschutz",
+          "subtopic": "Vertraulichkeit, Integrität, Verfügbarkeit, BSI-Grundschutz, ISO 27001",
+          "detail": "CIA: Vertraulichkeit (nur Befugte), Integrität (unverändert/korrekt), Verfügbarkeit (erreichbar). BSI IT-Grundschutz: deutsches Framework mit Bausteinen. ISO 27001: internationaler ISMS-Standard.",
           "relevance": "hoch",
-          "typicalQuestion": "VPN-Typen unterscheiden. Wann Site-to-Site, wann Remote-Access?",
-          "difficulty": "mittel"
+          "typicalQuestion": "Maßnahme einem CIA-Ziel zuordnen. Unterschied BSI vs. ISO 27001.",
+          "difficulty": "leicht"
         },
         {
           "id": "w3t2",
-          "area": "IT-Sicherheit",
-          "exam": "AP2",
-          "topic": "Netzwerksicherheit",
-          "subtopic": "IPSec, Firewall, DMZ, IDS/IPS",
-          "detail": "DMZ trennt Innen- vom Außennetz. IDS erkennt Angriffe (passiv), IPS blockiert (aktiv). Firewall filtert Pakete nach Regeln.",
+          "area": "Datenschutz",
+          "exam": "AP1/AP2",
+          "topic": "DSGVO & Datenschutzrecht",
+          "subtopic": "Grundprinzipien, Betroffenenrechte, Anonymisierung, Pseudonymisierung, BDSG",
+          "detail": "7 Grundsätze (Art. 5): Rechtmäßigkeit, Transparenz, Zweckbindung, Datenminimierung, Richtigkeit, Speicherbegrenzung, Integrität/Vertraulichkeit. Betroffenenrechte Art. 15–22. Anonymisierung: kein Personenbezug mehr möglich. Pseudonymisierung: Zuordnung nur mit Zusatzinfo.",
           "relevance": "hoch",
-          "typicalQuestion": "DMZ-Aufbau skizzieren oder IDS vs. IPS unterscheiden.",
-          "difficulty": "schwer"
+          "typicalQuestion": "DSGVO-Grundsätze nennen. Anonymisierung vs. Pseudonymisierung unterscheiden.",
+          "difficulty": "mittel"
         },
         {
           "id": "w3t3",
           "area": "IT-Sicherheit",
           "exam": "AP1/AP2",
-          "topic": "WLAN-Sicherheit",
-          "subtopic": "WPA2/WPA3, SSID, Authentifizierung",
-          "detail": "WPA2 (AES/CCMP) vs. WPA3 (SAE). SSID-Broadcasting deaktivieren allein reicht nicht. 802.1X für Unternehmensauthentifizierung.",
+          "topic": "Verschlüsselung & TOM",
+          "subtopic": "Symmetrisch, asymmetrisch, hybrid, Passwort-Policy, Virenschutz, Personal Firewall",
+          "detail": "Symmetrisch: gleicher Schlüssel (AES). Asymmetrisch: Schlüsselpaar (RSA, Public/Private Key). Hybrid: asymmetrisch zum Schlüsselaustausch, dann symmetrisch. TOM (Art. 32 DSGVO): technische und organisatorische Maßnahmen.",
+          "relevance": "hoch",
+          "typicalQuestion": "Verschlüsselungsarten erklären. Wann symmetrisch, wann asymmetrisch? TOM-Beispiele nennen.",
+          "difficulty": "mittel"
+        },
+        {
+          "id": "w3t4",
+          "area": "IT-Sicherheit",
+          "exam": "AP1/AP2",
+          "topic": "Schutzbedarfsanalyse & Risikoanalyse",
+          "subtopic": "Schutzbedarf: normal, hoch, sehr hoch; Risikoidentifikation, -bewertung, -behandlung",
+          "detail": "Schutzbedarf nach Schadensfolgen: normal (begrenzt), hoch (erheblich), sehr hoch (existenzbedrohend). Risiko = Eintrittswahrscheinlichkeit × Schadenshöhe. Maßnahmen: vermeiden, reduzieren, übertragen, akzeptieren.",
           "relevance": "mittel",
-          "typicalQuestion": "WLAN absichern – welche Maßnahmen empfehlen?",
-          "difficulty": "leicht"
+          "typicalQuestion": "Schutzbedarf klassifizieren und begründen. Risikomatrix ausfüllen.",
+          "difficulty": "mittel"
         }
       ],
       "traps": [
-        "IPSec: Tunnel-Modus verschlüsselt das gesamte Paket, Transport-Modus nur den Payload.",
-        "IDS = erkennen (Alarm), IPS = erkennen + blockieren (aktiv eingreifen).",
-        "DMZ-Aufbau: Webserver in DMZ, DB-Server im internen Netz – nie umgekehrt!"
+        "DSGVO ≠ IT-Sicherheit: DSGVO = personenbezogene Daten. IT-Sicherheit ist breiter.",
+        "Asymmetrisch: Public Key verschlüsselt, Private Key entschlüsselt – nicht umgekehrt merken!",
+        "TOM: technisch (Verschlüsselung, Zugangskontrolle) vs. organisatorisch (Schulungen, Richtlinien)."
       ]
     },
     {
       "week": 4,
-      "title": "Speichersysteme & RAID",
+      "title": "AP2 – Organisation, Verträge & Kommunikation",
       "tasks": [
         {
           "id": "w4t1",
-          "area": "Netzwerk & Infrastruktur",
+          "area": "Organisation",
           "exam": "AP2",
-          "topic": "Datenspeicherung",
-          "subtopic": "Speicherkonzepte, Sicherheitsgrundsätze",
-          "detail": "CIA-Triade auf Datenspeicherung anwenden. Unterschied lokale Speicherung vs. NAS vs. SAN vs. Cloud.",
+          "topic": "Unternehmensorganisation",
+          "subtopic": "Einlinien-, Mehrlinien-, Stabliniensystem, Matrixorganisation, Vollmachten",
+          "detail": "Einliniensystem: klare Befehlskette. Mehrliniensystem: mehrere Vorgesetzte. Stabliniensystem: Linie + beratende Stabsstellen. Matrixorganisation: kombiniert Funktions- und Projektstruktur. Vollmachten: Prokura, Handlungsvollmacht.",
           "relevance": "mittel",
-          "typicalQuestion": "Datensicherheitsgrundsätze nennen. Welches Speicherkonzept für welches Szenario?",
+          "typicalQuestion": "Organisationsform identifizieren. Vor-/Nachteile Matrixorganisation nennen.",
           "difficulty": "leicht"
         },
         {
           "id": "w4t2",
-          "area": "Netzwerk & Infrastruktur",
+          "area": "Vertragsrecht",
           "exam": "AP2",
-          "topic": "Speichersysteme",
-          "subtopic": "NAS, SAN, DAS",
-          "detail": "NAS: Dateibasiert, per Netzwerk (SMB/NFS). SAN: Blockbasiert, per FC/iSCSI. DAS: Direct Attached Storage. Vor-/Nachteile kennen.",
+          "topic": "Leistungserbringung & Vertragsrecht",
+          "subtopic": "BGB/HGB, AGB, Remote vs. vor Ort, Ticketsystem, SLA, Erfüllungsort",
+          "detail": "BGB: Vertragsabschluss (Angebot + Annahme), Gewährleistung, Garantie. HGB: Kaufleute. AGB: vorformulierte Vertragsbedingungen. SLA: Verfügbarkeit, Reaktionszeit, Lösungszeit. Compliance: Einhaltung von Vorschriften.",
           "relevance": "hoch",
-          "typicalQuestion": "NAS vs. SAN – Unterschied und Einsatzgebiet.",
+          "typicalQuestion": "Unterschied Gewährleistung vs. Garantie. SLA-Inhalt beschreiben.",
           "difficulty": "mittel"
         },
         {
           "id": "w4t3",
-          "area": "Netzwerk & Infrastruktur",
+          "area": "Kommunikation",
           "exam": "AP2",
-          "topic": "RAID",
-          "subtopic": "RAID 0, 1, 5, 6, 10 – Kapazität & Ausfalltoleranz",
-          "detail": "RAID 0: Striping, kein Schutz. RAID 1: Spiegelung. RAID 5: 1 Parität, 1 Ausfall toleriert. RAID 6: 2 Paritäten. RAID 10: Kombi. Nutzspeicher berechnen!",
+          "topic": "Kommunikation & Präsentation",
+          "subtopic": "Aktives Zuhören, CRM, Corporate Identity, Visualisierung, Präsentationstechnik",
+          "detail": "Aktives Zuhören: paraphrasieren, nachfragen. CRM: Kundendaten und -beziehungen verwalten. Corporate Identity: einheitliches Erscheinungsbild. Präsentation: Struktur (Einstieg, Hauptteil, Schluss), Visualisierung.",
+          "relevance": "mittel",
+          "typicalQuestion": "Aktives Zuhören beschreiben. Was ist CRM? Präsentationsaufbau erklären.",
+          "difficulty": "leicht"
+        },
+        {
+          "id": "w4t4",
+          "area": "IT-Sicherheit",
+          "exam": "AP2",
+          "topic": "IT-Sicherheitsvorfälle & Bedrohungen",
+          "subtopic": "Ransomware, Phishing, Social Engineering, Schadenspotenziale, präventive Maßnahmen",
+          "detail": "Ransomware: Verschlüsselung von Daten, Lösegeld. Phishing: gefälschte E-Mails/Webseiten zur Datenmitnahme. Social Engineering: Manipulation von Menschen. Präventiv: Schulungen, Backups, Patchmanagement, MFA.",
           "relevance": "hoch",
-          "typicalQuestion": "Nutzbaren Speicher bei RAID 5 berechnen. Wie viele Festplatten dürfen ausfallen?",
-          "difficulty": "schwer"
+          "typicalQuestion": "Ransomware-Angriff beschreiben und Schutzmaßnahmen nennen. Phishing erkennen.",
+          "difficulty": "mittel"
         }
       ],
       "traps": [
-        "RAID ≠ Backup! RAID schützt vor Hardwareausfall, nicht vor Datenverlust durch Löschen.",
-        "GiB vs. GB: 1 GiB = 1,073 GB – IHK rechnet meist mit GiB.",
-        "RAID 5 mit 3 Disks: nutzbarer Speicher = (n-1) × Diskgröße.",
-        "RAID 6 mit 4 Disks: 2 Disks dürfen ausfallen, nutzbarer Speicher = (n-2) × Diskgröße."
+        "Gewährleistung (gesetzlich, 2 Jahre) ≠ Garantie (freiwillig vom Hersteller).",
+        "Matrix-Organisation: Mitarbeiter hat zwei Vorgesetzte – Konfliktpotenzial!",
+        "Ransomware: Backup allein reicht nicht – Backup muss offline/isoliert sein."
       ]
     },
     {
       "week": 5,
-      "title": "Backup & Hochverfügbarkeit",
+      "title": "AP2 – Netzwerkmodelle & Grundlagen",
       "tasks": [
         {
           "id": "w5t1",
-          "area": "Netzwerk & Infrastruktur",
+          "area": "Netzwerk",
           "exam": "AP1/AP2",
-          "topic": "Backup-Strategien",
-          "subtopic": "Vollbackup, Differenziell, Inkrementell, Snapshot",
-          "detail": "Voll: alles. Differenziell: seit letztem Voll. Inkrementell: seit letztem Backup. Snapshot: Zustandsabbild (kein echtes Backup!). 3-2-1-Regel.",
+          "topic": "Netzwerkmodelle",
+          "subtopic": "OSI-Modell (7 Schichten), TCP/IP-Modell, Protokollzuordnung",
+          "detail": "OSI: Bitübertragung, Sicherung, Vermittlung, Transport, Sitzung, Darstellung, Anwendung. TCP/IP: 4 Schichten (Netzzugang, Internet, Transport, Anwendung). Protokolle zuordnen: HTTP→7, TCP→4, IP→3, Ethernet→2.",
           "relevance": "hoch",
-          "typicalQuestion": "Backup-Arten unterscheiden. Wiederherstellungsaufwand vergleichen.",
+          "typicalQuestion": "Protokoll einer OSI-Schicht zuordnen. Unterschied OSI vs. TCP/IP.",
           "difficulty": "mittel"
         },
         {
           "id": "w5t2",
-          "area": "Netzwerk & Infrastruktur",
-          "exam": "AP2",
-          "topic": "Business Continuity",
-          "subtopic": "Disaster Recovery Plan, Notfallkonzept",
-          "detail": "DR-Plan: Wer macht was im Notfall? Warm-Standby, Cold-Standby, Hot-Standby kennen.",
-          "relevance": "mittel",
-          "typicalQuestion": "DR-Konzept beschreiben. Was ist ein Notfallplan?",
+          "area": "Netzwerk",
+          "exam": "AP1/AP2",
+          "topic": "Netzwerkkomponenten",
+          "subtopic": "Switch, Router, Firewall, Bridge, Hub, Access Point, Loadbalancer",
+          "detail": "Hub: überträgt an alle (Kollisionsdomäne). Switch: Schicht 2, lernt MAC-Adressen. Router: Schicht 3, verbindet Netzwerke, kennt IP. Firewall: filtert Pakete nach Regeln. Bridge: verbindet zwei Segmente.",
+          "relevance": "hoch",
+          "typicalQuestion": "Welche Komponente arbeitet auf welcher OSI-Schicht? Switch vs. Router.",
           "difficulty": "mittel"
         },
         {
           "id": "w5t3",
-          "area": "Netzwerk & Infrastruktur",
+          "area": "Netzwerk",
           "exam": "AP2",
-          "topic": "Verfügbarkeitskennzahlen",
-          "subtopic": "MTBF, MTTR, Verfügbarkeit in %",
-          "detail": "MTBF (Mean Time Between Failures): durchschnittliche Zeit zwischen Ausfällen. MTTR (Mean Time To Repair): Reparaturzeit. Verfügbarkeit = MTBF / (MTBF + MTTR) × 100.",
-          "relevance": "hoch",
-          "typicalQuestion": "Verfügbarkeit aus MTBF und MTTR berechnen. RAID reduziert MTTR.",
-          "difficulty": "schwer"
-        },
-        {
-          "id": "w5t4",
-          "area": "Netzwerk & Infrastruktur",
-          "exam": "AP2",
-          "topic": "Recovery-Ziele",
-          "subtopic": "RTO, RPO",
-          "detail": "RTO (Recovery Time Objective): max. Ausfallzeit bis Wiederherstellung. RPO (Recovery Point Objective): max. Datenverlust-Zeitspanne. Aus Anforderungen ableiten.",
-          "relevance": "hoch",
-          "typicalQuestion": "RTO/RPO aus Anforderungen ableiten. Bsp: max. 1h Ausfall, max. 10min Datenverlust.",
-          "difficulty": "mittel"
+          "topic": "Netzwerktopologien & -typen",
+          "subtopic": "LAN/WAN/MAN/GAN, VLAN, Peer-to-Peer, Client-Server, Topologien",
+          "detail": "Bus, Ring, Stern, Mesh. LAN: lokal. WAN: weiträumig. MAN: städtisch. VLAN: logische Trennung im Switch. Client-Server: zentrale Ressource. Peer-to-Peer: gleichwertige Partner.",
+          "relevance": "mittel",
+          "typicalQuestion": "Netzwerktypen unterscheiden. Wann VLAN, wann physische Trennung?",
+          "difficulty": "leicht"
         }
       ],
       "traps": [
-        "Snapshot ≠ Backup! Snapshot liegt auf demselben System – bei Hardwareausfall weg.",
-        "RTO = Ausfallzeit (wann läuft's wieder?), RPO = Datenverlust (wie viel darf verloren gehen?).",
-        "RAID reduziert MTTR, erhöht aber nicht automatisch die Verfügbarkeit auf 99,99%."
+        "Hub ≠ Switch: Hub überträgt an alle Ports, Switch nur an den Ziel-Port.",
+        "OSI nur aufsagen reicht nicht – Protokolle und Geräte müssen den Schichten zugeordnet werden können.",
+        "VLAN trennt Broadcast-Domänen, nicht physische Netzwerke."
       ]
     },
     {
       "week": 6,
-      "title": "IP-Adressierung & Subnetting",
+      "title": "AP2 – Netzwerkdienste & VPN",
       "tasks": [
         {
           "id": "w6t1",
-          "area": "Netzwerk & Infrastruktur",
+          "area": "Netzwerk",
           "exam": "AP1/AP2",
-          "topic": "IP-Adressierung",
-          "subtopic": "CIDR-Notation, Subnetzmaske, IPv4 vs. IPv6",
-          "detail": "Präfixlänge lesen: /24 = 255.255.255.0. Privatadressen kennen: 10.x, 172.16-31.x, 192.168.x. IPv6-Format.",
+          "topic": "Netzwerkdienste",
+          "subtopic": "DNS, DHCP, Proxy, NAT/PAT, NTP",
+          "detail": "DNS: Namensauflösung (Hostname → IP). DHCP: automatische IP-Vergabe, Lease-Zeit. Proxy: Stellvertreter (Caching, Filterung). NAT: private IP → öffentliche IP. PAT: mehrere Geräte teilen eine IP über Ports.",
           "relevance": "hoch",
-          "typicalQuestion": "CIDR-Notation interpretieren. Subnetzmaske aus Präfixlänge ableiten.",
+          "typicalQuestion": "DNS vs. DHCP erklären. Was passiert bei DNS-Ausfall? NAT/PAT beschreiben.",
           "difficulty": "mittel"
         },
         {
           "id": "w6t2",
-          "area": "Netzwerk & Infrastruktur",
-          "exam": "AP1/AP2",
-          "topic": "Netz- & Broadcastadresse",
-          "subtopic": "Netzadresse, Broadcastadresse, nutzbare Hosts",
-          "detail": "Netzadresse: erste Adresse (Host-Teil = 0). Broadcast: letzte Adresse (Host-Teil = 1). Nutzbare Hosts = 2^n - 2.",
+          "area": "Netzwerk",
+          "exam": "AP2",
+          "topic": "VPN & Tunneling",
+          "subtopic": "Site-to-Site, Remote-Access, IPSec (Tunnel/Transport), OpenVPN, WireGuard",
+          "detail": "Site-to-Site: verbindet ganze Netzwerke. Remote-Access: Einzelgerät ins Firmennetz. IPSec-Modi: Tunnel (ganzes Paket verschlüsselt) vs. Transport (nur Payload). Protokolle: IKE für Schlüsselaustausch.",
           "relevance": "hoch",
-          "typicalQuestion": "Broadcastadresse bestimmen. Wie viele nutzbare Hosts hat /26?",
+          "typicalQuestion": "VPN-Typen unterscheiden. IPSec Tunnel vs. Transport-Modus. Wann welchen Typ?",
           "difficulty": "mittel"
         },
         {
           "id": "w6t3",
-          "area": "Netzwerk & Infrastruktur",
+          "area": "Netzwerk",
           "exam": "AP1/AP2",
-          "topic": "Subnetting",
-          "subtopic": "Netz in Subnetze aufteilen, Präfix wählen",
-          "detail": "Wie viele Subnetze bei /26 aus /24? Welcher Präfix für 50 Hosts? Schritt: Hostbedarf → 2^n ≥ Hosts+2 → Präfix = 32-n.",
-          "relevance": "hoch",
-          "typicalQuestion": "Subnetting-Aufgabe lösen: Netz aufteilen, Adressen berechnen.",
-          "difficulty": "schwer"
+          "topic": "WLAN-Sicherheit & Funknetze",
+          "subtopic": "WPA2/WPA3, 802.1X, SSID, Bluetooth, WLAN-Controller, Access Point",
+          "detail": "WPA2 (AES/CCMP) vs. WPA3 (SAE, Forward Secrecy). 802.1X: Enterprise-Authentifizierung mit RADIUS. SSID verstecken allein schützt nicht. WLAN-Controller verwaltet mehrere APs zentral.",
+          "relevance": "mittel",
+          "typicalQuestion": "WLAN absichern – welche Maßnahmen empfehlen? WPA2 vs. WPA3.",
+          "difficulty": "leicht"
         }
       ],
       "traps": [
-        "IHK fragt nach nutzbaren Hosts, nicht nach Gesamtadressen → immer -2!",
-        "2^n rechnen aber -2 vergessen (Netzadresse + Broadcast sind nicht nutzbar).",
-        "Subnetzmaske in Binär: /26 = 11111111.11111111.11111111.11000000 = 255.255.255.192."
+        "DNS/DHCP verwechseln – DNS = Namen auflösen, DHCP = IP-Adressen vergeben (Punktkiller!).",
+        "NAT ≠ PAT: NAT übersetzt eine IP, PAT teilt eine IP über verschiedene Ports.",
+        "IPSec Tunnel-Modus verschlüsselt das gesamte Paket inkl. Original-IP-Header."
       ]
     },
     {
       "week": 7,
-      "title": "IT-Sicherheit – Grundlagen & Datenschutz",
+      "title": "AP2 – IP-Adressierung & Subnetting",
       "tasks": [
         {
           "id": "w7t1",
-          "area": "IT-Sicherheit & Datenschutz",
-          "exam": "AP2",
-          "topic": "IT-Sicherheitsstandards",
-          "subtopic": "BSI IT-Grundschutz, ISO 27001",
-          "detail": "BSI-Grundschutz: deutsches Framework, Bausteine/Maßnahmen. ISO 27001: internationaler Standard, ISMS. BSI ≠ ISO – BSI ist detaillierter und auf DE ausgerichtet.",
+          "area": "Netzwerk",
+          "exam": "AP1/AP2",
+          "topic": "IP-Adressierung",
+          "subtopic": "CIDR-Notation, Subnetzmaske, IPv4 vs. IPv6, private Adressbereiche",
+          "detail": "Präfixlänge: /24 = 255.255.255.0. Private IPv4: 10.x.x.x, 172.16-31.x.x, 192.168.x.x. IPv6: 128 Bit, Hexadezimal, ::1 = Loopback. APIPA: 169.254.x.x wenn kein DHCP.",
           "relevance": "hoch",
-          "typicalQuestion": "BSI-Grundschutz erklären. Unterschied BSI vs. ISO 27001.",
+          "typicalQuestion": "Subnetzmaske aus CIDR ableiten. Private vs. öffentliche IP-Bereiche nennen.",
           "difficulty": "mittel"
         },
         {
           "id": "w7t2",
-          "area": "IT-Sicherheit & Datenschutz",
+          "area": "Netzwerk",
           "exam": "AP1/AP2",
-          "topic": "Datenschutz",
-          "subtopic": "DSGVO Grundprinzipien, Betroffenenrechte, Art. 5",
-          "detail": "7 Grundsätze: Rechtmäßigkeit, Transparenz, Zweckbindung, Datenminimierung, Richtigkeit, Speicherbegrenzung, Integrität/Vertraulichkeit. Betroffenenrechte (Art. 15-22).",
+          "topic": "Netz- & Broadcastadresse",
+          "subtopic": "Netzadresse, Broadcastadresse, nutzbare Hosts berechnen",
+          "detail": "Netzadresse: erste Adresse (Host-Teil = 0). Broadcast: letzte Adresse (Host-Teil = alle 1). Nutzbare Hosts = 2^n - 2. Beispiel /26: 2^6 - 2 = 62 Hosts.",
           "relevance": "hoch",
-          "typicalQuestion": "DSGVO-Grundsätze oder Betroffenenrechte nennen und erläutern.",
+          "typicalQuestion": "Broadcastadresse aus IP und Subnetzmaske bestimmen. Nutzbare Hosts bei /26?",
           "difficulty": "mittel"
         },
         {
           "id": "w7t3",
-          "area": "IT-Sicherheit & Datenschutz",
+          "area": "Netzwerk",
           "exam": "AP1/AP2",
-          "topic": "CIA-Triade",
-          "subtopic": "Vertraulichkeit, Integrität, Verfügbarkeit",
-          "detail": "Vertraulichkeit: nur Befugte haben Zugriff. Integrität: Daten unverändert/korrekt. Verfügbarkeit: Systeme erreichbar. Maßnahmen den Zielen zuordnen können.",
+          "topic": "Subnetting",
+          "subtopic": "Netz aufteilen, Präfix wählen, Subnetzadressen berechnen",
+          "detail": "Vorgehensweise: Hostbedarf → 2^n ≥ Hosts+2 → Präfix = 32-n. /24 in 4 Subnetze: /26. Subnetzadressen in Schritten berechnen. Schritt = 256 - Subnetzmaske letztes Oktett.",
           "relevance": "hoch",
-          "typicalQuestion": "Maßnahmen einem CIA-Ziel zuordnen. Verschlüsselung → Vertraulichkeit.",
-          "difficulty": "leicht"
-        },
-        {
-          "id": "w7t4",
-          "area": "IT-Sicherheit & Datenschutz",
-          "exam": "AP2",
-          "topic": "TOM",
-          "subtopic": "Technisch-organisatorische Maßnahmen (DSGVO Art. 32)",
-          "detail": "Technisch: Verschlüsselung, Zugangskontrolle, Logging. Organisatorisch: Schulungen, Richtlinien, Berechtigungskonzepte. Verhältnismäßigkeit beachten.",
-          "relevance": "mittel",
-          "typicalQuestion": "TOM-Beispiele nennen und technisch vs. organisatorisch unterscheiden.",
-          "difficulty": "leicht"
-        },
-        {
-          "id": "w7t5",
-          "area": "IT-Sicherheit & Datenschutz",
-          "exam": "AP2",
-          "topic": "Risikoanalyse",
-          "subtopic": "Schutzbedarfsfeststellung: normal, hoch, sehr hoch",
-          "detail": "Schutzbedarf klassifizieren anhand Schadensfolgen. Normal: begrenzt. Hoch: erheblich. Sehr hoch: existenzbedrohend. Basis für IT-Grundschutz.",
-          "relevance": "mittel",
-          "typicalQuestion": "Schutzbedarf eines Systems bestimmen und begründen.",
-          "difficulty": "mittel"
-        }
-      ],
-      "traps": [
-        "DSGVO ≠ IT-Sicherheit: DSGVO regelt Datenschutz (personenbezogene Daten), IT-Sicherheit ist breiter.",
-        "BSI-Grundschutz ≠ ISO 27001: BSI ist deutsches nationales Framework.",
-        "CIA: Welche Maßnahme schützt welches Ziel? (Backup → Verfügbarkeit, Verschlüsselung → Vertraulichkeit)."
-      ]
-    },
-    {
-      "week": 8,
-      "title": "IT-Sicherheit – Zugriff & Risiko",
-      "tasks": [
-        {
-          "id": "w8t1",
-          "area": "IT-Sicherheit & Datenschutz",
-          "exam": "AP2",
-          "topic": "Berechtigungsmanagement",
-          "subtopic": "RBAC, LDAP, Minimalprinzip (Need-to-know)",
-          "detail": "RBAC: Rechte werden Rollen zugewiesen, nicht Personen. LDAP: speichert Identitäten/Gruppen. Minimalprinzip: nur nötige Rechte vergeben.",
-          "relevance": "hoch",
-          "typicalQuestion": "RBAC erklären. LDAP-Funktion beschreiben. Was ist das Minimalprinzip?",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w8t2",
-          "area": "IT-Sicherheit & Datenschutz",
-          "exam": "AP1/AP2",
-          "topic": "Authentifizierung",
-          "subtopic": "MFA, Zertifikate (PKI), SSO",
-          "detail": "Faktoren: Wissen, Besitz, Biometrie. MFA = mind. 2 Faktoren. PKI: CA stellt Zertifikate aus. SSO: einmal anmelden, überall Zugriff. Unterschied Authentifizierung vs. Autorisierung.",
-          "relevance": "hoch",
-          "typicalQuestion": "MFA-Verfahren erklären. Authentifizierung vs. Autorisierung unterscheiden.",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w8t3",
-          "area": "IT-Sicherheit & Datenschutz",
-          "exam": "AP2",
-          "topic": "Sicherheitskonzepte",
-          "subtopic": "Security by Design, Privacy by Design",
-          "detail": "Sicherheit von Anfang an einplanen, nicht nachträglich. Privacy by Default: datenschutzfreundlichste Einstellungen als Standard.",
-          "relevance": "mittel",
-          "typicalQuestion": "Security by Design / Privacy by Design erklären und Beispiele nennen.",
-          "difficulty": "leicht"
-        },
-        {
-          "id": "w8t4",
-          "area": "IT-Sicherheit & Datenschutz",
-          "exam": "AP2",
-          "topic": "Sicherheitstests",
-          "subtopic": "Penetrationstest, Blackbox, Whitebox, Greybox",
-          "detail": "Blackbox: kein Vorwissen. Whitebox: voller Quellcodezugriff. Greybox: teilweises Wissen. Pentest = autorisierter Angriff zur Schwachstellenfindung.",
-          "relevance": "mittel",
-          "typicalQuestion": "Pentest-Arten unterscheiden. Was ist der Unterschied Blackbox/Whitebox?",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w8t5",
-          "area": "IT-Sicherheit & Datenschutz",
-          "exam": "AP2",
-          "topic": "Risikomanagement",
-          "subtopic": "Risikoidentifikation, -bewertung, -behandlung",
-          "detail": "Risiko = Eintrittswahrscheinlichkeit × Schadenshöhe. Maßnahmen: vermeiden, reduzieren, übertragen (Versicherung), akzeptieren.",
-          "relevance": "hoch",
-          "typicalQuestion": "Risikomatrix ausfüllen oder Maßnahmen aus Risikobewertung ableiten.",
+          "typicalQuestion": "Netz 192.168.1.0/24 in 4 Subnetze aufteilen. Welcher Präfix für 100 Hosts?",
           "difficulty": "schwer"
         }
       ],
       "traps": [
-        "Rechte werden Rollen zugewiesen, nicht direkt Personen (RBAC).",
-        "LDAP speichert Identitäten, ist kein Authentifizierungsprotokoll selbst.",
-        "Authentifizierung (wer bist du?) ≠ Autorisierung (was darfst du?).",
-        "Minimalprinzip: nur so viele Rechte wie nötig – nie mehr."
+        "IHK fragt nach nutzbaren Hosts → immer -2 (Netzadresse + Broadcast nicht nutzbar)!",
+        "Subnetzmaske /26 in Binär: 11000000 im letzten Oktett = 192 → 255.255.255.192.",
+        "2^n vergessen: /26 hat 6 Host-Bits → 2^6 = 64 Adressen, nicht 26!"
+      ]
+    },
+    {
+      "week": 8,
+      "title": "AP2 – Netzwerkinstallation & -konfiguration",
+      "tasks": [
+        {
+          "id": "w8t1",
+          "area": "Netzwerk",
+          "exam": "AP2",
+          "topic": "Netzwerkkomponenten installieren & konfigurieren",
+          "subtopic": "Router, Switch, WLAN-Controller, Access Point, Firewall, Loadbalancer",
+          "detail": "Switch-Konfiguration: VLAN, Trunk-Port (802.1Q), Spanning Tree (STP). Router: statische/dynamische Routen. Firewall: Regelwerk (von oben nach unten). Loadbalancer: Anfragen verteilen.",
+          "relevance": "hoch",
+          "typicalQuestion": "VLAN auf Switch konfigurieren. Trunk-Port vs. Access-Port. STP-Funktion erklären.",
+          "difficulty": "mittel"
+        },
+        {
+          "id": "w8t2",
+          "area": "Netzwerk",
+          "exam": "AP2",
+          "topic": "Netzwerkdienste administrieren",
+          "subtopic": "Spanning Tree, Routing, NAT/PAT, QoS, First Hop Redundancy (HSRP/VRRP)",
+          "detail": "Spanning Tree: verhindert Schleifen im Netz. QoS: Priorisierung von Datenverkehr (z.B. VoIP). HSRP/VRRP: Redundanz beim Default Gateway. Routing: statisch vs. dynamisch (OSPF, BGP).",
+          "relevance": "mittel",
+          "typicalQuestion": "Wofür ist Spanning Tree zuständig? QoS erklären. HSRP beschreiben.",
+          "difficulty": "schwer"
+        },
+        {
+          "id": "w8t3",
+          "area": "Netzwerk",
+          "exam": "AP2",
+          "topic": "Übertragungsmedien & Topologien",
+          "subtopic": "Glasfaser (LWL), Kupfer (Cat5e/6/7), Funk (WLAN), WAN-Anbindung",
+          "detail": "Kupfer: Cat5e bis 1 GBit, Cat6 bis 10 GBit (55m), Cat7 abgeschirmt. Glasfaser: Single-Mode (weit) vs. Multi-Mode (kürzer). Funk: 2,4 GHz (Reichweite) vs. 5 GHz (Geschwindigkeit). WAN: DSL, Glasfaser, Richtfunk.",
+          "relevance": "mittel",
+          "typicalQuestion": "Übertragungsmedium für Szenario auswählen. Single-Mode vs. Multi-Mode Glasfaser.",
+          "difficulty": "leicht"
+        },
+        {
+          "id": "w8t4",
+          "area": "Netzwerk",
+          "exam": "AP2",
+          "topic": "Netzwerkanalyse & Optimierung",
+          "subtopic": "Redundanz, Load Balancing, Ping, Traceroute, Wireshark, Nmap",
+          "detail": "Ping: Erreichbarkeit (ICMP). Traceroute: Pfad zum Ziel. Wireshark: Paketanalyse. Nmap: Port-Scan. Redundanz: mehrere Wege/Geräte. Load Balancing: Last verteilen.",
+          "relevance": "mittel",
+          "typicalQuestion": "Welches Tool für welche Diagnose? Ping vs. Traceroute. Netzwerkredundanz beschreiben.",
+          "difficulty": "leicht"
+        }
+      ],
+      "traps": [
+        "Trunk-Port ≠ Access-Port: Trunk trägt mehrere VLANs (getaggt), Access nur eines (ungetaggt).",
+        "Spanning Tree verhindert Layer-2-Schleifen – ohne STP bricht das Netz zusammen.",
+        "Ping nutzt ICMP – kein TCP oder UDP!"
       ]
     },
     {
       "week": 9,
-      "title": "Systemintegration – Server & Cloud",
+      "title": "AP2 – Netzwerksicherheit & Berechtigungen",
       "tasks": [
         {
           "id": "w9t1",
-          "area": "Systembetrieb",
+          "area": "IT-Sicherheit",
           "exam": "AP2",
-          "topic": "Serverinstallation",
-          "subtopic": "Installation, Konfiguration, Dokumentation",
-          "detail": "Typische Schritte: Planung → Installation → Konfiguration → Test → Dokumentation → Übergabe. Was muss dokumentiert werden?",
-          "relevance": "mittel",
-          "typicalQuestion": "Schritte bei einer Serverinstallation nennen. Was ist zu dokumentieren?",
-          "difficulty": "leicht"
+          "topic": "Netzwerksicherheit",
+          "subtopic": "Firewall, NGFW, IDS/IPS, DMZ, Portsecurity, Webfilter",
+          "detail": "DMZ: entmilitarisierte Zone zwischen internem Netz und Internet. IDS: erkennt passiv. IPS: blockiert aktiv. NGFW: Next-Gen Firewall mit Deep Packet Inspection. Portsecurity: MAC-basierte Zugangskontrolle am Switch.",
+          "relevance": "hoch",
+          "typicalQuestion": "DMZ-Aufbau skizzieren. IDS vs. IPS. Webserver in DMZ oder internem Netz?",
+          "difficulty": "schwer"
         },
         {
           "id": "w9t2",
-          "area": "Systembetrieb",
+          "area": "IT-Sicherheit",
           "exam": "AP2",
-          "topic": "Virtualisierung",
-          "subtopic": "Hypervisor Typ 1 / Typ 2, VM, Container (Docker)",
-          "detail": "Typ 1 (bare-metal): läuft direkt auf Hardware (VMware ESXi, Hyper-V). Typ 2 (hosted): läuft auf OS (VirtualBox, VMware Workstation). Container: teilen den OS-Kernel.",
+          "topic": "Berechtigungskonzepte",
+          "subtopic": "RBAC, LDAP, ACL, AGDLP, Minimalprinzip, User Accounts, Sicherheitsgruppen",
+          "detail": "RBAC: Rechte an Rollen, nicht direkt an Personen. LDAP: verzeichnisbasierte Benutzerverwaltung. ACL: Access Control List. AGDLP: Account → Global → Domain Local → Permission. Minimalprinzip: nur nötige Rechte.",
           "relevance": "hoch",
-          "typicalQuestion": "Hypervisor Typ 1 vs. Typ 2 unterscheiden. VM vs. Container Vor-/Nachteile.",
+          "typicalQuestion": "RBAC erklären. AGDLP-Prinzip beschreiben. Was ist das Minimalprinzip?",
           "difficulty": "mittel"
         },
         {
           "id": "w9t3",
-          "area": "Systembetrieb",
-          "exam": "AP2",
-          "topic": "Cloud-Modelle",
-          "subtopic": "IaaS, PaaS, SaaS, Public/Private/Hybrid Cloud",
-          "detail": "IaaS: Infrastruktur (VMs, Netz). PaaS: Plattform (Laufzeitumgebung). SaaS: Software (fertige App). Betriebsmodelle: Public, Private, Hybrid.",
+          "area": "IT-Sicherheit",
+          "exam": "AP1/AP2",
+          "topic": "Authentifizierung & Zertifikate",
+          "subtopic": "MFA, PKI, SSO, RADIUS, OTP, Hardwaretoken, Zertifikate",
+          "detail": "Faktoren: Wissen (Passwort), Besitz (Token), Biometrie. MFA = mind. 2 Faktoren. PKI: CA stellt Zertifikate aus (X.509). SSO: einmal anmelden. RADIUS: Authentifizierungsserver für Netzwerkzugang.",
           "relevance": "hoch",
-          "typicalQuestion": "Cloudmodelle unterscheiden und Verantwortlichkeiten zuordnen.",
-          "difficulty": "leicht"
+          "typicalQuestion": "MFA-Faktoren erklären. PKI-Ablauf beschreiben. Authentifizierung vs. Autorisierung.",
+          "difficulty": "mittel"
         },
         {
           "id": "w9t4",
-          "area": "Systembetrieb",
+          "area": "IT-Sicherheit",
           "exam": "AP2",
-          "topic": "Betriebsmodelle",
-          "subtopic": "On-Premises vs. Cloud vs. Hybrid",
-          "detail": "On-Prem: volle Kontrolle, hohe Kosten. Cloud: flexibel, Abhängigkeit. Hybrid: Kombination. Entscheidungskriterien: Datenschutz, Kosten, Flexibilität.",
-          "relevance": "hoch",
-          "typicalQuestion": "On-Prem vs. Cloud für ein Szenario empfehlen und begründen.",
+          "topic": "Sicherheitsrichtlinien & Compliance",
+          "subtopic": "BSI-Richtlinien, BYOD, DLP, Nutzerordnung, Betriebsvereinbarungen",
+          "detail": "BYOD (Bring Your Own Device): private Geräte im Firmennetz – Risiken und Regelungen. DLP (Data Loss Prevention): verhindert unautorisierten Datenabfluss. Betriebsvereinbarung: Mitbestimmung des Betriebsrats.",
+          "relevance": "mittel",
+          "typicalQuestion": "BYOD-Risiken nennen. Was regelt DLP? Sicherheitsrichtlinie beschreiben.",
           "difficulty": "leicht"
         }
       ],
       "traps": [
-        "Container ≠ VM: Container teilen den OS-Kernel, VMs haben eigenes Gast-OS.",
-        "Hypervisor Typ 1 läuft direkt auf Hardware (kein Host-OS dazwischen).",
-        "IaaS/PaaS/SaaS: Verantwortlichkeiten klar zuordnen können – wer managed was?"
+        "DMZ-Aufbau: Webserver in DMZ, Datenbankserver im internen Netz – nie umgekehrt!",
+        "Authentifizierung (wer bist du?) ≠ Autorisierung (was darfst du?).",
+        "LDAP speichert Identitäten, ist selbst kein Authentifizierungsprotokoll."
       ]
     },
     {
       "week": 10,
-      "title": "Systemintegration – Betrieb & ITIL",
+      "title": "AP2 – Speichersysteme, RAID & Backup",
       "tasks": [
         {
-          "id": "w9t5",
-          "area": "Systembetrieb",
+          "id": "w10t1",
+          "area": "Infrastruktur",
           "exam": "AP2",
-          "topic": "IT-Lifecycle",
-          "subtopic": "Planung → Beschaffung → Betrieb → Wartung → Entsorgung",
-          "detail": "Lifecycle-Phasen kennen. Entsorgung: datenschutzkonforme Vernichtung (z.B. nach DIN 66399). Kosten über den gesamten Lebenszyklus beachten (TCO).",
-          "relevance": "mittel",
-          "typicalQuestion": "Lifecycle-Phasen benennen. Wie werden Datenträger datenschutzkonform entsorgt?",
-          "difficulty": "leicht"
-        },
-        {
-          "id": "w9t6",
-          "area": "Systembetrieb",
-          "exam": "AP2",
-          "topic": "Patchmanagement & Updates",
-          "subtopic": "Rolling Update, Canary Deployment, Blue-Green Deployment",
-          "detail": "Rolling: schrittweise aktualisieren. Canary: kleiner Nutzeranteil zuerst. Blue-Green: zwei Produktionsumgebungen, sofortiger Wechsel. Rollback-Strategie wichtig.",
-          "relevance": "mittel",
-          "typicalQuestion": "Blue-Green Deployment erklären. Unterschied Rolling vs. Canary.",
+          "topic": "Speichersysteme",
+          "subtopic": "NAS, SAN, DAS, Cloud-Storage, blockbasiert vs. dateibasiert",
+          "detail": "DAS: direkt angeschlossen. NAS: Dateibasiert per Netzwerk (SMB/NFS). SAN: Blockbasiert per FC/iSCSI, wirkt wie lokale Festplatte. Cloud: skalierbar, unveränderlich (WORM) oder veränderlich.",
+          "relevance": "hoch",
+          "typicalQuestion": "NAS vs. SAN – Unterschied und Einsatzgebiet. Wann SAN, wann NAS?",
           "difficulty": "mittel"
         },
         {
-          "id": "w9t7",
-          "area": "Systembetrieb",
+          "id": "w10t2",
+          "area": "Infrastruktur",
           "exam": "AP2",
-          "topic": "ITIL / Incident Management",
-          "subtopic": "Incident vs. Problem, Ticket-Workflow",
-          "detail": "Incident = einzelne Störung (z.B. Server down). Problem = Ursache hinter mehreren Incidents. Ticket: Erstellt → In Bearbeitung → Gelöst → Geschlossen.",
+          "topic": "RAID",
+          "subtopic": "RAID 0, 1, 5, 6, 10 – Kapazität, Ausfalltoleranz, Nutzspeicher berechnen",
+          "detail": "RAID 0: Striping, kein Schutz. RAID 1: Spiegelung, 1 Ausfall. RAID 5: 1 Parität, min. 3 Disks, (n-1)×Disk. RAID 6: 2 Paritäten, 2 Ausfälle, (n-2)×Disk. RAID 10: 1+0, min. 4 Disks.",
           "relevance": "hoch",
-          "typicalQuestion": "Incident und Problem unterscheiden. Ticket-Workflow beschreiben.",
+          "typicalQuestion": "Nutzspeicher bei RAID 5 mit 4×2TB berechnen. Wie viele Disks dürfen ausfallen?",
+          "difficulty": "schwer"
+        },
+        {
+          "id": "w10t3",
+          "area": "Infrastruktur",
+          "exam": "AP1/AP2",
+          "topic": "Backup-Strategien",
+          "subtopic": "Vollbackup, Differenziell, Inkrementell, Snapshot, 3-2-1-Regel, Aufbewahrungsfristen",
+          "detail": "Voll: alles. Differenziell: seit letztem Vollbackup (wächst). Inkrementell: seit letztem Backup (kleiner). Snapshot: Zustandsabbild, kein echtes Backup! 3-2-1: 3 Kopien, 2 Medien, 1 offsite. Backupdauer + Wiederherstellungsdauer berechnen können.",
+          "relevance": "hoch",
+          "typicalQuestion": "Backup-Arten vergleichen. Wiederherstellungsaufwand: Vollbackup vs. inkrementell.",
           "difficulty": "mittel"
         },
         {
-          "id": "w9t8",
-          "area": "Systembetrieb",
+          "id": "w10t4",
+          "area": "Infrastruktur",
           "exam": "AP2",
-          "topic": "Eskalation",
-          "subtopic": "Technische vs. Hierarchische Eskalation",
-          "detail": "Technisch: Experte mit mehr Fachwissen (z.B. 2nd Level Support). Hierarchisch: Vorgesetzter/Management (bei Prioritätskonflikten oder Budgetfragen).",
+          "topic": "Business Continuity & Disaster Recovery",
+          "subtopic": "Disaster Recovery Plan, Hot/Warm/Cold Standby, RTO, RPO",
+          "detail": "RTO: max. Ausfallzeit bis Wiederherstellung. RPO: max. Datenverlust. Hot-Standby: sofort bereit. Warm-Standby: kurze Anlaufzeit. Cold-Standby: manuelle Aktivierung. DR-Plan: wer macht was im Notfall.",
           "relevance": "hoch",
-          "typicalQuestion": "Technische vs. hierarchische Eskalation unterscheiden. Wann welche?",
+          "typicalQuestion": "RTO/RPO aus Anforderungen ableiten. Hot vs. Warm vs. Cold Standby.",
           "difficulty": "mittel"
         }
       ],
       "traps": [
-        "Incident ≠ Problem: Incident ist die Störung selbst, Problem ist die dahinter liegende Ursache.",
-        "Technische ≠ Hierarchische Eskalation: Fachwissen vs. Entscheidungsbefugnis.",
-        "Lifecycle: Entsorgung nicht vergessen – Datenträger müssen sicher vernichtet werden.",
-        "Blue-Green Deployment: zwei identische Umgebungen, nicht schrittweise."
+        "RAID ≠ Backup! RAID schützt vor Hardwareausfall, nicht vor versehentlichem Löschen oder Ransomware.",
+        "Snapshot ≠ Backup: Snapshot liegt auf demselben System – bei Hardwareausfall weg.",
+        "GiB vs. GB: 1 GiB = 1,073 GB – IHK rechnet meist mit GiB.",
+        "RTO = wann läuft's wieder? RPO = wie viel Datenverlust ist akzeptabel?"
       ]
     },
     {
       "week": 11,
-      "title": "Monitoring & Support",
+      "title": "AP2 – Hochverfügbarkeit & Monitoring",
       "tasks": [
         {
-          "id": "w10t1",
-          "area": "Monitoring & Support",
+          "id": "w11t1",
+          "area": "Infrastruktur",
           "exam": "AP2",
-          "topic": "Ticketsysteme",
-          "subtopic": "Ticket-Workflow, Priorisierung, Dokumentation",
-          "detail": "Ticket vollständig dokumentieren: Problem, Schritte, Lösung. Prioritäten: kritisch > hoch > mittel > niedrig. SLA-Zeiten einhalten.",
-          "relevance": "mittel",
-          "typicalQuestion": "Ticket-Workflow beschreiben. Wie priorisiert man Incidents?",
-          "difficulty": "leicht"
+          "topic": "Verfügbarkeitskennzahlen",
+          "subtopic": "MTBF, MTTR, Verfügbarkeit in %, USV, Redundanzen",
+          "detail": "MTBF: mittlere Zeit zwischen Ausfällen. MTTR: mittlere Reparaturzeit. Verfügbarkeit = MTBF / (MTBF + MTTR) × 100. USV: unterbrechungsfreie Stromversorgung. Redundanz reduziert MTTR.",
+          "relevance": "hoch",
+          "typicalQuestion": "Verfügbarkeit aus MTBF und MTTR berechnen. Was bewirkt Redundanz auf MTBF/MTTR?",
+          "difficulty": "schwer"
         },
         {
-          "id": "w10t2_monitoring",
-          "area": "Monitoring & Support",
+          "id": "w11t2",
+          "area": "Monitoring",
           "exam": "AP2",
-          "topic": "Monitoring",
-          "subtopic": "SNMP, Logging, Alerting, Metriken",
-          "detail": "SNMP: liest Gerätestatus (MIB/OID). Traps: Gerät sendet aktiv bei Ereignis. Metriken: CPU, RAM, Disk, Netz. Alerting: Schwellenwerte definieren.",
+          "topic": "Monitoring & SNMP",
+          "subtopic": "SNMP, MIB/OID, Traps, Metriken (CPU/RAM/Disk), SMART, Schwellenwerte",
+          "detail": "SNMP: Simple Network Management Protocol. Polling (pull): Manager fragt Gerät ab. Trap (push): Gerät sendet aktiv bei Ereignis. MIB: Management Information Base. SMART: Festplattendiagnose. Metriken: CPU, RAM, Disk I/O, Netzauslastung.",
           "relevance": "hoch",
-          "typicalQuestion": "SNMP-Funktion erklären. Was ist ein SNMP-Trap? Monitoringdaten auswerten.",
+          "typicalQuestion": "SNMP-Funktion erklären. SNMP-Trap vs. Polling. Was sind Schwellenwerte?",
           "difficulty": "mittel"
         },
         {
-          "id": "w10t3",
-          "area": "Programmierung & Datenbanken",
-          "exam": "AP1/AP2",
-          "topic": "Algorithmen & Datenstrukturen",
-          "subtopic": "Pseudocode, Struktogramm, Flowchart, O-Notation",
-          "detail": "Algorithmen lesen und schreiben. Struktogramm nach Nassi-Shneiderman. Grundlegende Sortieralgorithmen kennen.",
-          "relevance": "mittel",
-          "typicalQuestion": "Algorithmus in Pseudocode schreiben oder Struktogramm lesen.",
+          "id": "w11t3",
+          "area": "Support",
+          "exam": "AP2",
+          "topic": "Incident Management & Ticketsystem",
+          "subtopic": "Incident vs. Problem, Ticket-Workflow, 1st/2nd/3rd Level, SLA, Priorisierung",
+          "detail": "Incident: einzelne Störung. Problem: Ursache hinter mehreren Incidents. Ticket-Workflow: Erstellt → Zugewiesen → In Bearbeitung → Gelöst → Geschlossen. SLA-Reaktionszeiten einhalten.",
+          "relevance": "hoch",
+          "typicalQuestion": "Incident vs. Problem unterscheiden. Ticket-Workflow beschreiben. SLA erklären.",
+          "difficulty": "mittel"
+        },
+        {
+          "id": "w11t4",
+          "area": "Support",
+          "exam": "AP2",
+          "topic": "Eskalation & Support-Stufen",
+          "subtopic": "1st/2nd/3rd Level, technische vs. hierarchische Eskalation",
+          "detail": "1st Level: Erstannahme, einfache Lösungen. 2nd Level: technischer Experte. 3rd Level: Hersteller/Spezialist. Technische Eskalation: mehr Fachwissen benötigt. Hierarchische Eskalation: Entscheidungsbefugnis nötig (Budget, Priorität).",
+          "relevance": "hoch",
+          "typicalQuestion": "Technische vs. hierarchische Eskalation. Wann eskaliere ich auf 2nd Level?",
           "difficulty": "mittel"
         }
       ],
       "traps": [
-        "SNMP-Trap: Gerät sendet aktiv (push), normales Polling ist pull.",
-        "Ticket muss vollständig dokumentiert sein: Problem, Schritte zur Lösung, Ergebnis."
+        "SNMP-Trap: Gerät sendet aktiv (push) – Polling ist pull. Nicht verwechseln!",
+        "Incident ≠ Problem: Incident ist die Störung, Problem ist die dahinter liegende Ursache.",
+        "MTTR senken = Verfügbarkeit steigt. RAID hilft bei MTTR, nicht direkt bei MTBF."
       ]
     },
     {
       "week": 12,
-      "title": "Modellierung & Schnittstellen",
+      "title": "AP2 – Systeme konzipieren & betreiben",
       "tasks": [
         {
-          "id": "w10t4",
-          "area": "Programmierung & Datenbanken",
-          "exam": "AP1/AP2",
-          "topic": "UML",
-          "subtopic": "Klassendiagramm, Use-Case, Sequenzdiagramm, Aktivitätsdiagramm",
-          "detail": "Klassendiagramm: Klassen, Attribute, Methoden, Beziehungen. Use-Case: Akteure und Anwendungsfälle. Sequenzdiagramm: Interaktionen über Zeit.",
-          "relevance": "mittel",
-          "typicalQuestion": "UML-Diagramm lesen oder ergänzen. Klassen und Beziehungen benennen.",
+          "id": "w12t1",
+          "area": "Systembetrieb",
+          "exam": "AP2",
+          "topic": "Virtualisierung & Container",
+          "subtopic": "Hypervisor Typ 1 / Typ 2, VM, Container (Docker), Vor-/Nachteile",
+          "detail": "Typ 1 (bare-metal): direkt auf Hardware (ESXi, Hyper-V). Typ 2 (hosted): auf OS (VirtualBox, VMware Workstation). Container: teilen OS-Kernel, leichter/schneller als VMs, Docker/Kubernetes.",
+          "relevance": "hoch",
+          "typicalQuestion": "Hypervisor Typ 1 vs. Typ 2. VM vs. Container Vor-/Nachteile.",
           "difficulty": "mittel"
         },
         {
-          "id": "w10t5",
-          "area": "Programmierung & Datenbanken",
+          "id": "w12t2",
+          "area": "Systembetrieb",
+          "exam": "AP2",
+          "topic": "Cloud-Modelle & Betriebsmodelle",
+          "subtopic": "IaaS, PaaS, SaaS, Public/Private/Hybrid Cloud, On-Premises",
+          "detail": "IaaS: VMs und Netzwerk. PaaS: Laufzeitumgebung. SaaS: fertige Anwendung. Shared Responsibility: Wer verantwortet was? On-Prem: volle Kontrolle, hohe Kosten. Cloud: flexibel, Abhängigkeit.",
+          "relevance": "hoch",
+          "typicalQuestion": "IaaS/PaaS/SaaS Verantwortlichkeiten zuordnen. Cloud vs. On-Prem empfehlen.",
+          "difficulty": "leicht"
+        },
+        {
+          "id": "w12t3",
+          "area": "Systembetrieb",
+          "exam": "AP2",
+          "topic": "Systemarchitektur & Konzeption",
+          "subtopic": "2-Tier, 3-Tier, Multi-Tier, Anforderungen definieren, Schnittstellen",
+          "detail": "2-Tier: Client + Server. 3-Tier: Präsentation, Logik, Daten (typisch für Webanwendungen). Multi-Tier: weitere Schichten. Anforderungen: Bandbreite, Latenz, Verfügbarkeit, Skalierbarkeit.",
+          "relevance": "mittel",
+          "typicalQuestion": "3-Tier-Architektur erklären. Für welches Szenario welche Architektur?",
+          "difficulty": "mittel"
+        },
+        {
+          "id": "w12t4",
+          "area": "Systembetrieb",
+          "exam": "AP2",
+          "topic": "IT-Lifecycle & Patchmanagement",
+          "subtopic": "Lifecycle-Phasen, Rolling Update, Canary, Blue-Green, Migration, Green IT",
+          "detail": "Lifecycle: Planung → Beschaffung → Betrieb → Wartung → Entsorgung (DIN 66399). TCO: Gesamtkosten über Lebenszyklus. Blue-Green: 2 Umgebungen, sofortiger Wechsel. Canary: kleiner Nutzeranteil zuerst.",
+          "relevance": "mittel",
+          "typicalQuestion": "Blue-Green vs. Canary Deployment. Lifecycle-Phasen nennen. Datenschutz bei Entsorgung.",
+          "difficulty": "mittel"
+        }
+      ],
+      "traps": [
+        "Container ≠ VM: Container haben kein eigenes OS-Kernel.",
+        "Shared Responsibility in der Cloud: IaaS = Kunde verantwortet OS und App, SaaS = fast alles beim Anbieter.",
+        "Blue-Green: zwei identische Umgebungen, nicht schrittweise wie Rolling Update."
+      ]
+    },
+    {
+      "week": 13,
+      "title": "AP2 – Modellierung & Algorithmen",
+      "tasks": [
+        {
+          "id": "w13t1",
+          "area": "Programmierung",
+          "exam": "AP1/AP2",
+          "topic": "UML-Diagramme",
+          "subtopic": "Klassendiagramm, Use-Case, Sequenz-, Aktivitäts-, Zustandsdiagramm",
+          "detail": "Klassendiagramm: Klassen, Attribute, Methoden, Beziehungen (Assoziation, Vererbung, Aggregation). Use-Case: Akteure und Anwendungsfälle. Sequenzdiagramm: Interaktionen über Zeit. Aktivitätsdiagramm: Ablauf.",
+          "relevance": "hoch",
+          "typicalQuestion": "UML-Diagramm lesen oder ergänzen. Beziehungstypen im Klassendiagramm.",
+          "difficulty": "mittel"
+        },
+        {
+          "id": "w13t2",
+          "area": "Programmierung",
           "exam": "AP1/AP2",
           "topic": "ERM & Datenmodellierung",
-          "subtopic": "Entity-Relationship-Modell, Kardinalitäten",
-          "detail": "Entitäten, Attribute, Beziehungen, Kardinalitäten (1:1, 1:n, m:n) zeichnen und lesen. Überführung in relationales Modell.",
+          "subtopic": "Entity-Relationship-Modell, Kardinalitäten (1:1, 1:n, m:n), relationales Modell",
+          "detail": "Entitäten, Attribute, Beziehungen. Kardinalitäten: 1:1 (Person-Ausweis), 1:n (Abteilung-Mitarbeiter), m:n (Student-Kurs). m:n → Zwischentabelle. ERM in relationales Modell überführen.",
           "relevance": "hoch",
           "typicalQuestion": "ERM zeichnen oder Kardinalitäten bestimmen. ERM in Tabellen überführen.",
           "difficulty": "mittel"
         },
         {
-          "id": "w10t6",
-          "area": "Programmierung & Datenbanken",
+          "id": "w13t3",
+          "area": "Programmierung",
           "exam": "AP1/AP2",
-          "topic": "Datenaustauschformate",
-          "subtopic": "REST, JSON, XML, HTTP-Methoden",
-          "detail": "REST: zustandslose API, Ressourcen über HTTP. GET/POST/PUT/DELETE. JSON: leichtgewichtig, {key:value}. XML: tags, schwergewichtiger.",
+          "topic": "Algorithmen & Pseudocode",
+          "subtopic": "Pseudocode, Struktogramm (Nassi-Shneiderman), Schreibtischtest, Flowchart",
+          "detail": "Algorithmen in Pseudocode formulieren. Struktogramm: Sequenz, Auswahl (if/else), Schleife (while/for). Schreibtischtest: Algorithmus manuell durchlaufen. Grundlegende Konzepte: Variablen, Schleifen, Bedingungen.",
           "relevance": "mittel",
-          "typicalQuestion": "REST-API erklären. HTTP-Methoden und ihre Funktion.",
+          "typicalQuestion": "Algorithmus in Pseudocode schreiben. Struktogramm lesen oder ergänzen.",
+          "difficulty": "mittel"
+        },
+        {
+          "id": "w13t4",
+          "area": "Programmierung",
+          "exam": "AP1/AP2",
+          "topic": "Schnittstellen & Datenaustausch",
+          "subtopic": "REST, JSON, XML, HTTP-Methoden, API",
+          "detail": "REST: zustandslose API, Ressourcen über HTTP-Verben. GET (lesen), POST (erstellen), PUT (ersetzen), PATCH (ändern), DELETE (löschen). JSON: {key: value}, leichtgewichtig. XML: tags-basiert, schwergewichtiger.",
+          "relevance": "mittel",
+          "typicalQuestion": "HTTP-Methoden und ihre Funktion. JSON vs. XML. REST-API erklären.",
           "difficulty": "leicht"
         }
       ],
       "traps": [
-        "ERM Kardinalitäten: m:n braucht eine Zwischentabelle in der Implementierung.",
-        "REST: GET hat keinen Body, POST/PUT schon. DELETE löscht die Ressource."
-      ]
-    },
-    {
-      "week": 13,
-      "title": "SQL & Softwareentwicklung",
-      "tasks": [
-        {
-          "id": "w11t1",
-          "area": "Programmierung & Datenbanken",
-          "exam": "AP1/AP2",
-          "topic": "SQL",
-          "subtopic": "SELECT, JOIN, GROUP BY, WHERE, Normalisierung (1NF–3NF)",
-          "detail": "INNER/LEFT/RIGHT JOIN. GROUP BY mit Aggregatfunktionen (COUNT, SUM, AVG). Normalisierung: Redundanz reduzieren. 1NF: atomar. 2NF: kein partieller. 3NF: kein transitiver Abhängigkeit.",
-          "relevance": "hoch",
-          "typicalQuestion": "SQL-Abfrage mit JOIN schreiben. Normalisierungsstufen erklären.",
-          "difficulty": "schwer"
-        },
-        {
-          "id": "w11t2",
-          "area": "Programmierung & Datenbanken",
-          "exam": "AP1/AP2",
-          "topic": "Softwaretests",
-          "subtopic": "Blackbox, Whitebox, Greybox, TDD, Testarten",
-          "detail": "Blackbox: nur Ein-/Ausgabe bekannt. Whitebox: Quellcode bekannt. Unit > Integrationstest > Systemtest. TDD: Test zuerst schreiben.",
-          "relevance": "hoch",
-          "typicalQuestion": "Testarten unterscheiden. Was testet ein Unit-Test?",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w11t3",
-          "area": "Programmierung & Datenbanken",
-          "exam": "AP1/AP2",
-          "topic": "Versionskontrolle",
-          "subtopic": "Git: Branches, Merge, Pull Request, Konflikte",
-          "detail": "Git-Workflow: Feature-Branch → PR → Review → Merge. Konflikte auflösen. Tags für Releases. .gitignore, README.",
-          "relevance": "mittel",
-          "typicalQuestion": "Git-Workflow beschreiben. Was ist ein Merge-Konflikt?",
-          "difficulty": "leicht"
-        }
+        "ERM: m:n-Beziehungen brauchen in der Implementierung immer eine Zwischentabelle.",
+        "REST: GET hat keinen Request-Body. PUT ersetzt komplett, PATCH nur teilweise.",
+        "Klassendiagramm: Vererbung (Dreieck, geschlossen) ≠ Assoziation (Linie)."
       ]
     },
     {
       "week": 14,
-      "title": "Wirtschafts- & Sozialkunde (WISO) I",
+      "title": "AP2 – SQL, Testing & Versionskontrolle",
       "tasks": [
         {
-          "id": "w12t1",
-          "area": "WISO",
+          "id": "w14t1",
+          "area": "Datenbanken",
           "exam": "AP1/AP2",
-          "topic": "Arbeitsrecht",
-          "subtopic": "Ausbildungsvertrag, Rechte & Pflichten Azubi/Betrieb",
-          "detail": "Ausbildungsvertrag: Inhalt (Beginn, Dauer, Vergütung, Urlaub). Rechte: Ausbildung, Zeugnis, Urlaub. Pflichten: Lernpflicht, Berichtsheft.",
-          "relevance": "mittel",
-          "typicalQuestion": "Rechte und Pflichten des Azubis nennen. Was muss im Ausbildungsvertrag stehen?",
-          "difficulty": "leicht"
+          "topic": "SQL-Grundlagen & JOIN",
+          "subtopic": "SELECT, FROM, WHERE, JOIN (INNER/LEFT/RIGHT), Aggregatfunktionen, GROUP BY",
+          "detail": "INNER JOIN: nur übereinstimmende Datensätze. LEFT JOIN: alle links + Übereinstimmungen rechts. GROUP BY mit COUNT, SUM, AVG, MAX, MIN. HAVING filtert nach Aggregation. ORDER BY für Sortierung.",
+          "relevance": "hoch",
+          "typicalQuestion": "SQL-Abfrage mit JOIN schreiben. GROUP BY mit COUNT. LEFT vs. INNER JOIN.",
+          "difficulty": "schwer"
         },
         {
-          "id": "w12t2",
-          "area": "WISO",
+          "id": "w14t2",
+          "area": "Datenbanken",
           "exam": "AP1/AP2",
-          "topic": "Tarifrecht",
-          "subtopic": "Tarifvertrag, Günstigkeitsprinzip",
-          "detail": "Tarifvertrag regelt Löhne, Arbeitszeiten für Branchen. Günstigkeitsprinzip: Abweichung nur zugunsten des Arbeitnehmers. Tarifvertrag steht NICHT über dem Gesetz!",
-          "relevance": "mittel",
-          "typicalQuestion": "Was regelt ein Tarifvertrag? Günstigkeitsprinzip erklären.",
-          "difficulty": "leicht"
+          "topic": "Datenbankdesign & Normalisierung",
+          "subtopic": "1NF, 2NF, 3NF, Anomalien vermeiden, Primärschlüssel, Fremdschlüssel",
+          "detail": "1NF: atomare Werte, kein Wiederholen. 2NF: kein partieller Abhängigkeit vom Schlüssel. 3NF: kein transitiver Abhängigkeit. Anomalien: Einfüge-, Änderungs-, Löschanomalie.",
+          "relevance": "hoch",
+          "typicalQuestion": "Tabelle normalisieren. Welche Normalform verletzt diese Tabelle? Anomalie beschreiben.",
+          "difficulty": "schwer"
         },
         {
-          "id": "w12t3",
-          "area": "WISO",
+          "id": "w14t3",
+          "area": "Softwarequalität",
           "exam": "AP1/AP2",
-          "topic": "Betriebsrat",
-          "subtopic": "Mitbestimmungsrechte, Betriebsvereinbarung",
-          "detail": "Betriebsrat: gewählt von Arbeitnehmern. Mitbestimmung bei: Arbeitszeit, Urlaub, Datenschutz. Betriebsvereinbarung = Vertrag zw. Arbeitgeber und Betriebsrat.",
-          "relevance": "mittel",
-          "typicalQuestion": "Wann hat der Betriebsrat Mitbestimmungsrecht?",
-          "difficulty": "leicht"
+          "topic": "Softwaretests & Debugging",
+          "subtopic": "Blackbox, Whitebox, Greybox, TDD, Unit-/Integrations-/Systemtest, Debugging",
+          "detail": "Blackbox: nur Ein-/Ausgabe bekannt. Whitebox: Quellcode bekannt. TDD: Test vor Implementierung. Testpyramide: Unit → Integration → System. Debugging: Breakpoints, Logging, Ablaufverfolgung. Extremwerttests.",
+          "relevance": "hoch",
+          "typicalQuestion": "Testarten unterscheiden und zuordnen. Was ist TDD? Blackbox vs. Whitebox.",
+          "difficulty": "mittel"
         },
         {
-          "id": "w12t4",
-          "area": "WISO",
+          "id": "w14t4",
+          "area": "Softwarequalität",
           "exam": "AP1/AP2",
-          "topic": "Allgemeines Arbeitsrecht",
-          "subtopic": "Kündigungsschutz, Arbeitszeiten, Urlaubsanspruch",
-          "detail": "Probezeit max. 6 Monate. Mindesturlaub 24 Tage (5-Tage-Woche). Arbeitszeit: max. 8h/Tag, Ausnahme 10h. Kündigungsfristen.",
+          "topic": "Versionskontrolle & Softwareanforderungen",
+          "subtopic": "Git: Branches, Merge, Pull Request, Konflikte; Softwarequalitätskriterien",
+          "detail": "Git-Workflow: Feature-Branch → Commit → PR → Review → Merge. Merge-Konflikte manuell lösen. Tags für Releases. Softwarequalität (ISO 25010): Änderbarkeit, Effizienz, Zuverlässigkeit, Wartbarkeit.",
           "relevance": "mittel",
-          "typicalQuestion": "Gesetzliche Regelungen zu Urlaub oder Arbeitszeit nennen.",
+          "typicalQuestion": "Git-Workflow beschreiben. Was ist ein Merge-Konflikt? Softwarequalitätskriterien nennen.",
           "difficulty": "leicht"
         }
       ],
       "traps": [
-        "Tarifvertrag steht NICHT über dem Gesetz – Gesetze setzen die Mindestgrenze.",
-        "Günstigkeitsprinzip: Abweichung vom Tarifvertrag nur wenn für den Arbeitnehmer besser."
+        "HAVING filtert nach GROUP BY, WHERE filtert vor der Aggregation.",
+        "3NF: kein transitiver Abhängigkeit – PLZ → Stadt ist eine transitive Abhängigkeit von Kunden-ID.",
+        "LEFT JOIN ≠ INNER JOIN: LEFT JOIN behält alle Zeilen der linken Tabelle."
       ]
     },
     {
       "week": 15,
-      "title": "Wirtschafts- & Sozialkunde (WISO) II",
+      "title": "WISO I – Arbeits- & Sozialrecht",
       "tasks": [
         {
-          "id": "w12t5",
+          "id": "w15t1",
           "area": "WISO",
           "exam": "AP1/AP2",
-          "topic": "Sozialversicherung",
-          "subtopic": "Kranken-, Renten-, Pflege-, Arbeitslosen-, Unfallversicherung",
-          "detail": "5 Säulen der Sozialversicherung kennen. Beiträge je zur Hälfte AG und AN (außer UV: nur AG). Pflichtversicherung bis Versicherungspflichtgrenze.",
+          "topic": "Berufsausbildung & Ausbildungsrecht",
+          "subtopic": "Ausbildungsvertrag, Rechte & Pflichten Azubi/Betrieb, duales System",
+          "detail": "Ausbildungsvertrag: Beginn, Dauer, Vergütung, Urlaub, Kündigungsfristen. Rechte Azubi: Ausbildung, Zeugnis, Vergütung, Urlaub. Pflichten: Lernpflicht, Berichtsheft, Schweigepflicht. Duales System: Betrieb + Berufsschule.",
+          "relevance": "mittel",
+          "typicalQuestion": "Pflichten des Azubis nennen. Was regelt der Ausbildungsvertrag?",
+          "difficulty": "leicht"
+        },
+        {
+          "id": "w15t2",
+          "area": "WISO",
+          "exam": "AP1/AP2",
+          "topic": "Tarifrecht & Arbeitskampf",
+          "subtopic": "Tarifvertrag, Günstigkeitsprinzip, Tarifautonomie, Betriebsrat, Betriebsvereinbarung",
+          "detail": "Tarifvertrag: regelt Löhne/Arbeitszeiten für Branchen/Betriebe. Günstigkeitsprinzip: Abweichung nur zugunsten des AN. Tarifvertrag steht NICHT über dem Gesetz! Betriebsrat: Mitbestimmung bei Arbeitszeit, Urlaub, Datenschutz.",
+          "relevance": "mittel",
+          "typicalQuestion": "Günstigkeitsprinzip erklären. Wann hat der Betriebsrat Mitbestimmungsrecht?",
+          "difficulty": "leicht"
+        },
+        {
+          "id": "w15t3",
+          "area": "WISO",
+          "exam": "AP1/AP2",
+          "topic": "Sozialversicherung & Lohnabrechnung",
+          "subtopic": "5 Säulen der SV, Brutto/Netto, Steuerklassen, Lohnsteuer, Sozialabgaben",
+          "detail": "5 Säulen: Kranken-, Renten-, Pflege-, Arbeitslosen-, Unfallversicherung. Alle 50/50 (AG+AN) außer Unfallversicherung (nur AG). Bruttolohn - Steuern - SV-Beiträge = Nettolohn. Steuerklassen I–VI.",
           "relevance": "hoch",
-          "typicalQuestion": "Sozialversicherungszweige nennen. Wer zahlt welchen Anteil?",
+          "typicalQuestion": "Sozialversicherungszweige nennen. Unfallversicherung: wer zahlt? Nettolohn berechnen.",
           "difficulty": "leicht"
         },
         {
-          "id": "w12t6",
+          "id": "w15t4",
           "area": "WISO",
           "exam": "AP1/AP2",
-          "topic": "Lohnabrechnung",
-          "subtopic": "Brutto/Netto, Steuerklassen, Abzüge",
-          "detail": "Bruttolohn - Steuern - Sozialversicherungsbeiträge = Nettolohn. Steuerklassen I–VI. Lohnsteuer, Solidaritätszuschlag, Kirchensteuer.",
+          "topic": "Allgemeines Arbeitsrecht",
+          "subtopic": "Kündigungsschutz, Arbeitszeiten, Urlaubsanspruch, Probezeit",
+          "detail": "Probezeit max. 6 Monate. Mindesturlaub 24 Werktage (6-Tage-Woche) = 20 Tage (5-Tage-Woche). Arbeitszeit: max. 8h/Tag, max. 10h Ausnahme. Kündigungsfristen variieren nach Betriebszugehörigkeit.",
           "relevance": "mittel",
-          "typicalQuestion": "Lohnabzüge berechnen oder Steuerklassen zuordnen.",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w12t7",
-          "area": "WISO",
-          "exam": "AP1/AP2",
-          "topic": "Umweltschutz",
-          "subtopic": "Entsorgung, Kreislaufwirtschaft, RoHS, WEEE",
-          "detail": "Elektroaltgeräte: WEEE-Richtlinie, Hersteller haften für Rücknahme. RoHS: Schadstoffe in Elektrogeräten begrenzen. Kreislaufwirtschaft.",
-          "relevance": "mittel",
-          "typicalQuestion": "Wie werden Elektroaltgeräte korrekt entsorgt? Was regelt RoHS?",
-          "difficulty": "leicht"
-        },
-        {
-          "id": "w12t8",
-          "area": "WISO",
-          "exam": "AP1/AP2",
-          "topic": "Arbeitsschutz",
-          "subtopic": "ArbSchG, Gefährdungsbeurteilung, Ergonomie",
-          "detail": "Arbeitgeber muss Gefährdungsbeurteilung erstellen. Ergonomische Arbeitsplatzgestaltung. Unfallversicherung = Berufsgenossenschaft.",
-          "relevance": "mittel",
-          "typicalQuestion": "Was muss der Arbeitgeber beim Arbeitsschutz beachten?",
+          "typicalQuestion": "Gesetzliche Regelungen zu Urlaub oder Arbeitszeit nennen. Kündigungsfristen.",
           "difficulty": "leicht"
         }
       ],
       "traps": [
-        "Unfallversicherung (BG) wird nur vom Arbeitgeber bezahlt – Ausnahme von der 50/50-Regel!",
-        "Steuerklasse ≠ Sozialversicherungspflicht: SVB ist einkommensabhängig, nicht klassenabhängig."
+        "Tarifvertrag steht NICHT über dem Gesetz – Gesetze setzen die Untergrenze.",
+        "Unfallversicherung wird NUR vom Arbeitgeber bezahlt – Ausnahme von der 50/50-Regel!",
+        "Günstigkeitsprinzip: vom Tarifvertrag darf nur abgewichen werden, wenn es für den AN besser ist."
+      ]
+    },
+    {
+      "week": 16,
+      "title": "WISO II – Betrieb, Organisation & Umwelt",
+      "tasks": [
+        {
+          "id": "w16t1",
+          "area": "WISO",
+          "exam": "AP1/AP2",
+          "topic": "Betrieb & Rechtsformen",
+          "subtopic": "GbR, KG, OHG, GmbH, AG, Haftung, Unternehmensorganisation",
+          "detail": "Einzelunternehmen: volle Haftung. GbR: Gesellschaft bürgerlichen Rechts, persönliche Haftung. KG: Komplementär (voll) + Kommanditist (begrenzt). GmbH: Haftung auf Stammkapital beschränkt (mind. 25.000€). AG: Aktionäre, Vorstand, Aufsichtsrat.",
+          "relevance": "mittel",
+          "typicalQuestion": "Rechtsform für Szenario wählen und begründen. Haftungsunterschiede nennen.",
+          "difficulty": "leicht"
+        },
+        {
+          "id": "w16t2",
+          "area": "WISO",
+          "exam": "AP1/AP2",
+          "topic": "Wirtschaftlichkeit & Ziele",
+          "subtopic": "Produktivität, Wirtschaftlichkeit, Rentabilität, Zielkonflikte, Globalisierung",
+          "detail": "Produktivität = Output / Input. Wirtschaftlichkeit = Ertrag / Aufwand (>1 = wirtschaftlich). Rentabilität = Gewinn / eingesetztes Kapital × 100. Ökonomisch, ökologisch, sozial – Zielkonflikte beachten.",
+          "relevance": "mittel",
+          "typicalQuestion": "Wirtschaftlichkeit berechnen. Produktivität vs. Rentabilität unterscheiden.",
+          "difficulty": "mittel"
+        },
+        {
+          "id": "w16t3",
+          "area": "WISO",
+          "exam": "AP1/AP2",
+          "topic": "Arbeitsschutz & Gesundheit",
+          "subtopic": "ArbSchG, ArbZG, Gefährdungsbeurteilung, Ergonomie, Bildschirmarbeitsplatz",
+          "detail": "ArbSchG: Arbeitgeber muss Gefährdungsbeurteilung erstellen. Ergonomische Arbeitsplatzgestaltung (Bildschirmabstand, Beleuchtung). Unfallversicherung = Berufsgenossenschaft. Sicherheitsbeauftragte.",
+          "relevance": "mittel",
+          "typicalQuestion": "Was muss der Arbeitgeber beim Arbeitsschutz beachten? Gefährdungsbeurteilung erklären.",
+          "difficulty": "leicht"
+        },
+        {
+          "id": "w16t4",
+          "area": "WISO",
+          "exam": "AP1/AP2",
+          "topic": "Umweltschutz & Nachhaltigkeit",
+          "subtopic": "WEEE, RoHS, Kreislaufwirtschaft, Entsorgung, Green IT",
+          "detail": "WEEE-Richtlinie: Hersteller haftet für Rücknahme von Elektroaltgeräten. RoHS: schränkt Schadstoffe in Elektrogeräten ein (Blei, Quecksilber). Kreislaufwirtschaft: Wiederverwertung. Green IT: energieeffiziente Rechenzentren.",
+          "relevance": "mittel",
+          "typicalQuestion": "Wie werden Elektroaltgeräte entsorgt? Was regelt WEEE vs. RoHS?",
+          "difficulty": "leicht"
+        }
+      ],
+      "traps": [
+        "GmbH-Haftung: nur auf Stammkapital begrenzt, nicht auf Privatvermögen der Gesellschafter.",
+        "Wirtschaftlichkeit ≠ Rentabilität: Wirtschaftlichkeit = Ertrag/Aufwand, Rentabilität = Gewinn/Kapital.",
+        "WEEE = Rücknahme von Altgeräten, RoHS = Verbotene Schadstoffe in Neugeräten."
       ]
     }
   ]
