@@ -847,6 +847,50 @@
         "Wirtschaftlichkeit ≠ Rentabilität: Wirtschaftlichkeit = Ertrag/Aufwand, Rentabilität = Gewinn/Kapital.",
         "WEEE = Rücknahme von Altgeräten, RoHS = Verbotene Schadstoffe in Neugeräten."
       ]
+    },
+    {
+      "week": 17,
+      "title": "Vernetztes Zusammenarbeiten & digitale Medien",
+      "tasks": [
+        {
+          "id": "w17t1",
+          "area": "Digitale Zusammenarbeit",
+          "exam": "AP1/AP2",
+          "topic": "Digitale Kommunikation & Kollaborationstools",
+          "subtopic": "E-Mail, Chat, Videokonferenzen, Teams, SharePoint, Git",
+          "detail": "E-Mail: asynchron, formell. Chat/Messenger (Teams): synchron, schnell. Videokonferenz: Bild+Ton, Protokoll. SharePoint: gemeinsame Dokumentablage. Teams: kombiniert Chat, Meetings, Dateien. Git: Versionsverwaltung für Code und Dokumente.",
+          "relevance": "mittel",
+          "typicalQuestion": "Welches Tool für welches Kommunikationsszenario? Vor-/Nachteile synchron vs. asynchron.",
+          "difficulty": "leicht"
+        },
+        {
+          "id": "w17t2",
+          "area": "Digitale Zusammenarbeit",
+          "exam": "AP1/AP2",
+          "topic": "Versionsverwaltung & Dokumentenmanagement",
+          "subtopic": "Git, gemeinsame Dokumentbearbeitung, Versionierung, Synchronisation, Datenkonsistenz",
+          "detail": "Git: Branches, Merge, Konflikte, Pull Requests. Gemeinsame Bearbeitung (z.B. Office Online/SharePoint): gleichzeitiger Zugriff, Versionsverlauf. Synchronisation: lokale Änderungen mit zentralem Stand abgleichen. Konflikte bei gleichzeitiger Bearbeitung vermeiden.",
+          "relevance": "mittel",
+          "typicalQuestion": "Wie verhindert man Versionskonflikte bei gemeinsamer Bearbeitung? Git-Workflow beschreiben.",
+          "difficulty": "leicht"
+        },
+        {
+          "id": "w17t3",
+          "area": "Digitale Zusammenarbeit",
+          "exam": "AP1/AP2",
+          "topic": "Datenschutz & Sicherheit in der Zusammenarbeit",
+          "subtopic": "Zugriffsrechte in Kollaborationstools, Remote-Arbeit, DSGVO, Netiquette",
+          "detail": "Zugriffsrechte: wer darf lesen/schreiben/verwalten (z.B. in Teams/SharePoint). Remote-Arbeit: VPN-Pflicht, Endgerätesicherheit, Heimnetz-Risiken. Netiquette: respektvoller Umgang, Antwortzeiten, Betreffzeile. DSGVO: keine personenbezogenen Daten in ungesicherten Clouds.",
+          "relevance": "hoch",
+          "typicalQuestion": "Welche Risiken entstehen bei Remote-Arbeit? Zugriffsrechte in Kollaborationstools beschreiben.",
+          "difficulty": "leicht"
+        }
+      ],
+      "traps": [
+        "Synchron (Chat, Video) ≠ Asynchron (E-Mail, Kommentare) – beide haben ihren Einsatzbereich.",
+        "Gemeinsame Bearbeitung ≠ kein Versionsverlauf – Änderungen sollten nachvollziehbar bleiben.",
+        "Remote-Arbeit: privates WLAN ist kein sicheres Firmennetz → VPN Pflicht!"
+      ]
     }
   ]
 }
