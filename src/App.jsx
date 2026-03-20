@@ -3,6 +3,23 @@ import plan from "./plan.json";
 
 const STORAGE_KEY = "lernplan-progress-v2";
 const LEGACY_KEY = "lernplan-progress-v1";
+const EDIT_SESSION_KEY = "lernplan-edit-session";
+
+// ─── Passwort-Hash (SHA-256) ───────────────────────────────────────────────
+// Standard-Passwort: "hebendanz2025"
+// Um dein eigenes Passwort zu setzen, öffne die Browser-Konsole und führe aus:
+//   crypto.subtle.digest('SHA-256', new TextEncoder().encode('DEIN_PASSWORT'))
+//     .then(b => console.log(Array.from(new Uint8Array(b)).map(x => x.toString(16).padStart(2,'0')).join('')))
+// Dann den Hash hier ersetzen.
+const PASSWORD_HASH = "208d9254daf2838d96bdf07cb2fa65f5173d9a1a98668228a4811ebd2445fb4d";
+
+async function hashPassword(pw) {
+  const data = new TextEncoder().encode(pw);
+  const buf = await crypto.subtle.digest("SHA-256", data);
+  return Array.from(new Uint8Array(buf))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+}
 
 function normalizeProgress(rawObj) {
   const out = {};
@@ -36,137 +53,119 @@ const WEEK_PLAN = [
     week: 1,
     title: "AP1 – Projektmanagement & Kundenkommunikation",
     sections: [
-      { ptIdx: 0, fkIdx: 0 },          // AP1 FK01 komplett
-      { ptIdx: 0, fkIdx: 1 },          // AP1 FK02 komplett
+      { ptIdx: 0, fkIdx: 0 },
+      { ptIdx: 0, fkIdx: 1 },
     ],
   },
   {
     week: 2,
     title: "AP1 – IT-Systeme beurteilen & IT-Lösungen (Teil 1)",
     sections: [
-      { ptIdx: 0, fkIdx: 2 },                    // AP1 FK03 komplett
-      { ptIdx: 0, fkIdx: 3, tkRange: [0, 3] },   // AP1 FK04 TK01–04
+      { ptIdx: 0, fkIdx: 2 },
+      { ptIdx: 0, fkIdx: 3, tkRange: [0, 3] },
     ],
   },
   {
     week: 3,
     title: "AP1 – IT-Lösungen (Teil 2), Qualitätssicherung & IT-Sicherheit",
     sections: [
-      { ptIdx: 0, fkIdx: 3, tkRange: [4, 7] },   // AP1 FK04 TK05–08
-      { ptIdx: 0, fkIdx: 4 },                    // AP1 FK05 komplett
-      { ptIdx: 0, fkIdx: 5 },                    // AP1 FK06 komplett
+      { ptIdx: 0, fkIdx: 3, tkRange: [4, 7] },
+      { ptIdx: 0, fkIdx: 4 },
+      { ptIdx: 0, fkIdx: 5 },
     ],
   },
   {
     week: 4,
     title: "AP1 – Auftragsabschluss & Leistungserbringung",
-    sections: [
-      { ptIdx: 0, fkIdx: 6 },          // AP1 FK07 komplett
-    ],
+    sections: [{ ptIdx: 0, fkIdx: 6 }],
   },
   {
     week: 5,
     title: "AP2 – Übergreifend: Kunden, IT-Lösungen & Qualität",
     sections: [
-      { ptIdx: 1, fkIdx: 0 },          // AP2 übergreifend FK01
-      { ptIdx: 1, fkIdx: 1 },          // AP2 übergreifend FK02
-      { ptIdx: 1, fkIdx: 2 },          // AP2 übergreifend FK03
+      { ptIdx: 1, fkIdx: 0 },
+      { ptIdx: 1, fkIdx: 1 },
+      { ptIdx: 1, fkIdx: 2 },
     ],
   },
   {
     week: 6,
     title: "AP2 – Übergreifend: IT-Sicherheit & Datenschutz",
-    sections: [
-      { ptIdx: 1, fkIdx: 3 },          // AP2 übergreifend FK04
-    ],
+    sections: [{ ptIdx: 1, fkIdx: 3 }],
   },
   {
     week: 7,
     title: "AP2 SI – Betreiben von IT-Systemen (Teil 1)",
-    sections: [
-      { ptIdx: 2, fkIdx: 0, tkRange: [0, 6] },   // AP2 SI FK01 TK01–07
-    ],
+    sections: [{ ptIdx: 2, fkIdx: 0, tkRange: [0, 6] }],
   },
   {
     week: 8,
     title: "AP2 SI – Betreiben von IT-Systemen (Teil 2) & Speicherlösungen (Teil 1)",
     sections: [
-      { ptIdx: 2, fkIdx: 0, tkRange: [7, 12] },  // AP2 SI FK01 TK08–13
-      { ptIdx: 2, fkIdx: 1, tkRange: [0, 2] },   // AP2 SI FK02 TK01–03
+      { ptIdx: 2, fkIdx: 0, tkRange: [7, 12] },
+      { ptIdx: 2, fkIdx: 1, tkRange: [0, 2] },
     ],
   },
   {
     week: 9,
     title: "AP2 SI – Speicherlösungen (Teil 2) & Programmieren von Softwarelösungen",
     sections: [
-      { ptIdx: 2, fkIdx: 1, tkRange: [3, 5] },   // AP2 SI FK02 TK04–06
-      { ptIdx: 2, fkIdx: 2 },                    // AP2 SI FK03 komplett
+      { ptIdx: 2, fkIdx: 1, tkRange: [3, 5] },
+      { ptIdx: 2, fkIdx: 2 },
     ],
   },
   {
     week: 10,
     title: "AP2 SI – Konzipieren & Realisieren von IT-Systemen (Teil 1)",
-    sections: [
-      { ptIdx: 2, fkIdx: 3, tkRange: [0, 8] },   // AP2 SI FK04 TK01–09
-    ],
+    sections: [{ ptIdx: 2, fkIdx: 3, tkRange: [0, 8] }],
   },
   {
     week: 11,
     title: "AP2 SI – Konzipieren & Realisieren von IT-Systemen (Teil 2)",
-    sections: [
-      { ptIdx: 2, fkIdx: 3, tkRange: [9, 17] },  // AP2 SI FK04 TK10–18
-    ],
+    sections: [{ ptIdx: 2, fkIdx: 3, tkRange: [9, 17] }],
   },
   {
     week: 12,
     title: "AP2 SI – Installieren & Konfigurieren von Netzwerken",
-    sections: [
-      { ptIdx: 2, fkIdx: 4 },          // AP2 SI FK05 komplett
-    ],
+    sections: [{ ptIdx: 2, fkIdx: 4 }],
   },
   {
     week: 13,
     title: "AP2 SI – Administrieren von IT-Systemen (Teil 1)",
-    sections: [
-      { ptIdx: 2, fkIdx: 5, tkRange: [0, 5] },   // AP2 SI FK06 TK01–06
-    ],
+    sections: [{ ptIdx: 2, fkIdx: 5, tkRange: [0, 5] }],
   },
   {
     week: 14,
     title: "AP2 SI – Administrieren von IT-Systemen (Teil 2)",
-    sections: [
-      { ptIdx: 2, fkIdx: 5, tkRange: [6, 11] },  // AP2 SI FK06 TK07–12
-    ],
+    sections: [{ ptIdx: 2, fkIdx: 5, tkRange: [6, 11] }],
   },
   {
     week: 15,
     title: "AP2 WiSo – Berufsausbildung & Arbeitsrecht (Teil 1)",
-    sections: [
-      { ptIdx: 3, fkIdx: 0, tkRange: [0, 8] },   // WiSo FK01 TK01–09
-    ],
+    sections: [{ ptIdx: 3, fkIdx: 0, tkRange: [0, 8] }],
   },
   {
     week: 16,
     title: "AP2 WiSo – Berufsausbildung & Arbeitsrecht (Teil 2) & Unternehmensorganisation (Teil 1)",
     sections: [
-      { ptIdx: 3, fkIdx: 0, tkRange: [9, 13] },  // WiSo FK01 TK10–14
-      { ptIdx: 3, fkIdx: 1, tkRange: [0, 3] },   // WiSo FK02 TK01–04
+      { ptIdx: 3, fkIdx: 0, tkRange: [9, 13] },
+      { ptIdx: 3, fkIdx: 1, tkRange: [0, 3] },
     ],
   },
   {
     week: 17,
     title: "AP2 WiSo – Unternehmensorganisation (Teil 2) & Arbeitsschutz",
     sections: [
-      { ptIdx: 3, fkIdx: 1, tkRange: [4, 8] },   // WiSo FK02 TK05–09
-      { ptIdx: 3, fkIdx: 2 },                    // WiSo FK03 komplett
+      { ptIdx: 3, fkIdx: 1, tkRange: [4, 8] },
+      { ptIdx: 3, fkIdx: 2 },
     ],
   },
   {
     week: 18,
     title: "AP2 WiSo – Umweltschutz & Vernetztes Zusammenarbeiten",
     sections: [
-      { ptIdx: 3, fkIdx: 3 },          // WiSo FK04 komplett
-      { ptIdx: 3, fkIdx: 4 },          // WiSo FK05 komplett
+      { ptIdx: 3, fkIdx: 3 },
+      { ptIdx: 3, fkIdx: 4 },
     ],
   },
 ];
@@ -200,10 +199,25 @@ export default function App() {
   const [progress, setProgress] = useState(() => loadProgress());
   const [showOpenOnly, setShowOpenOnly] = useState(false);
   const [expanded, setExpanded] = useState({});
+  const [editMode, setEditMode] = useState(() => {
+    // Session-basiert: Edit-Modus bleibt bis Tab/Fenster geschlossen
+    return sessionStorage.getItem(EDIT_SESSION_KEY) === "true";
+  });
+  const [showPasswordModal, setShowPasswordModal] = useState(false);
+  const [passwordInput, setPasswordInput] = useState("");
+  const [passwordError, setPasswordError] = useState("");
 
   useEffect(() => {
     saveProgress(progress);
   }, [progress]);
+
+  useEffect(() => {
+    if (editMode) {
+      sessionStorage.setItem(EDIT_SESSION_KEY, "true");
+    } else {
+      sessionStorage.removeItem(EDIT_SESSION_KEY);
+    }
+  }, [editMode]);
 
   const weeks = useMemo(
     () => buildWeeks(WEEK_PLAN, plan.pruefungskatalog),
@@ -226,6 +240,7 @@ export default function App() {
   const nextTask = allTasks.find((t) => !progress[t.id]?.done);
 
   function toggleDone(id) {
+    if (!editMode) return;
     setProgress((prev) => {
       const cur = prev[id] || { done: false, review: false, sub: {} };
       return { ...prev, [id]: { ...cur, done: !cur.done } };
@@ -233,6 +248,7 @@ export default function App() {
   }
 
   function toggleReview(id) {
+    if (!editMode) return;
     setProgress((prev) => {
       const cur = prev[id] || { done: false, review: false, sub: {} };
       return { ...prev, [id]: { ...cur, review: !cur.review } };
@@ -240,6 +256,7 @@ export default function App() {
   }
 
   function toggleSubDone(id, idx, total) {
+    if (!editMode) return;
     setProgress((prev) => {
       const cur = prev[id] || { done: false, review: false, sub: {} };
       const sub = { ...cur.sub };
@@ -251,6 +268,7 @@ export default function App() {
   }
 
   function toggleSubReview(id, idx) {
+    if (!editMode) return;
     setProgress((prev) => {
       const cur = prev[id] || { done: false, review: false, sub: {} };
       const sub = { ...cur.sub };
@@ -265,7 +283,34 @@ export default function App() {
   }
 
   function resetAll() {
-    setProgress({});
+    if (!editMode) return;
+    if (window.confirm("Wirklich ALLE Häkchen zurücksetzen?")) {
+      setProgress({});
+    }
+  }
+
+  async function handlePasswordSubmit(e) {
+    e.preventDefault();
+    const inputHash = await hashPassword(passwordInput);
+    if (inputHash === PASSWORD_HASH) {
+      setEditMode(true);
+      setShowPasswordModal(false);
+      setPasswordInput("");
+      setPasswordError("");
+    } else {
+      setPasswordError("Falsches Passwort!");
+      setPasswordInput("");
+    }
+  }
+
+  function handleEditClick() {
+    if (editMode) {
+      setEditMode(false);
+    } else {
+      setShowPasswordModal(true);
+      setPasswordError("");
+      setPasswordInput("");
+    }
   }
 
   // Tasks oder Sub-Items mit Review
@@ -291,14 +336,36 @@ export default function App() {
                 Häkchen setzen, Fortschritt sehen, Prüfung dominieren.
               </p>
             </div>
-            <button
-              onClick={resetAll}
-              className="text-sm px-3 py-2 rounded-xl bg-zinc-800 hover:bg-zinc-700"
-              title="Setzt alle Häkchen zurück"
-            >
-              Reset
-            </button>
+
+            <div className="flex items-center gap-2 shrink-0">
+              {editMode && (
+                <button
+                  onClick={resetAll}
+                  className="text-sm px-3 py-2 rounded-xl bg-zinc-800 hover:bg-zinc-700"
+                  title="Setzt alle Häkchen zurück"
+                >
+                  Reset
+                </button>
+              )}
+              <button
+                onClick={handleEditClick}
+                className={`text-sm px-3 py-2 rounded-xl transition-colors ${
+                  editMode
+                    ? "bg-emerald-600 hover:bg-emerald-700 text-white"
+                    : "bg-zinc-800 hover:bg-zinc-700 text-zinc-300"
+                }`}
+                title={editMode ? "Bearbeitung sperren" : "Bearbeitung freischalten"}
+              >
+                {editMode ? "🔓 Bearbeiten" : "🔒 Gesperrt"}
+              </button>
+            </div>
           </div>
+
+          {!editMode && (
+            <div className="mt-2 text-xs text-zinc-500 bg-zinc-800/50 rounded-lg px-3 py-1.5 inline-block">
+              Nur-Lesen-Modus — klicke auf 🔒 um zu bearbeiten
+            </div>
+          )}
 
           <div className="mt-4 bg-zinc-900 rounded-2xl p-4 shadow">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
@@ -406,9 +473,10 @@ export default function App() {
                           <div className="flex items-start gap-3 p-3">
                             <input
                               type="checkbox"
-                              className="mt-1 accent-emerald-500 shrink-0"
+                              className={`mt-1 accent-emerald-500 shrink-0 ${!editMode ? "pointer-events-none opacity-60" : ""}`}
                               checked={isDone}
                               onChange={() => toggleDone(t.id)}
+                              disabled={!editMode}
                             />
 
                             <div
@@ -443,19 +511,21 @@ export default function App() {
                                       <li key={i} className={`flex items-start gap-2 text-sm rounded-lg px-2 py-1 ${subReview ? "ring-1 ring-amber-500/30" : ""}`}>
                                         <input
                                           type="checkbox"
-                                          className="mt-0.5 accent-emerald-500 shrink-0"
+                                          className={`mt-0.5 accent-emerald-500 shrink-0 ${!editMode ? "pointer-events-none opacity-60" : ""}`}
                                           checked={subDone}
                                           onChange={() => toggleSubDone(t.id, i, t.unterpunkte.length)}
+                                          disabled={!editMode}
                                         />
                                         <span className={`flex-1 ${subDone ? "line-through text-zinc-500" : "text-zinc-300"}`}>
                                           {u}
                                         </span>
-                                        <label className="flex items-center gap-1 cursor-pointer shrink-0">
+                                        <label className={`flex items-center gap-1 shrink-0 ${editMode ? "cursor-pointer" : "pointer-events-none opacity-60"}`}>
                                           <input
                                             type="checkbox"
                                             className="accent-amber-500"
                                             checked={subReview}
                                             onChange={() => toggleSubReview(t.id, i)}
+                                            disabled={!editMode}
                                             title="Unsicher / Später wiederholen"
                                           />
                                           <span className="text-xs text-amber-400">R</span>
@@ -477,12 +547,13 @@ export default function App() {
                               </div>
                             </div>
 
-                            <label className="flex items-center gap-1.5 cursor-pointer select-none shrink-0">
+                            <label className={`flex items-center gap-1.5 select-none shrink-0 ${editMode ? "cursor-pointer" : "pointer-events-none opacity-60"}`}>
                               <input
                                 type="checkbox"
                                 className="accent-amber-500"
                                 checked={isReview}
                                 onChange={() => toggleReview(t.id)}
+                                disabled={!editMode}
                                 title="Unsicher / Später wiederholen"
                               />
                               <span className="text-xs text-amber-300">
@@ -535,9 +606,69 @@ export default function App() {
         </main>
 
         <footer className="mt-8 p-6 text-xs text-zinc-500">
-          Speicherung lokal im Browser (localStorage). Kein Login, kein Server, kein Drama.
+          Speicherung lokal im Browser (localStorage).
         </footer>
       </div>
+
+      {/* ─── Passwort-Modal ─────────────────────────────────────────── */}
+      {showPasswordModal && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
+          onClick={() => setShowPasswordModal(false)}
+        >
+          <div
+            className="bg-zinc-900 border border-zinc-700 rounded-2xl p-6 w-full max-w-sm mx-4 shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h3 className="text-lg font-semibold text-zinc-100 mb-1">
+              Bearbeitung freischalten
+            </h3>
+            <p className="text-sm text-zinc-400 mb-4">
+              Gib das Passwort ein, um Häkchen setzen zu können.
+            </p>
+
+            <div onSubmit={handlePasswordSubmit}>
+              <input
+                type="password"
+                className="w-full px-4 py-2.5 bg-zinc-800 border border-zinc-600 rounded-xl text-zinc-100 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                placeholder="Passwort"
+                value={passwordInput}
+                onChange={(e) => {
+                  setPasswordInput(e.target.value);
+                  setPasswordError("");
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") handlePasswordSubmit(e);
+                }}
+                autoFocus
+              />
+
+              {passwordError && (
+                <div className="mt-2 text-sm text-red-400">
+                  {passwordError}
+                </div>
+              )}
+
+              <div className="flex gap-2 mt-4">
+                <button
+                  type="button"
+                  onClick={() => setShowPasswordModal(false)}
+                  className="flex-1 px-4 py-2 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-sm"
+                >
+                  Abbrechen
+                </button>
+                <button
+                  type="button"
+                  onClick={handlePasswordSubmit}
+                  className="flex-1 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium"
+                >
+                  Freischalten
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
