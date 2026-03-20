@@ -1,895 +1,1894 @@
 {
-  "weeks": [
+  "quelle": "Aus den hochgeladenen PDF-Seiten des Prüfungskatalogs übernommen; Struktur 1:1 nach Fragenkomplex -> Themenkreis. Anhang-Seiten sind nicht als Lernstoff enthalten.",
+  "pruefungskatalog": [
     {
-      "week": 1,
-      "title": "AP1 – Projektmanagement",
-      "tasks": [
+      "pruefungsteil": "AP1",
+      "bereich": "Fachrichtungsübergreifende berufsprofilgebende Fertigkeiten, Kenntnisse und Fähigkeiten",
+      "fragenkomplexe": [
         {
-          "id": "w1t1",
-          "area": "Projektmanagement",
-          "exam": "AP1",
-          "topic": "Projektmethoden",
-          "subtopic": "Wasserfall, Scrum, Gantt, Netzplan, kritischer Weg, Pufferzeiten, SMART, Meilensteine",
-          "detail": "Unterschied Wasserfall (sequenziell) vs. Scrum (iterativ/Sprints). Netzplan: Vorgänger/Nachfolger, Puffer berechnen. Kritischer Weg = längster Pfad ohne Puffer. SMART für Zieldefinition.",
-          "relevance": "hoch",
-          "typicalQuestion": "Kritischen Weg im Netzplan bestimmen. Pufferzeit berechnen. Wasserfall vs. Scrum vergleichen.",
-          "difficulty": "mittel"
+          "nummer": "01",
+          "titel": "Planen, Vorbereiten und Durchführen von Arbeitsaufgaben in Abstimmung mit den kundenspezifischen Geschäfts- und Leistungsprozessen",
+          "quelle": "Systemintegration_AP1_S.1.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Merkmale und Methoden des Projektmanagements kennen, beurteilen, anwenden können",
+              "unterpunkte":[
+                "Merkmale eines Projektes",
+                "Projektplanung mithilfe von Stukturplan, Netzplan und Gantt-Diagramm",
+                "Kritischer weg",
+                "Pufferzeiten",
+                "fristgerechte Terminierung",
+                "Lösungsmöglichkeiten bei Terminproblemen",
+                "SMART",
+                "Meilensteine",
+                "Projektphasen: Wasserfallmodell bzw. SCRUM",
+                "Phasen der Teambuilding und -entwicklung",
+                "Reflektionsmethoden kennen, z.B. Feedback-Kultur, Lessons Learned"
+
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Machbarkeit und Wirtschaftlichkeit von Projekten beurteilen können",
+              "unterpunkte":[
+                "Machbarkeitsanalyse mithilfe einer Budgetvorgabe",
+                "Vor- und Nachkalkulation",
+                "Einfluss der Stakeholder beurteilen können",
+                "Risikoanalyse"
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Arbeitsaufgaben im Rahmen von Geschäfts- und Leistungsprozessen planen, vorbereiten und durchführen",
+              "unterpunkte":[
+                "Kundenkommunikation",
+                "Fehlermanagement",
+                "Störungs-Management",
+                "Bearbeitungsstatus, z.B. mittels ticketsystem",
+                "KI-Unterstützung",
+                "Support- und Serviceanfragen (First-, Second- und Thirdlevelsupport)"
+              ]
+            }
+          ]
         },
         {
-          "id": "w1t2",
-          "area": "Projektmanagement",
-          "exam": "AP1",
-          "topic": "Wirtschaftlichkeit & Machbarkeit",
-          "subtopic": "Machbarkeitsanalyse, Vor-/Nachkalkulation, Budgetvorgaben, Stakeholder, Risikoanalyse",
-          "detail": "Vor-Kalkulation (Planung) vs. Nach-Kalkulation (Auswertung). Stakeholder identifizieren und einbinden. Risikoanalyse: Eintrittswahrscheinlichkeit × Schadenshöhe. Nutzwertanalyse bei Entscheidungen.",
-          "relevance": "hoch",
-          "typicalQuestion": "Nutzwertanalyse durchführen. Vor- vs. Nachkalkulation erklären. Stakeholder-Analyse beschreiben.",
-          "difficulty": "mittel"
+          "nummer": "02",
+          "titel": "Informieren und Beraten von Kunden und Kundinnen",
+          "quelle": "Systemintegration_AP1_S.5.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Marktsituationen bewerten können",
+              "unterpunkte": [
+                "Marktformen, z. B. Monopol, Oligopol, Polypol, Käufer-/Verkäufermarkt",
+                "Zielgruppendefinition und -abgrenzung",
+                "Quantitative und qualitative Angebotsbewertung"
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Zielgruppengerechte Bedarfsanalyse durchführen können",
+              "unterpunkte": [
+                "Eigene Datenerhebung, z. B. Kundenbefragung",
+                "Auswertung vorhandener Daten, z. B. Anforderung an Büroarbeitsplätze"
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Zielgerichtete Methoden zur Kundenberatung kennen und beurteilen können",
+              "unterpunkte": [
+                "Situationsgerechte Kundenkommunikation",
+                "Kommunikationsmodelle, z. B. 4-Ohren-Modell, Sender-Empfänger-Modell",
+                "Kundenbedarf ermitteln und Angebote unterbreiten",
+                "Interpretation englischsprachiger Texte"
+              ]
+            },
+            {
+              "nummer": "04",
+              "titel": "Informationen aufbereiten und präsentieren sowie Quellen auswerten können",
+              "unterpunkte": [
+                "Technische und kaufmännische Texte in deutscher und englischer Sprache",
+                "Präsentation und Medienkompetenz"
+              ]
+            },
+            {
+              "nummer": "05",
+              "titel": "Marketingaktivitäten unterstützen können",
+              "unterpunkte": [
+                "Nutzwertanalyse",
+                "Vertriebsformen (direkter Vertrieb, indirekter Vertrieb)"
+              ]
+            }
+          ]
         },
         {
-          "id": "w1t3",
-          "area": "Projektmanagement",
-          "exam": "AP1",
-          "topic": "Qualitätsmanagement",
-          "subtopic": "PDCA-Zyklus, Testprotokoll, Abnahmeprotokoll, QM-Normen",
-          "detail": "PDCA: Plan-Do-Check-Act als Verbesserungskreislauf. Testprotokoll dokumentiert Testergebnis. Abnahmeprotokoll: Übergabe an Kunden. QM-Normen: ISO 9001 Grundverständnis.",
-          "relevance": "hoch",
-          "typicalQuestion": "PDCA-Schritte beschreiben. Was gehört in ein Abnahmeprotokoll?",
-          "difficulty": "leicht"
+          "nummer": "03",
+          "titel": "Beurteilen marktgängiger IT-Systeme und kundenspezifischer Lösungen",
+          "quelle": "Systemintegration_AP1_S.2.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Marktgängige IT-Systeme kennen, unterscheiden und beurteilen können",
+              "unterpunkte": [
+                "Funktionale, ökonomische und ökologische Aspekte, z. B. Ergonomie, Leistungsparameter, einmalige und laufende Kosten, Nutzungsdauer, Energieverbrauch, Recyclingfähigkeit",
+                "Hardwareprodukte, z. B. CPU, Motherboard, Speicher, Datenspeicher, Netzkarte, Grafikkarte, Peripheriegeräte, Sensoren, Netzwerkkomponenten wie z. B. WLAN-Router, Switch, Gateway, Accesspoint",
+                "Softwareprodukte, z. B. Anwendungen, Betriebssysteme",
+                "Standardsoftware, z. B. Office-Pakete, Datenbankmanagementsysteme, Browser",
+                "Branchensoftware, z. B. ERP-Systeme, Supply Chain Management, Customer Relationship",
+                "Systemsoftware",
+                "Entwicklungssysteme, z. B. Compiler, virtuelle Maschinen, Interpreter, Editoren und Debugger",
+                "Cloudlösungen, z. B. Software as a Service, Desktop as a Service",
+                "KI-Software",
+                "Virtuelle Desktops (Cloud oder lokal)"
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Typische IT-Systeme und deren Einsatzbereiche identifizieren und zuordnen können",
+              "unterpunkte": [
+                "Kommunikationssysteme, z. B. Videokonferenzsysteme, Social-Media-Systeme",
+                "Client-Server-Systeme",
+                "Einbindung in einer Domäne",
+                "Mobile Geräte, z. B. Smartphone, Tablet",
+                "Netzwerkprotokolle (z. B. Ethernet, IP, DNS) und OSI-Modell"
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Leistungsfähigkeit und Energieeffizienz von IT-Systemen bestimmen, analysieren und beurteilen können",
+              "unterpunkte": [
+                "Kenngrößen, Leistungsdaten, Funktionsumfang, z. B. Einstellungsmöglichkeiten im BIOS, UEFI, CPU, RAM, Datenspeicher (SSD/HDD), Filesysteme (z. B. fat32, NTFS, APFS, ext4), Grafikkarte, Netzwerkkarte, Gateway/Router, Switch, LWL, Ethernet Standards, WLAN-Standards",
+                "Barrierefreier Zugriff auf IT-Systeme am Arbeitsplatz, z. B. Einstellungsmöglichkeiten auf Webseiten",
+                "Gütesiegel für Energieeffizienz",
+                "Übertragungsdaten, -zeiten, Datenmengen von digitalisierten Dokumenten, Videos usw.",
+                "Strom, Spannung, Leistung, Wirkungsgrad, Energie, Energiekosten"
+              ]
+            },
+            {
+              "nummer": "04",
+              "titel": "Wirtschaftlichkeit von IT-Systemen bestimmen und beurteilen können",
+              "unterpunkte": [
+                "Anschaffungskosten",
+                "Betriebskosten",
+                "Variable und fixe Kosten",
+                "Lizenzkosten",
+                "Finanzierungskosten",
+                "Einfacher Kostenvergleich (Leasing, Kauf, Finanzierung, Pay-per-Use)",
+                "Preis-Leistungs-Verhältnis",
+                "Qualitativer und quantitativer Angebotsvergleich",
+                "Nutzwertanalyse",
+                "Wertschöpfung"
+              ]
+            }
+          ]
         },
         {
-          "id": "w1t4",
-          "area": "Projektmanagement",
-          "exam": "AP1",
-          "topic": "Change-Management & Teamarbeit",
-          "subtopic": "Change-Request, Lessons Learned, Teambildung, Feedback",
-          "detail": "Change-Request-Prozess: Antrag → Bewertung → Entscheidung → Umsetzung. Lessons Learned am Projektende: Was lief gut/schlecht? Teambildungsphasen (Tuckman: Forming, Storming, Norming, Performing).",
-          "relevance": "mittel",
-          "typicalQuestion": "Change-Request-Prozess beschreiben. Lessons Learned erklären.",
-          "difficulty": "leicht"
+          "nummer": "04",
+          "titel": "Entwickeln, Erstellen und Betreuen von IT-Lösungen",
+          "quelle": "Systemintegration_AP1_S.5.pdf / Systemintegration_AP1_S.3.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "IT-Systeme unter Berücksichtigung des IT-Umfeldes konzeptionieren, konfigurieren, testen und dokumentieren können",
+              "unterpunkte": [
+                "Bedarfsanalyse",
+                "Lasten- und Pflichtenheft (Zweck, Urheber, Inhalt)",
+                "Installation und Einrichtung von Systemen, z. B. Betriebssysteme, BIOS, UEFI, Partitionierungen/Formatierungen, Netzwerkanbindungen, IP(v4/v6)-Konfiguration, Remote-Desktop, KI-Software"
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Bedarfsgerechte Auswahl von Hardware vornehmen und begründen können",
+              "unterpunkte": [
+                "Geräteklassen, z. B. Desktops, Notebooks, All-in-One, Thin Clients, Tablets, Smartphones",
+                "Mobile und stationäre Arbeitsplatzsysteme wie PC, Terminals, LAN, WLAN",
+                "Barrierefreiheit, Unterstützung durch zusätzliche Hardware, z. B. größerer Monitor, breitere Tastatur, Lautsprecher/Mikrofon zur Verfügung stellen"
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Bedarfsgerechte Auswahl von Software vornehmen und begründen können",
+              "unterpunkte": [
+                "Anwendungssoftware",
+                "Betriebssysteme (Einsatzzweck, Filemanagement, Freigaben managen)",
+                "Integrierte Entwicklungsumgebung (IDE)",
+                "Standard- oder Individualsoftware",
+                "Open Source",
+                "Proprietäre Software",
+                "Beurteilungskriterien (Anpassbarkeit, Wartbarkeit, Schnittstellen)",
+                "KI-Software"
+              ]
+            },
+            {
+              "nummer": "04",
+              "titel": "Urheberrechtsgesetz kennen und Lizenzmodelle unterscheiden können",
+              "unterpunkte": [
+                "Grundlagen des Schutzes der Urheber",
+                "Lizenzarten, z. B. EULA, OEM, GNU",
+                "Pay-per-Use"
+              ]
+            },
+            {
+              "nummer": "05",
+              "titel": "Aktivitäten bei Installationen und Konfigurationen kennen und beurteilen",
+              "unterpunkte": [
+                "Installation und Konfiguration der Hardware",
+                "Installation und Konfiguration des Betriebssystems",
+                "Arbeiten mit der Kommandozeile, Befehlssyntax, Parameter",
+                "Anpassung von Software",
+                "Konfiguration, Test, Troubleshooting und Dokumentation von Netzwerkverbindungen, z. B. IP-Adressen, DHCP, WLAN-Zugang, Pre shared key/Enterprise, VPN",
+                "Konsolenbefehle für Dateioperationen und Netzwerktroubleshooting, z. B. dir, ls, mkdir, ipconfig, ifconfig/ip, alias, iproute2, arp, del, cp, copy, chmod, ping, traceroute, nslookup"
+              ]
+            },
+            {
+              "nummer": "06",
+              "titel": "Programmiersprachen mit folgenden Merkmalen kennen, einordnen und unterscheiden können",
+              "unterpunkte": [
+                "Compiler, Linker, Interpreter",
+                "Prozedurale und objektorientierte Herangehensweise",
+                "Variablen, Datentypen und -strukturen",
+                "Kontrollstrukturen, z. B. Verzweigung, Schleife",
+                "Prozeduren, Funktionen",
+                "Klassen, Attribute, Objekte, Methoden, Sichtbarkeit",
+                "Bibliotheken, Frameworks",
+                "Skriptsprachen, z. B. Shell-Skript",
+                "Debugging, formale und inhaltliche Fehler"
+              ]
+            },
+            {
+              "nummer": "07",
+              "titel": "Programmierwerkzeuge kennen und anwenden können",
+              "unterpunkte": [
+                "Abbildung der Kontrollstrukturen, z. B. Verzweigungen, Schleifen mittels Pseudocode",
+                "UML (Use Case bzw. Anwendungsfalldiagramm, Klassendiagramm, Aktivitätsdiagramm)",
+                "Entwurf der Bildschirmausgabemasken (Softwareergonomie, Corporate Identity, Barrierefreiheit)",
+                "Fehler in einem gegebenen Quellcode finden",
+                "Schreibtischtest mit einem gegebenen Quellcode durchführen"
+              ]
+            },
+            {
+              "nummer": "08",
+              "titel": "Grundlagen von relationalen Datenbanken kennen und anwenden können",
+              "unterpunkte": [
+                "Einfache ER-Modelle"
+              ]
+            }
+          ]
+        },
+        {
+          "nummer": "05",
+          "titel": "Durchführen und Dokumentieren von qualitätssichernden Maßnahmen",
+          "quelle": "Systemintegration_AP1_S.5.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Grundverständnis zu folgenden Fachbegriffen nachweisen",
+              "unterpunkte": [
+                "Betriebliche QM-Systeme",
+                "QS-Normen",
+                "Zertifizierung"
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Maßnahmen des Qualitätsmanagements für den eigenen Arbeitsbereich kennen, planen und anwenden",
+              "unterpunkte": [
+                "Qualitätsplanung, Qualitätsziele (Ist-Zustand ermitteln und Ziel-Zustand festlegen)",
+                "Qualitätslenkung (Umsetzung der Planphase)",
+                "PDCA – Plan, Do, Check, Act als Qualitätsmanagementzyklus",
+                "Testprotokoll für das Einrichten eines Arbeitsplatzes"
+              ]
+            }
+          ]
+        },
+        {
+          "nummer": "06",
+          "titel": "Umsetzen, Integrieren und Prüfen von Maßnahmen zur IT-Sicherheit und zum Datenschutz",
+          "quelle": "Systemintegration_AP1_S.4.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Regelungen zur IT-Sicherheit auf Grundschutzniveau im eigenen Arbeitsbereich analysieren, anwenden und ihre Einhaltung überprüfen",
+              "unterpunkte": [
+                "Gewährleistung von Verfügbarkeit, Vertraulichkeit und Integrität der Daten",
+                "Technisch organisatorische Maßnahmen (TOM)",
+                "Unterscheidung von IT-Sicherheitsbeauftragten und Datenschutzbeauftragten im Betrieb",
+                "Erläuterung von IT-Sicherheitsrichtlinien wie Passwort-Policy",
+                "Benennung von technischen Maßnahmen, z. B. Virenschutz, Personal Firewall, Verschlüsselung (inkl. Unterscheidung symmetrisch, asymmetrisch und hybrid)",
+                "Personelle Maßnahmen, Entwicklung des Sicherheitsbewusstseins",
+                "Auszüge aus BSI IT-Grundschutz-Kompendium",
+                "Einhaltung der Grundzüge der Datenschutzgesetze, national und auf EU-Ebene, z. B. DSGVO, BDSG überprüfen",
+                "Definition von personenbezogenen Daten",
+                "Rechte der Betroffenen, Konsequenzen der Einwilligung der Betroffenen kennen",
+                "Maßnahmen wie Anonymisierung und Pseudonymisierung"
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Schutzbedarfsanalyse im eigenen Arbeitsbereich aufgrund betrieblicher Vorgaben nach BSI IT-Grundschutz durchführen",
+              "unterpunkte": [
+                "Schutzbedarfsanalyse für Anwendungen",
+                "Schutzbedarfsanalyse für IT-Systeme",
+                "Schutzbedarfsanalyse für Räume, Infrastruktur",
+                "Schutzbedarfsanalyse für Kommunikationsverbindungen"
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Modellierung eines arbeitsplatzbezogenen Sicherheitskonzeptes nach BSI IT-Grundschutz",
+              "unterpunkte": [
+                "Bausteine aus dem Grundschutzkatalog",
+                "Schutzbedarfskategorien (normal, hoch, sehr hoch) ableiten und begründen",
+                "Risiko-Klassifikation, z. B. mit Matrix",
+                "Informations-Sicherheitsmanagementsystem (ISMS) kennen und unterstützen"
+              ]
+            },
+            {
+              "nummer": "04",
+              "titel": "Umsetzung des arbeitsplatzbezogenen Sicherheitskonzeptes unterstützen können",
+              "unterpunkte": [
+                "Schaffung eines Sicherheitsbewusstseins bei den Mitarbeitern, z. B. Security by Design, Security by Default",
+                "IT-Sicherheitsmanagement",
+                "Durch technische (infrastrukturelle), organisatorische und personelle Schutzmaßnahmen",
+                "Härtung Betriebssystem (Schwachstellen schließen)",
+                "Datensicherung/Backup-Verfahren",
+                "Sicherung der Verfügbarkeit, z. B. NAS",
+                "Zugangs- und Zugriffskontrolle",
+                "Verschlüsselungstechniken kennen (symmetrische, asymmetrische und hybride Verschlüsselung)",
+                "Hashwerte, Zertifikate und digitale Signaturen verwenden",
+                "Authentifizierung (z. B. Zweifaktor) kennen, Passwort-Policy bewerten",
+                "Personal Firewall anpassen, z. B. Softwarezugriff auf Internet sperren"
+              ]
+            }
+          ]
+        },
+        {
+          "nummer": "07",
+          "titel": "Erbringen der Leistungen und Auftragsabschluss",
+          "quelle": "Systemintegration_AP1_S.x.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Vertragsarten, Vertragsbestandteile und Vertragsstörungen kennen und unterscheiden",
+              "unterpunkte": [
+                "Kaufvertrag, Mietvertrag, Leasing",
+                "Lizenzvertrag",
+                "Servicevertrag, Service Level Agreement (SLA)",
+                "Werkvertrag, Dienstvertrag",
+                "Vertragsbestandteile, z. B. Leistungsbeschreibung, Termine, Entgelte, Sanktionen/Konventionalstrafen",
+                "Vertragsstörungen"
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Zielsetzungen des Unternehmens dem Leitbild entnehmen können",
+              "unterpunkte": [
+                "Ökonomisch, z. B. Umsatz und Gewinn",
+                "Ökologisch, z. B. Ressourcenschonung, Nachhaltigkeit",
+                "Sozial, z. B. Arbeitsbedingungen"
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Umsetzungsvarianten der Leistungserbringung kennen",
+              "unterpunkte": [
+                "Leistungserbringung vor Ort vs. Remote",
+                "Ticketsystem",
+                "Kundenvorgaben bei der Leistungserbringung, z. B. Termin und Erfüllungsort, technische Voraussetzungen, z. B. Betriebssystem, Hersteller",
+                "Einhaltung des Budgets"
+              ]
+            },
+            {
+              "nummer": "04",
+              "titel": "Leistungserbringung gemäß der Aufbauorganisation des eigenen Unternehmens abstimmen",
+              "unterpunkte": [
+                "Mehrliniensystem, Einliniensystem, Matrixorganisation",
+                "Handlungs- und Entscheidungsspielräume/Vollmachten"
+              ]
+            },
+            {
+              "nummer": "05",
+              "titel": "Veränderungsprozesse begleiten und unterstützen",
+              "unterpunkte": [
+                "Motivierte Herangehensweise und Betonung der Chancen",
+                "Identifizierung und Darstellung von Veränderungsschritten",
+                "Einbeziehung der Mitarbeiter in den Veränderungsprozess",
+                "Mitarbeiterqualifizierung, z. B. durch Blended-Learning, Multiplikatoren",
+                "Erkennen von Promoter, Bremser, Skeptiker und Widerständler",
+                "Ursachen von Widerständen gegen Veränderungen, z. B. Angst vor Kompetenzverlust, Wissenslücken, Persönliche Historie"
+              ]
+            },
+            {
+              "nummer": "06",
+              "titel": "Leistungsübergabe und Einweisungen planen und dokumentieren",
+              "unterpunkte": [
+                "Inhalt des Abnahmeprotokolls",
+                "Mängel und Mängelarten",
+                "Schlechtleistung",
+                "Falschlieferung",
+                "Minderlieferung"
+              ]
+            },
+            {
+              "nummer": "07",
+              "titel": "Leistungserbringung bewerten und dokumentieren können",
+              "unterpunkte": [
+                "Soll-Ist-Vergleich, Abweichungsanalyse",
+                "Nachkalkulation",
+                "Lessons Learned",
+                "Generierung von Nachfolgeaufträgen"
+              ]
+            }
+          ]
         }
-      ],
-      "traps": [
-        "SMART: alle 5 Kriterien können (Spezifisch, Messbar, Attraktiv, Realistisch, Terminiert).",
-        "Kritischer Weg hat Puffer = 0 – nicht der längste Weg per se, sondern der ohne Puffer.",
-        "Nutzwertanalyse: Gewichtung × Punkte = gewichteter Wert – immer ausrechnen!"
       ]
     },
     {
-      "week": 2,
-      "title": "AP1 – Kunden, Markt & IT-Systeme",
-      "tasks": [
+      "pruefungsteil": "AP2",
+      "bereich": "Fachrichtungsübergreifende berufsprofilgebende Fertigkeiten, Kenntnisse und Fähigkeiten",
+      "fragenkomplexe": [
         {
-          "id": "w2t1",
-          "area": "Kundenberatung",
-          "exam": "AP1",
-          "topic": "Kundenberatung & Kommunikation",
-          "subtopic": "4-Ohren-Modell, Sender-Empfänger, Bedarfsanalyse, Angebote unterbreiten",
-          "detail": "4-Ohren-Modell (Schulz von Thun): Sachebene, Selbstoffenbarung, Beziehung, Appell. Bedarfsanalyse: Kundenbefragung, Daten auswerten. Angebote vergleichen mit Nutzwertanalyse. Marktformen: Monopol, Oligopol, Polypol.",
-          "relevance": "mittel",
-          "typicalQuestion": "4-Ohren-Modell an einem Beispiel erklären. Bedarfsanalyse beschreiben.",
-          "difficulty": "leicht"
+          "nummer": "01",
+          "titel": "Informieren und Beraten von Kunden und Kundinnen",
+          "quelle": "Systemintegration_AP2_S.1.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Aktives Zuhören, Kommunikationsmodelle (z. B. Telefonkonferenzen, Chat, virtuelle Teambesprechung), Verkaufsgespräche (Anfrage, Angebot, Auftrag), Analyse der Kundenbedürfnisse",
+              "unterpunkte": [
+                "Nicht Bestandteil der schriftlichen Prüfung"
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Kundenbeziehungen unter Beachtung rechtlicher Regelungen und betrieblicher Grundsätze gestalten",
+              "unterpunkte": [
+                "BGB/HGB",
+                "Gesetz gegen unlauteren Wettbewerb",
+                "AGB-Gesetz",
+                "Compliance",
+                "Regelkonformität",
+                "Customer Relationship Management"
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Daten und Sachverhalte interpretieren, multimedial aufbereiten und situationsgerecht unter Nutzung digitaler Werkzeuge und unter Berücksichtigung der betrieblichen Vorgaben präsentieren",
+              "unterpunkte": [
+                "Präsentationstechnik",
+                "Grafische Darstellung (Diagrammarten, Bildbearbeitung, Videos, multimediale Aufbereitung)",
+                "Visualisierung",
+                "Tabellenkalkulation",
+                "Präsentationsprogramm",
+                "Programm zum Erstellen multimedialer Inhalte",
+                "Corporate Identity (CI)"
+              ]
+            }
+          ]
         },
         {
-          "id": "w2t2",
-          "area": "IT-Systeme",
-          "exam": "AP1",
-          "topic": "Marktgängige IT-Systeme beurteilen",
-          "subtopic": "Hardware, Software, Cloud, virtuelle Desktops, KI-Software, Energieeffizienz",
-          "detail": "Funktionale, ökonomische und ökologische Bewertungskriterien. Leistungsfähigkeit (CPU, RAM, Speicher) vs. Energieeffizienz (TDP, PUE). Cloud vs. On-Prem: Kosten, Skalierbarkeit, Datenschutz.",
-          "relevance": "hoch",
-          "typicalQuestion": "IT-System für ein Szenario auswählen und begründen. Kriterien für Systembewertung nennen.",
-          "difficulty": "mittel"
+          "nummer": "02",
+          "titel": "Entwickeln, Erstellen und Betreuen von IT-Lösungen",
+          "quelle": "Systemintegration_AP2_S.1.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Fehler erkennen, analysieren und beheben",
+              "unterpunkte": [
+                "Debugging, Breakpoint",
+                "Software-Test, dynamische und statische Testverfahren, z. B. Black Box, White Box, Review, Extremwertest",
+                "Testdaten",
+                "Komponententest, Integrationstest, Systemtest",
+                "Versionsmanagement des Quellcodes"
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Algorithmen formulieren und Programme entwickeln",
+              "unterpunkte": [
+                "Abbildung der Kontrollstrukturen mittels Aktivitätsdiagramm oder Pseudocode als didaktisches Hilfsmittel",
+                "UML (siehe Anhang des Prüfungskatalogs: Use Case bzw. Anwendungsfalldiagramm, Klassendiagramm, Aktivitätsdiagramm)",
+                "Entwurf der Bildschirmausgabemasken (Softwareergonomie, Barrierefreiheit)"
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Datenbanken modellieren und erstellen",
+              "unterpunkte": [
+                "Relationale und nicht-relationale Datenbanken, NoSQL Datenbanken",
+                "Datentypen: Boolesche Werte, Ganzzahl, Gleitkommatwerte, Währung, Datumswerte, Texte fester und variabler Länge, BLO, Geokoordinaten",
+                "Anomalien/Redundanzen erkennen",
+                "Normalisieren, 1. bis 3. Normalform",
+                "ER-Modell, Attribute, Beziehungen, Kardinalitäten, referenzielle Integrität, Aktualisierungsweitergabe, Löscherweitergabe, Primärschlüssel, Fremdschlüssel",
+                "Datenbankabfrage, Datenpflege",
+                "SQL (siehe Anhang des Prüfungskatalogs): Tabellenstruktur, Index, Manipulation, Projektion, Selektion, Sortieren, Gruppieren",
+                "Abfrage über mehrere Tabellen",
+                "Ausdrücke und Bedingungen",
+                "Aggregat-Funktionen",
+                "OpenData, API-Schnittstellen"
+              ]
+            }
+          ]
         },
         {
-          "id": "w2t3",
-          "area": "IT-Systeme",
-          "exam": "AP1/AP2",
-          "topic": "Lizenzmodelle & Urheberrecht",
-          "subtopic": "Open Source, Abo vs. Kauf, CAL, Pay-per-Use, Rahmenverträge, Audit",
-          "detail": "Urheberrechtsgesetz: Software darf nicht einfach kopiert werden. Open Source: GPL, MIT, Apache. CAL: Client Access License für Server-Software. Abo-Modell vs. Einmalkauf. Lizenzaudit: Übereinstimmung prüfen.",
-          "relevance": "hoch",
-          "typicalQuestion": "Lizenzmodelle unterscheiden. Was ist eine CAL? Open Source Lizenzen erklären.",
-          "difficulty": "mittel"
+          "nummer": "03",
+          "titel": "Durchführen und Dokumentieren von qualitätssichernden Maßnahmen",
+          "quelle": "Systemintegration_AP2_S.1.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Methoden der Qualitätslenkung anwenden",
+              "unterpunkte": [
+                "Verschiedene Prüfverfahren, z. B. Parität, Redundanz",
+                "Software-Test, dynamische und statische Testverfahren (z. B. Black Box, White Box, Review, Extremwertetest, Testdaten, Last- und Performancetest)",
+                "Debugging, Ablaufverfolgung"
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Methoden zur Messung der Zielerreichung im QM-Prozess kennen und anwenden",
+              "unterpunkte": [
+                "Verbesserungsprozess, PDCA-Zyklus, KVP, Kennzahlen",
+                "Soll-Ist-Vergleich, Abweichungen erkennen und berechnen",
+                "Testdatengeneratoren",
+                "Testprotokolle",
+                "Abnahmeprotokoll"
+              ]
+            }
+          ]
         },
         {
-          "id": "w2t4",
-          "area": "Vertragsrecht",
-          "exam": "AP1/AP2",
-          "topic": "Vertragsarten",
-          "subtopic": "Kauf, Miete, Leasing, SLA, Werkvertrag, Dienstvertrag",
-          "detail": "Kaufvertrag: Eigentümerübergang sofort. Mietvertrag: Nutzungsüberlassung. Leasing: Finanzierungsform, kein Eigentum. SLA: Service Level Agreement mit definierten KPIs. Werkvertrag: Erfolg geschuldet. Dienstvertrag: Tätigkeit geschuldet.",
-          "relevance": "hoch",
-          "typicalQuestion": "Vertragsart einem Szenario zuordnen. Unterschied Werkvertrag vs. Dienstvertrag.",
-          "difficulty": "mittel"
+          "nummer": "04",
+          "titel": "Umsetzen, Integrieren und Prüfen von Maßnahmen zur IT-Sicherheit und zum Datenschutz",
+          "quelle": "Systemintegration_AP2_S.2.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Schadenspotenziale von IT-Sicherheitsvorfällen einschätzen und Schäden verhindern können",
+              "unterpunkte": [
+                "Imageschaden",
+                "Wirtschaftlicher Schaden",
+                "Datenverlust"
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Präventive IT-Sicherheitsmaßnahmen für verschiedene Bedrohungsszenarien planen und umsetzen, z. B. Maßnahmen gegen",
+              "unterpunkte": [
+                "Datendiebstahl",
+                "Digitale Erpressung (Ransomware)",
+                "Identitätsdiebstahl (Phishing)"
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Ziele zur Entwicklung von IT-Sicherheitskriterien definieren",
+              "unterpunkte": [
+                "Richtschnur für Entwickler",
+                "Objektive Bewertung der Systeme (IT-Grundschutz-modellierung)",
+                "Unterstützung von Anwendern/Benutzern bei der Auswahl eines geeigneten IT-Sicherheitsprodukts (Security by Design)"
+              ]
+            },
+            {
+              "nummer": "04",
+              "titel": "Kunden zur IT-Sicherheit beraten",
+              "unterpunkte": [
+                "Private Haushalte",
+                "Unternehmen (intern/extern)",
+                "Öffentliche Hand",
+                "Funktionale Anforderungen",
+                "Qualitätsanforderungen",
+                "Technisch Organisatorische Maßnahmen (TOM)",
+                "Rahmenbedingungen: Technologisch, Organisatorisch, Rechtlich, Ethisch",
+                "Risikoanalyse",
+                "Bedrohungsszenarien, z. B. Man-in-the-Middle, SQL-Injection, DDoS-Attacke"
+              ]
+            },
+            {
+              "nummer": "05",
+              "titel": "Verschiedene Tools zur Überprüfung von IT-Sicherheitsmaßnahmen erläutern",
+              "unterpunkte": [
+                "Penetrations-Test",
+                "Device Security Check",
+                "Identity & Access Management",
+                "Schwachstellenanalyse"
+              ]
+            },
+            {
+              "nummer": "06",
+              "titel": "Wirksamkeit und Effizienz der umgesetzten Technisch Organisatorischen Maßnahmen (TOM) zur IT-Sicherheit und zum Datenschutz prüfen",
+              "unterpunkte": [
+                "Zutrittskontrolle, z. B. Alarmanlage, Videoüberwachung, Besucherausweise",
+                "Zugangskontrolle, z. B. Bildschirmschoner mit Passwortschutz, Biometrische Verfahren, Magnet- oder Chipkarte",
+                "Zugriffskontrolle, z. B. Verschlüsselung von Datenträgern, Löschung von Datenträgern, User/Rollenkonzept",
+                "Log Management",
+                "Compliance Reports"
+              ]
+            }
+          ]
         }
-      ],
-      "traps": [
-        "Werkvertrag = Erfolg geschuldet (z.B. fertige Software). Dienstvertrag = nur Tätigkeit (z.B. Beratung).",
-        "Leasing ≠ Kauf: Eigentum bleibt beim Leasinggeber. Am Ende kein automatischer Übergang.",
-        "Open Source ≠ kostenlos: Open Source bedeutet offener Quellcode, kann trotzdem Kosten haben."
       ]
     },
     {
-      "week": 3,
-      "title": "AP1 – IT-Sicherheit & Datenschutz",
-      "tasks": [
+      "pruefungsteil": "AP2",
+      "bereich": "Berufsprofilgebende Fertigkeiten, Kenntnisse und Fähigkeiten in der Fachrichtung Systemintegration",
+      "fragenkomplexe": [
         {
-          "id": "w3t1",
-          "area": "IT-Sicherheit",
-          "exam": "AP1/AP2",
-          "topic": "CIA-Triade & BSI IT-Grundschutz",
-          "subtopic": "Vertraulichkeit, Integrität, Verfügbarkeit, BSI-Grundschutz, ISO 27001",
-          "detail": "CIA: Vertraulichkeit (nur Befugte), Integrität (unverändert/korrekt), Verfügbarkeit (erreichbar). BSI IT-Grundschutz: deutsches Framework mit Bausteinen. ISO 27001: internationaler ISMS-Standard.",
-          "relevance": "hoch",
-          "typicalQuestion": "Maßnahme einem CIA-Ziel zuordnen. Unterschied BSI vs. ISO 27001.",
-          "difficulty": "leicht"
+          "nummer": "01",
+          "titel": "Betreiben von IT-Systemen",
+          "quelle": "Systemintegration_AP2_S.3.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Schichtenmodelle, z. B. OSI, TCP/IP benennen und zuordnen können",
+              "unterpunkte": [
+                "IPv4/IPv6",
+                "MAC",
+                "Routing",
+                "Switching",
+                "ARP",
+                "TCP/UDP"
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Netzwerkkomponenten vergleichen und beschreiben können",
+              "unterpunkte": [
+                "Switch",
+                "Bridge",
+                "Router",
+                "Firewall"
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Netzwerkkonzepte (-topologien, -infrastrukturen) benennen und charakterisieren",
+              "unterpunkte": [
+                "Ausdehnung: LAN/WAN/MAN/GAN",
+                "Datenübertragungsrate",
+                "Zugriffskontrolle im Netzwerk (RADIUS, Kerberos ...)",
+                "Verschlüsselung auf Netzwerkebene, VPN",
+                "Strukturierte Verkabelung",
+                "VLAN",
+                "Drahtlos: PAN/WLAN/Mesh",
+                "Sicherheit in Drahtlosnetzen",
+                "Bluetooth",
+                "Sicherheitskonzepte und -risiken",
+                "Netzwerktopologie (FI DV/FI SI)",
+                "Netzwerkplan"
+              ]
+            },
+            {
+              "nummer": "04",
+              "titel": "Peer 2 Peer bzw. Client-Server-Konzepte vergleichen und hinsichtlich ihres Einsatzes bewerten können",
+              "unterpunkte": [
+                "Dateifreigaben, z. B. SMB/CIFS",
+                "Datenabruf, z. B. HTTP, ODBC"
+              ]
+            },
+            {
+              "nummer": "05",
+              "titel": "Übertragungsprotokolle und ihre Eigenschaften erläutern und zielgerichtet einsetzen können",
+              "unterpunkte": [
+                "TCP/UDP",
+                "HTTP/HTTPS"
+              ]
+            },
+            {
+              "nummer": "06",
+              "titel": "Standortübergreifende und -unabhängige Kommunikation situationsgerecht auswählen und einrichten können",
+              "unterpunkte": [
+                "VPN-Modelle",
+                "Tunneling",
+                "IPsec"
+              ]
+            },
+            {
+              "nummer": "07",
+              "titel": "Netzwerkrelevante Dienste beschreiben können",
+              "unterpunkte": [
+                "DNS",
+                "DHCP",
+                "Proxy"
+              ]
+            },
+            {
+              "nummer": "08",
+              "titel": "Anforderungen an Verfügbarkeit von Anwendungsdiensten beurteilen können",
+              "unterpunkte": [
+                "Echtzeitkommunikation",
+                "Mailserver",
+                "Webserver",
+                "Groupware",
+                "Datenbanken"
+              ]
+            },
+            {
+              "nummer": "09",
+              "titel": "Risiken identifizieren, Maßnahmen planen und Ausfallwahrscheinlichkeiten berücksichtigen",
+              "unterpunkte": [
+                "PDCA-Zyklus",
+                "MTBF/AFR",
+                "Notfallkonzept (Disaster Recovery)"
+              ]
+            },
+            {
+              "nummer": "10",
+              "titel": "Maßnahmen zur Sicherstellung des Betriebes beurteilen können",
+              "unterpunkte": [
+                "Elektrotechnisch (USV)",
+                "Hardwaretechnisch (Redundanzen), RAID",
+                "Softwaretechnisch (Backups ...)"
+              ]
+            },
+            {
+              "nummer": "11",
+              "titel": "Monitoringsysteme anwenden und Ergebnisse interpretieren können",
+              "unterpunkte": [
+                "Festlegen der Monitoringdaten",
+                "SNMP, S.M.A.R.T. u. Ä.",
+                "Systemlastanalyse",
+                "Predictive Maintenance",
+                "Ressourcenengpässe",
+                "Festlegen von Schwellwerten"
+              ]
+            },
+            {
+              "nummer": "12",
+              "titel": "Monitoringergebnisse analysieren und korrektive Maßnahmen bestimmen können",
+              "unterpunkte": [
+                "Standard Operation Procedures (SOP)",
+                "Service Level Agreement (SLA), Service Level 1-3",
+                "Incident Management (Ticketsystem)",
+                "Eskalationsstufen"
+              ]
+            },
+            {
+              "nummer": "13",
+              "titel": "Erstellen und Erweitern von Handbüchern für Benutzer und Systembetreuer",
+              "unterpunkte": [
+                "Programm- und Konfigurationsdokumentation",
+                "Checklisten"
+              ]
+            }
+          ]
         },
         {
-          "id": "w3t2",
-          "area": "Datenschutz",
-          "exam": "AP1/AP2",
-          "topic": "DSGVO & Datenschutzrecht",
-          "subtopic": "Grundprinzipien, Betroffenenrechte, Anonymisierung, Pseudonymisierung, BDSG",
-          "detail": "7 Grundsätze (Art. 5): Rechtmäßigkeit, Transparenz, Zweckbindung, Datenminimierung, Richtigkeit, Speicherbegrenzung, Integrität/Vertraulichkeit. Betroffenenrechte Art. 15–22. Anonymisierung: kein Personenbezug mehr möglich. Pseudonymisierung: Zuordnung nur mit Zusatzinfo.",
-          "relevance": "hoch",
-          "typicalQuestion": "DSGVO-Grundsätze nennen. Anonymisierung vs. Pseudonymisierung unterscheiden.",
-          "difficulty": "mittel"
+          "nummer": "02",
+          "titel": "Inbetriebnehmen von Speicherlösungen",
+          "quelle": "Systemintegration_AP2_S.3.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Technische und organisatorische Maßnahmen (TOM)",
+              "unterpunkte": [
+                "Berechtigungskonzepte, Organisationsstrukturen (Zugang, Zutritt, Zugriff)"
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Möglichkeiten der physischen/hardwaretechnischen Absicherung benennen",
+              "unterpunkte": [
+                "Zugangskontrollen, z. B. Gebäude, Serverraum, Schrank",
+                "Elementarrisiken, z. B. Feuer, Hochwasser"
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Möglichkeiten der softwaretechnischen Absicherung implementieren können",
+              "unterpunkte": [
+                "User- und Zugriffsmanagement",
+                "Firewall/Webfilter",
+                "Portsecurity",
+                "Verschlüsselung, z. B. Bitlocker"
+              ]
+            },
+            {
+              "nummer": "04",
+              "titel": "Verschiedene Service- und Liefermodelle benennen und bedarfsorientiert auswählen können",
+              "unterpunkte": [
+                "On Premises, Cloud ...",
+                "SaaS, IaaS, PaaS ..."
+              ]
+            },
+            {
+              "nummer": "05",
+              "titel": "Daten heterogener Quellen zusammenführen können",
+              "unterpunkte": [
+                "Datenaustauschformate: XML, JSON, CSV u. a.",
+                "Bildung eines Data Lake o. a."
+              ]
+            },
+            {
+              "nummer": "06",
+              "titel": "Netzwerkkomponenten und -protokolle beschreiben können",
+              "unterpunkte": [
+                "NAS",
+                "SAN",
+                "iSCSI",
+                "SMB",
+                "NFS",
+                "Ethernet, FibreChannel"
+              ]
+            }
+          ]
         },
         {
-          "id": "w3t3",
-          "area": "IT-Sicherheit",
-          "exam": "AP1/AP2",
-          "topic": "Verschlüsselung & TOM",
-          "subtopic": "Symmetrisch, asymmetrisch, hybrid, Passwort-Policy, Virenschutz, Personal Firewall",
-          "detail": "Symmetrisch: gleicher Schlüssel (AES). Asymmetrisch: Schlüsselpaar (RSA, Public/Private Key). Hybrid: asymmetrisch zum Schlüsselaustausch, dann symmetrisch. TOM (Art. 32 DSGVO): technische und organisatorische Maßnahmen.",
-          "relevance": "hoch",
-          "typicalQuestion": "Verschlüsselungsarten erklären. Wann symmetrisch, wann asymmetrisch? TOM-Beispiele nennen.",
-          "difficulty": "mittel"
+          "nummer": "03",
+          "titel": "Programmieren von Softwarelösungen",
+          "quelle": "Systemintegration_AP2_S.x.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Softwareanforderungen erfassen können",
+              "unterpunkte": [
+                "Änderbarkeit/Erweiterbarkeit",
+                "Benutzbarkeit",
+                "Effizienz",
+                "Funktionalität",
+                "Übertragbarkeit",
+                "Zuverlässigkeit",
+                "Wartbarkeit",
+                "Normen anwenden"
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Planen mit geeigneten Modellen",
+              "unterpunkte": [
+                "ERM",
+                "Relationales Datenbankmodell",
+                "UML-Klassendiagramm",
+                "Mock up",
+                "UML-Aktivitätsdiagramm",
+                "UML-Anwendungsfalldiagramm",
+                "UML-Sequenzdiagramm",
+                "UML-Zustandsdiagramm (FI AE)"
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Festlegen von Schnittstellen und vorhandene Schnittstellen nutzen",
+              "unterpunkte": [
+                "Datenaustauschformate (XML, JSON ...)",
+                "SQL",
+                "API, z. B. REST"
+              ]
+            },
+            {
+              "nummer": "04",
+              "titel": "Situationsgerechte Auswahl einer passenden Programmiersprache begründen können",
+              "unterpunkte": [
+                "Performance, Speicherverbrauch",
+                "Portabilität",
+                "Framework/Bibliotheken",
+                "Einsatz von integrierten Entwicklungsumgebungen",
+                "Know-how/Fachkenntnis"
+              ]
+            },
+            {
+              "nummer": "05",
+              "titel": "Algorithmen in einer Programmiersprache darstellen",
+              "unterpunkte": [
+                "Darstellung in allgemein verständlichem Programm- oder Pseudocode",
+                "Im Prüfungskontext muss der Code nicht 1:1 kompilierbar sein, Syntaxfehler werden toleriert",
+                "Kontrollstrukturen (z. B. durch Einrücken) müssen ersichtlich sein"
+              ]
+            },
+            {
+              "nummer": "06",
+              "titel": "Cyber-physische Systeme beschreiben und erweitern können",
+              "unterpunkte": [
+                "CPS-Software",
+                "Auswahl von geeigneten Sensoren/Aktoren",
+                "Nutzung von Bibliotheken",
+                "Abfragerythmus planen",
+                "Kenntnis des Zugriffs auf Sensoren und Aktoren"
+              ]
+            },
+            {
+              "nummer": "07",
+              "titel": "Wiederkehrende Systemabläufe mithilfe von Skripten automatisieren und überwachen können",
+              "unterpunkte": [
+                "Shellprogrammierung, z. B. PowerShell, Bash",
+                "Skriptprogrammierung, z. B. Python ..."
+              ]
+            },
+            {
+              "nummer": "08",
+              "titel": "Qualitätssicherung und Tests",
+              "unterpunkte": [
+                "Black Box-/White Box-Tests",
+                "Grundsätzliches Vorgehen beim Testen, z. B. print-Debugging, TDD, Unit-Test, E2E Test"
+              ]
+            }
+          ]
         },
         {
-          "id": "w3t4",
-          "area": "IT-Sicherheit",
-          "exam": "AP1/AP2",
-          "topic": "Schutzbedarfsanalyse & Risikoanalyse",
-          "subtopic": "Schutzbedarf: normal, hoch, sehr hoch; Risikoidentifikation, -bewertung, -behandlung",
-          "detail": "Schutzbedarf nach Schadensfolgen: normal (begrenzt), hoch (erheblich), sehr hoch (existenzbedrohend). Risiko = Eintrittswahrscheinlichkeit × Schadenshöhe. Maßnahmen: vermeiden, reduzieren, übertragen, akzeptieren.",
-          "relevance": "mittel",
-          "typicalQuestion": "Schutzbedarf klassifizieren und begründen. Risikomatrix ausfüllen.",
-          "difficulty": "mittel"
+          "nummer": "04",
+          "titel": "Konzipieren und Realisieren von IT-Systemen",
+          "quelle": "Systemintegration_AP2_S.4.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Anforderungen an Systemkomponenten definieren",
+              "unterpunkte": [
+                "Server",
+                "Peripheriegeräte",
+                "Clients",
+                "Storage",
+                "Appliance",
+                "Virtualisierung",
+                "Betriebssysteme",
+                "Anwendungen",
+                "Sicherheitsaspekte",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Anforderungen an das Netzwerk definieren",
+              "unterpunkte": [
+                "Bandbreite",
+                "Latenz",
+                "Verfügbarkeit",
+                "Übertragungsmedium",
+                "Netzwerksicherheit",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Schichtenarchitektur auswählen",
+              "unterpunkte": [
+                "2-Tier",
+                "3-Tier",
+                "Multi-Tier"
+              ]
+            },
+            {
+              "nummer": "04",
+              "titel": "Schutzziele der Informationssicherheit",
+              "unterpunkte": [
+                "Vertraulichkeit",
+                "Authentizität",
+                "Integrität",
+                "Verfügbarkeit"
+              ]
+            },
+            {
+              "nummer": "05",
+              "titel": "Schutzbedarfsanalyse durchführen",
+              "unterpunkte": []
+            },
+            {
+              "nummer": "06",
+              "titel": "Technische und organisatorische Maßnahmen (TOM)",
+              "unterpunkte": [
+                "Berechtigungskonzepte u. a.",
+                "Organisationsstrukturen (Zugang, Zutritt, Zugriff)"
+              ]
+            },
+            {
+              "nummer": "07",
+              "titel": "Kundenspezifische Anforderungen berücksichtigen",
+              "unterpunkte": []
+            },
+            {
+              "nummer": "08",
+              "titel": "Auswahl der verwendeten Infrastruktur",
+              "unterpunkte": [
+                "Cloud",
+                "On Premises (eigene Server + Storage)"
+              ]
+            },
+            {
+              "nummer": "09",
+              "titel": "Auswahl der Technik",
+              "unterpunkte": [
+                "Virtualisierung",
+                "Bare-Metal"
+              ]
+            },
+            {
+              "nummer": "10",
+              "titel": "Realisieren von IT-Systemen (auswählen, installieren, konfigurieren, bewerten)",
+              "unterpunkte": [
+                "Server",
+                "Hardware",
+                "Betriebssystem",
+                "Anwendungen",
+                "Dienste",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "11",
+              "titel": "Einen Cloud-Anbieter auswählen",
+              "unterpunkte": [
+                "Services bewerten und beurteilen",
+                "Housing, Hosting",
+                "IaaS, SaaS, PaaS",
+                "Kosten-Nutzen berücksichtigen",
+                "Sicherheitsaspekte berücksichtigen",
+                "Datenschutz berücksichtigen",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "12",
+              "titel": "Kompatibilitätsprobleme erkennen und lösen",
+              "unterpunkte": [
+                "Zeichensätze, Umlaute, Sprache",
+                "Formate",
+                "Protokolle",
+                "System-/Schnittstellen",
+                "Programmiersprachen, Datentypen",
+                "Softwarebibliotheken",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "13",
+              "titel": "Lifecycle-Betrachtung durchführen",
+              "unterpunkte": [
+                "Hardware, z. B. Green IT",
+                "Software",
+                "Support, extended Support",
+                "Sicherheitsupdates",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "14",
+              "titel": "Versionskontrollen planen und durchführen",
+              "unterpunkte": [
+                "Installation von Software- und Sicherheitsupdates",
+                "Installation Betriebssystemupdates",
+                "Staging",
+                "Dokumentation der Versionierungen"
+              ]
+            },
+            {
+              "nummer": "15",
+              "titel": "Tests planen, erstellen und durchführen können",
+              "unterpunkte": [
+                "Performance-Test",
+                "Penetration-Test",
+                "Integration-Test",
+                "System-Test",
+                "Changeprozess",
+                "Rollback",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "16",
+              "titel": "Tests dokumentieren und auswerten können",
+              "unterpunkte": [
+                "Testprotokolle",
+                "Changeprozess",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "17",
+              "titel": "Kundenbezogene Prozesse berücksichtigen",
+              "unterpunkte": [
+                "Ermittlung von Ansprechpartnern",
+                "Stakeholder-Analyse",
+                "Abstimmung von Wartungsfenstern",
+                "Planung von Changes",
+                "Kundendokumentation",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "18",
+              "titel": "Migration planen und durchführen",
+              "unterpunkte": [
+                "Migrationsmethoden",
+                "Datengrößen",
+                "Datentypen",
+                "Kompatibilität von Filesystemen",
+                "Klassifizierung von Daten"
+              ]
+            }
+          ]
+        },
+        {
+          "nummer": "05",
+          "titel": "Installieren und Konfigurieren von Netzwerken",
+          "quelle": "Systemintegration_AP2_S.5.pdf / Systemintegration_AP2_S.6.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Verschiedene Netzwerkprotokolle je nach Anwendungsbereich und Anforderung auswählen",
+              "unterpunkte": [
+                "IPv4/IPv6",
+                "TCP/UDP",
+                "SSL/TLS (Version)",
+                "Schicht 5-7-Protokolle, z. B. DNS, IMAP, SMTP, HTTPS, SFTP, SSH",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Geeignete Topologien und Übertragungswege bewerten",
+              "unterpunkte": [
+                "Drahtlos, z. B. Funk",
+                "Drahtgebunden, z. B. Kupferkabel",
+                "Optisch, z. B. Glasfaser",
+                "WAN-Anbindung",
+                "Standortvernetzung",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Geeignete Netzwerkkomponenten auswählen, installieren, konfigurieren und betreiben",
+              "unterpunkte": [
+                "Leitungen/Kabel",
+                "WAN-Modem, z. B. DSL-Modem",
+                "Router",
+                "Switches",
+                "WLAN-Controller",
+                "Accesspoint",
+                "Firewall",
+                "Loadbalancer",
+                "Managed Services",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "04",
+              "titel": "Netzwerk- und netzwerkrelevante Dienste administrieren",
+              "unterpunkte": [
+                "DNS",
+                "DHCP",
+                "Proxy",
+                "Spanning tree",
+                "Dynamisches/statisches Routing",
+                "VLAN",
+                "First hop redundancy",
+                "QoS",
+                "Mesh",
+                "NAT/PAT",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "05",
+              "titel": "Netzwerke analysieren und optimieren",
+              "unterpunkte": [
+                "Funktions- und Belastungstest",
+                "Redundanz",
+                "Load Balancing",
+                "Mesh"
+              ]
+            },
+            {
+              "nummer": "06",
+              "titel": "Einsatz geeigneter Maßnahmen zur IT-Sicherheit evaluieren und vorschlagen",
+              "unterpunkte": [
+                "Allgemeiner IT-Grundschutz",
+                "Betriebliche Sicherheitsaspekte",
+                "Gefährdungen",
+                "Angriffsszenarien"
+              ]
+            },
+            {
+              "nummer": "07",
+              "titel": "Lösungen der IT-Sicherheit in Netzwerken (Hardware/Software) implementieren",
+              "unterpunkte": [
+                "Firewall",
+                "Next Generation Firewall (NGF)",
+                "IDS/IPS",
+                "Monitoringsysteme",
+                "Verschlüsselungstechniken",
+                "VPN",
+                "Zertifikatsinfrastruktur",
+                "Virtualisierungstechniken",
+                "Clustering",
+                "Viren- und Spamfilter",
+                "Zugriffsberechtigungen zu Netzwerkkomponenten und Netzwerkdiensten",
+                "System- und Firmwareupdates",
+                "Zutritt zu Server- und Betriebsräumen",
+                "Zutrittskontrollsystem"
+              ]
+            },
+            {
+              "nummer": "08",
+              "titel": "Dokumentation und Überwachung der umgesetzten Maßnahmen durchführen",
+              "unterpunkte": [
+                "Auswertung von Protokolldateien/Monitoring",
+                "Dokumentation der implementierten Lösungen mit Änderungsverfolgung",
+                "Ping",
+                "Trace Route",
+                "Analysetools, z. B. Pakettracer, Wireshark, Nmap",
+                "Netzwerkmonitoring, z. B. SNMP",
+                "etc."
+              ]
+            }
+          ]
+        },
+        {
+          "nummer": "06",
+          "titel": "Administrieren von IT-Systemen",
+          "quelle": "Systemintegration_AP2_S.6.pdf / Systemintegration_AP2_S.7.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Anwendungsbezogene Richtlinien von IT-Systemen identifizieren, abgrenzen und beschreiben",
+              "unterpunkte": [
+                "Nutzerordnung u. Ä.",
+                "Betriebsvereinbarungen u. Ä.",
+                "IT-Grundschutz-Vorgaben (BSI)",
+                "IT-Sicherheitsrichtlinien",
+                "Berechtigungsstufen, Rollen",
+                "BYOD",
+                "Data Loss Prävention",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Auswahl geeigneter Lizenzmodelle treffen und Lizenzmanagement durchführen",
+              "unterpunkte": [
+                "Abomodell vs. Kaufmodell",
+                "Pay-per-Use",
+                "Rahmenverträge",
+                "Lizenzmodell (kommerziell, Open Source, Freeware, GPL etc.)",
+                "Zugriffslizenzen (CALs)",
+                "Software Licence Monitoring",
+                "Lizenzverwaltung",
+                "Lizenzbeschaffung",
+                "Lizenzierungsserver",
+                "Lizenz-Audit",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Auswahl und Einführung von Berechtigungskonzepten",
+              "unterpunkte": [
+                "Zugriffsrechte",
+                "User Accounts",
+                "ACLs",
+                "Domänenkonzept",
+                "Sicherheitsgruppen",
+                "Rechte und Berechtigungen",
+                "AGDLP (RBAC)",
+                "LDAP",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "04",
+              "titel": "Authentifizierungsmethoden inklusive der benötigten Infrastruktur beurteilen, einsetzen oder einrichten",
+              "unterpunkte": [
+                "Single Sign On",
+                "Zertifikate",
+                "Zertifikatinfrastruktur",
+                "Signatur zum Login",
+                "Multi-Faktor-Authentifizierung",
+                "Hardwaretoken, z. B. Chipkarte",
+                "One-Time-Password",
+                "PIN-Code für Zutrittsberechtigung",
+                "RADIUS, z. B. für WLAN",
+                "Passwortrichtlinien",
+                "Securitykeys",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "05",
+              "titel": "Aktualisierungsmethoden auswählen, einsetzen und durchführen bzw. automatisieren",
+              "unterpunkte": [
+                "Updateverwaltung, z. B. WSUS, SCCM, APT, Repositories",
+                "BIOS-Updates",
+                "Firmware-Updates",
+                "Hardware-Upgrade",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "06",
+              "titel": "Geeignete Methoden und Systeme zur Sicherung und Archivierung vorschlagen und implementieren",
+              "unterpunkte": [
+                "Band, Platte, NAS, SAN, Cloud, USB, CD/DVD etc.",
+                "Veränderlich/unveränderlich",
+                "Blockbasiert vs. dateibasierter Zugriff",
+                "Backupstrategien, z. B. Generationenprinzip, schnell → langsam, FIFO",
+                "Lagerung",
+                "Aufbewahrungsfristen",
+                "Aufräumprozesse",
+                "Versionierung",
+                "Snapshots",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "07",
+              "titel": "Backupdauer berechnen",
+              "unterpunkte": [
+                "Geschwindigkeit, Bandbreite",
+                "Datenmenge, Speicherbedarf, Komprimierung"
+              ]
+            },
+            {
+              "nummer": "08",
+              "titel": "Restore-Funktionalität sicherstellen",
+              "unterpunkte": [
+                "Blockbasiert, dateibasierter Zugriff",
+                "Snapshots",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "09",
+              "titel": "Wiederherstellungsdauer berechnen",
+              "unterpunkte": [
+                "Geschwindigkeit, Bandbreite",
+                "Datenmenge, Speicherbedarf"
+              ]
+            },
+            {
+              "nummer": "10",
+              "titel": "Monitoring einrichten und durchführen",
+              "unterpunkte": [
+                "Monitoring-Werkzeuge auswählen und einsetzen",
+                "Überwachung",
+                "Fernsteuerung",
+                "Fehlererkennung",
+                "Fehlerbenachrichtigung",
+                "Z. B. Load-Balancing, High Availibility, Skalierbarkeit, Cloud-Systeme zur Last-Abfederung (Content Provider)",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "11",
+              "titel": "Ergebnisse des Monitorings bewerten und daraus Maßnahmen ableiten",
+              "unterpunkte": [
+                "Eskalationsmaßnahmen",
+                "Incident Management",
+                "Fehlerbehebung/Troubleshooting",
+                "Bewertung von Fehlern",
+                "Eindringlings-Angreifer-Überwachung und Abwehr, z. B. IDS/IPS, Honey Pot",
+                "Härtungsmaßnahmen, z. B. Windows: SCCM, MDM, Virenscanner, Endpoint-Security",
+                "etc."
+              ]
+            },
+            {
+              "nummer": "12",
+              "titel": "Benutzeranfragen aufnehmen, analysieren und bearbeiten",
+              "unterpunkte": [
+                "Ticket-Systeme",
+                "1st/2nd/3rd-Level-Support",
+                "Tickets eskalieren",
+                "Schulungsmaßnahmen",
+                "Nachschlagewerke und Standards, z. B. FAQs, Wiki, Knowledge DB, ITIL",
+                "Helpdesk",
+                "Abläufe standardisieren",
+                "etc."
+              ]
+            }
+          ]
         }
-      ],
-      "traps": [
-        "DSGVO ≠ IT-Sicherheit: DSGVO = personenbezogene Daten. IT-Sicherheit ist breiter.",
-        "Asymmetrisch: Public Key verschlüsselt, Private Key entschlüsselt – nicht umgekehrt merken!",
-        "TOM: technisch (Verschlüsselung, Zugangskontrolle) vs. organisatorisch (Schulungen, Richtlinien)."
       ]
     },
     {
-      "week": 4,
-      "title": "AP2 – Organisation, Verträge & Kommunikation",
-      "tasks": [
+      "pruefungsteil": "AP2",
+      "bereich": "Fachrichtungsübergreifende, integrativ zu vermittelnde Fertigkeiten, Kenntnisse und Fähigkeiten (Wirtschafts- und Sozialkunde)",
+      "fragenkomplexe": [
         {
-          "id": "w4t1",
-          "area": "Organisation",
-          "exam": "AP2",
-          "topic": "Unternehmensorganisation",
-          "subtopic": "Einlinien-, Mehrlinien-, Stabliniensystem, Matrixorganisation, Vollmachten",
-          "detail": "Einliniensystem: klare Befehlskette. Mehrliniensystem: mehrere Vorgesetzte. Stabliniensystem: Linie + beratende Stabsstellen. Matrixorganisation: kombiniert Funktions- und Projektstruktur. Vollmachten: Prokura, Handlungsvollmacht.",
-          "relevance": "mittel",
-          "typicalQuestion": "Organisationsform identifizieren. Vor-/Nachteile Matrixorganisation nennen.",
-          "difficulty": "leicht"
+          "nummer": "01",
+          "titel": "Berufsausbildung sowie Arbeits- und Tarifrecht",
+          "quelle": "Systemintegration_AP2_S.7.pdf / Systemintegration_AP2_S.8.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Rechte und Pflichten des Auszubildenden und des Ausbildenden",
+              "unterpunkte": [
+                "Inhalte des Ausbildungsvertrages (§ 10 f. BBiG)",
+                "Vertragspartner",
+                "Beginn und Dauer der Ausbildung",
+                "Sachliche und zeitliche Gliederung der Berufsausbildung, Dauer der täglichen Arbeitszeit",
+                "Probezeit",
+                "Vergütungs- und Urlaubsregelungen",
+                "Kündigungsbedingungen",
+                "Folgen bei Nichteinhaltung der Rechte und Pflichten",
+                "Geltungsbereich",
+                "Beendigung",
+                "Prüfungen, Abschluss"
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Vorteile der Ausbildung im dualen System der Berufsbildung",
+              "unterpunkte": [
+                "Unterschiedliche Lernorte, auf regionaler Ebene",
+                "Zusammenwirken von Betrieb und Berufsschule, z. B. Absprachen, Arbeitskreise, Abstimmung des Zeitpunkts der Vermittlung der Inhalte"
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Aufgaben von Ausbildungsbetrieb, Berufsschule und Kammern im Rahmen der Berufsausbildung",
+              "unterpunkte": [
+                "Regelungstatbestände in Ausbildungsordnung",
+                "Ausbildungsvertrag",
+                "Berufsbildungsgesetz",
+                "Berufsschulpflicht",
+                "Berufsschulzeiten",
+                "Freistellung zur Prüfung",
+                "Bereitstellung von Arbeitsmaterialien"
+              ]
+            },
+            {
+              "nummer": "04",
+              "titel": "Ausbildungsrahmenplan, sachliche und zeitliche Gliederung",
+              "unterpunkte": [
+                "Rahmenlehrplan",
+                "Betrieblicher Ausbildungsplan",
+                "Zuordnung der Lernziele des Ausbildungsrahmenplans zu den Inhalten des betrieblichen Ausbildungsplans, unter Berücksichtigung betrieblicher Besonderheiten",
+                "Einsatz- und Versetzungsplan im Betrieb",
+                "Rahmenplan für die berufsschulische Ausbildung"
+              ]
+            },
+            {
+              "nummer": "05",
+              "titel": "Grundsätze des Individual- und Kollektivarbeitsrechtes",
+              "unterpunkte": [
+                "Kenntnis der Arbeitnehmerrechte und -pflichten im Betrieb",
+                "Berufsbildungsgesetz",
+                "Arbeitsschutzgesetz",
+                "Bundesferiengesetz",
+                "Allgemeines Gleichbehandlungsgesetz",
+                "Kündigungsschutzgesetz",
+                "Jugendarbeitsschutzgesetz",
+                "Arbeitsstättenverordnung",
+                "Arbeitszeitgesetz",
+                "Betriebsverfassungsgesetz",
+                "Betriebsvereinbarungen, z. B. betriebliche Arbeitszeitregelung, betriebliches Beurteilungsverfahren",
+                "Sozialversicherung",
+                "Lohnsteuer",
+                "Mutterschutzgesetz",
+                "Schwerbehindertengesetz"
+              ]
+            },
+            {
+              "nummer": "06",
+              "titel": "Arbeitgeberorganisationen",
+              "unterpunkte": [
+                "Arbeitgeberverbände",
+                "Industrie- und Handelskammern",
+                "Wirtschaftsverbände"
+              ]
+            },
+            {
+              "nummer": "07",
+              "titel": "Arbeitnehmerorganisationen",
+              "unterpunkte": [
+                "Gewerkschaften",
+                "Betriebsräte: Wahl und Zusammensetzung",
+                "Mitbestimmungs- und Mitwirkungsrechte",
+                "Betriebsversammlung",
+                "Einigungsstelle",
+                "Jugend- und Auszubildendenvertretung"
+              ]
+            },
+            {
+              "nummer": "08",
+              "titel": "Tarifrecht",
+              "unterpunkte": [
+                "Tarifverträge",
+                "Tarifautonomie",
+                "Tarifverhandlung",
+                "Tarifkonflikt (Arbeitskampf)",
+                "Schlichtung",
+                "Tarifbindung",
+                "Geltungsbereich",
+                "Laufzeit"
+              ]
+            },
+            {
+              "nummer": "09",
+              "titel": "Lohn- und Gehaltsformen",
+              "unterpunkte": [
+                "Brutto/Netto",
+                "Lohnsteuer, Kirchensteuer",
+                "Sozialabgaben",
+                "Vermögenswirksame Leistungen"
+              ]
+            },
+            {
+              "nummer": "10",
+              "titel": "Lebensbegleitendes Lernen",
+              "unterpunkte": [
+                "Regelungen und Möglichkeiten für interne und externe Weiterbildung in Betrieb und Branche, evtl. tarifvertragliche Regelungen",
+                "Berufliche Fortbildung und Umschulung",
+                "Innerbetriebliche Fortbildung",
+                "Staatliche Fördermaßnahmen"
+              ]
+            },
+            {
+              "nummer": "11",
+              "titel": "Lerntechniken",
+              "unterpunkte": [
+                "Visuelles Lernen, z. B. Lernposter mit Mindmaps, Schaubilder, Grafiken erstellen, Videos ansehen, eigene Zusammenfassungen und Lernkarteien schreiben",
+                "Auditives Lernen, z. B. Lerngruppen bilden, Vorträge anhören, Lerninhalte aufnehmen und abspielen",
+                "Kommunikatives Lernen, z. B. Dialoge, Diskussionen, Lerngruppen, Frage-Antwort-Spiele",
+                "Motorisches Lernen, z. B. 'Learning by Doing', Rollenspiele, Gruppenaktivitäten"
+              ]
+            },
+            {
+              "nummer": "12",
+              "titel": "Arbeitstechniken",
+              "unterpunkte": [
+                "Zeitmanagementtechniken",
+                "Moderations- und Präsentationstechniken",
+                "Arbeitsplanung- und Projektplanungstechniken",
+                "Verschiedene Arbeitstechniken erlernen",
+                "Gestaltung eines lernförderlichen und das Lernen integrierenden Arbeitsplatzes",
+                "Beschaffung, Auswahl und Auswertung von Fachinformationen",
+                "Digitale Lernmedien nutzen und individuell bewerten: Internet, Apps, Plattformen, Netzwerke, Computer Based Training (CBT), Web Based Training (WBT), Umgang mit mobilen Endgeräten"
+              ]
+            },
+            {
+              "nummer": "13",
+              "titel": "Berufliche Fortbildung und Umschulung",
+              "unterpunkte": [
+                "Staatliche Fördermaßnahmen",
+                "Erhaltungsfortbildung",
+                "Anpassungsfortbildung",
+                "Aufstiegsfortbildung",
+                "Innerbetriebliche Fortbildung"
+              ]
+            },
+            {
+              "nummer": "14",
+              "titel": "Lebensplanung",
+              "unterpunkte": [
+                "Regelungen und Möglichkeiten für interne und externe Weiterbildung in Betrieb und Branche, evtl. tarifvertragliche Regelungen",
+                "Bildungseinrichtungen",
+                "Auslandsaufenthalte, z. B. mithilfe von EU-Förderprogrammen",
+                "Persönliche Weiterbildung: Studium von Fachliteratur, Selbstlernmaterialien, Fachmessen",
+                "Entwicklung bezüglich: Eigenständigkeit, Verantwortung, Reflexivität, Lernkompetenz, Team- und Führungsfähigkeit, Mitgestaltung, Kommunikation",
+                "Überbetriebliche Fortbildung",
+                "Europass",
+                "Mobilitätsprogramme",
+                "Europäische Sozialcharta",
+                "Potenzialanalyse",
+                "Karriereplanung",
+                "Möglichkeiten und Grenzen einer Existenzgründung"
+              ]
+            }
+          ]
         },
         {
-          "id": "w4t2",
-          "area": "Vertragsrecht",
-          "exam": "AP2",
-          "topic": "Leistungserbringung & Vertragsrecht",
-          "subtopic": "BGB/HGB, AGB, Remote vs. vor Ort, Ticketsystem, SLA, Erfüllungsort",
-          "detail": "BGB: Vertragsabschluss (Angebot + Annahme), Gewährleistung, Garantie. HGB: Kaufleute. AGB: vorformulierte Vertragsbedingungen. SLA: Verfügbarkeit, Reaktionszeit, Lösungszeit. Compliance: Einhaltung von Vorschriften.",
-          "relevance": "hoch",
-          "typicalQuestion": "Unterschied Gewährleistung vs. Garantie. SLA-Inhalt beschreiben.",
-          "difficulty": "mittel"
+          "nummer": "02",
+          "titel": "Aufbau und Organisation des Ausbildungsbetriebes",
+          "quelle": "Systemintegration_AP2_S.9.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Der Betrieb",
+              "unterpunkte": [
+                "Branchenzugehörigkeit",
+                "Gesamtwirtschaft, z. B. primärer, sekundärer, tertiärer Sektor, erwerbswirtschaftliche Betriebe",
+                "Produktpalette und Märkte"
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Rechtsformen",
+              "unterpunkte": [
+                "Gesellschaft bürgerlichen Rechts",
+                "Personengesellschaften, z. B. Einzelunternehmung, KG, OHG, GmbH & Co. KG",
+                "Kapitalgesellschaften, z. B. GmbH, AG",
+                "Gemeinnützige Organisationen"
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Unternehmensstruktur und Organisationsform",
+              "unterpunkte": [
+                "Einlinien- bzw. Mehrlinie-, Stablinienssystem",
+                "Spartenorganisation",
+                "Matrixorganisation",
+                "Arbeitsabläufe",
+                "Aufgabenteilung"
+              ]
+            },
+            {
+              "nummer": "04",
+              "titel": "Wirtschaftliche Verflechtungen",
+              "unterpunkte": [
+                "Konzern",
+                "Kartell",
+                "Fusion"
+              ]
+            },
+            {
+              "nummer": "05",
+              "titel": "Ziele von Betrieben und Unternehmen",
+              "unterpunkte": [
+                "Produktivität",
+                "Wirtschaftlichkeit",
+                "Rentabilität",
+                "Zielkonflikte"
+              ]
+            },
+            {
+              "nummer": "06",
+              "titel": "Betriebliche und gesamtwirtschaftliche Arbeitsteilung",
+              "unterpunkte": [
+                "Globalisierung",
+                "Möglichkeiten und Grenzen der Sozialen Marktwirtschaft"
+              ]
+            },
+            {
+              "nummer": "07",
+              "titel": "Ziele und Aufgaben von Arbeitgeber- und Arbeitnehmerverbänden",
+              "unterpunkte": [
+                "Branchenspezifische Gewerkschaften und Arbeitgeberverbände",
+                "Wirtschaftsorganisationen",
+                "Berufsständische Vertretungen und Organisationen",
+                "Ehrenamtliche Mitwirkung, z. B. Prüfungsausschuss"
+              ]
+            },
+            {
+              "nummer": "08",
+              "titel": "Ziele und Aufgaben von Behörden und Verwaltungen",
+              "unterpunkte": []
+            },
+            {
+              "nummer": "09",
+              "titel": "Grundsatz der vertrauensvollen Zusammenarbeit zwischen Arbeitgeber- und Arbeitnehmervertretern",
+              "unterpunkte": [
+                "Grundlage des Betriebsverfassungsgesetzes, Betriebsrat",
+                "Jugend- und Auszubildendenvertreter und deren Informations-, Beratungs- und Mitbestimmungsrechte",
+                "Betriebsvereinbarungen bzw. Personalvertretung auf Grundlage des Personalvertretungsgesetzes"
+              ]
+            }
+          ]
         },
         {
-          "id": "w4t3",
-          "area": "Kommunikation",
-          "exam": "AP2",
-          "topic": "Kommunikation & Präsentation",
-          "subtopic": "Aktives Zuhören, CRM, Corporate Identity, Visualisierung, Präsentationstechnik",
-          "detail": "Aktives Zuhören: paraphrasieren, nachfragen. CRM: Kundendaten und -beziehungen verwalten. Corporate Identity: einheitliches Erscheinungsbild. Präsentation: Struktur (Einstieg, Hauptteil, Schluss), Visualisierung.",
-          "relevance": "mittel",
-          "typicalQuestion": "Aktives Zuhören beschreiben. Was ist CRM? Präsentationsaufbau erklären.",
-          "difficulty": "leicht"
+          "nummer": "03",
+          "titel": "Sicherheit und Gesundheitsschutz bei der Arbeit",
+          "quelle": "Systemintegration_AP2_S.9.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Gesundheits- und Arbeitsschutzvorschriften",
+              "unterpunkte": [
+                "Arbeitsschutzgesetz",
+                "Arbeitssicherheitsgesetz",
+                "Arbeitszeitgesetz",
+                "Betriebssicherheitsverordnung",
+                "Arbeitsstättenverordnung",
+                "Unfallverhütungsvorschriften (UVV)",
+                "Arbeitsplatzergonomie",
+                "Bildschirmarbeitsverordnung",
+                "Aufsichtsbehörde für Arbeitsschutz (Gewerbeaufsicht)",
+                "Jugendarbeitsschutzgesetz"
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Gefährdungen und Beanspruchungen wahrnehmen und einschätzen",
+              "unterpunkte": [
+                "Mechanisch, elektrisch, thermisch, chemisch",
+                "Ergonomisch, akustisch, psychisch",
+                "Gefähren beachten und ggf. melden",
+                "Sicherheitshinweise, Vorschriften und Anweisungen beachten",
+                "Besondere Fürsorgepflicht des Arbeitgebers",
+                "Ersthelfer an Arbeitsplatz",
+                "Ergonomische Arbeitsplatzgestaltung"
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Vorsorgeuntersuchungen",
+              "unterpunkte": [
+                "Augenuntersuchung für Bildschirmarbeitsplätze",
+                "Psychische Gefährdungsbeurteilung"
+              ]
+            },
+            {
+              "nummer": "04",
+              "titel": "Aufgaben der Sicherheitsbeauftragten",
+              "unterpunkte": []
+            },
+            {
+              "nummer": "05",
+              "titel": "Vorschriften im betrieblichen und persönlichen Arbeitsablauf",
+              "unterpunkte": [
+                "Sachgerechter Umgang mit Gefahrenpotenzialen",
+                "Allgemeine und betriebliche Verhaltensregeln",
+                "Wissen über Fluchtwege",
+                "Notausgang (Kennzeichnung)",
+                "Im Gebäude/am Arbeitsplatz",
+                "Schutzarten elektrischer Betriebsmittel",
+                "Schutzklassen",
+                "Prüfzeichen, z. B. CE-Zeichen",
+                "Schriften, Farben und Zeichen des Arbeitsschutzes"
+              ]
+            },
+            {
+              "nummer": "06",
+              "titel": "Verhaltensweisen bei Unfällen",
+              "unterpunkte": [
+                "Erste-Hilfe-Maßnahmen",
+                "Ersthelfer, Notruf- und Notfallnummern",
+                "Meldeketten",
+                "Fluchtwege und Sammelplätze",
+                "Evakuierung und Dokumentation",
+                "Meldepflicht von Unfällen"
+              ]
+            },
+            {
+              "nummer": "07",
+              "titel": "Verhaltensweisen im Brandfall sowie vorbeugender Brandschutz",
+              "unterpunkte": [
+                "Brandursachen durch brennbare Stoffe und Hitzeentwicklung, z. B. nicht ausgeschaltete Heißwasserkocher und Kaffeemaschinen",
+                "Brandschutzordnung",
+                "Verhalten in Brandfällen, z. B. Verbot zur Fahrstuhlnutzung, Schließen von Türen und Fenstern in Gebäude/am Arbeitsplatz",
+                "Brandschutzmittel: Feuerlöscher (Standort, Bedienungsanleitung, Wirkungsweise), Löschdecken",
+                "Sammelplätze",
+                "Flucht- und Rettungswege",
+                "Sicherheitszeichen",
+                "Brandschutzklassen (A, B, C, D)",
+                "Brandmeldung"
+              ]
+            }
+          ]
         },
         {
-          "id": "w4t4",
-          "area": "IT-Sicherheit",
-          "exam": "AP2",
-          "topic": "IT-Sicherheitsvorfälle & Bedrohungen",
-          "subtopic": "Ransomware, Phishing, Social Engineering, Schadenspotenziale, präventive Maßnahmen",
-          "detail": "Ransomware: Verschlüsselung von Daten, Lösegeld. Phishing: gefälschte E-Mails/Webseiten zur Datenmitnahme. Social Engineering: Manipulation von Menschen. Präventiv: Schulungen, Backups, Patchmanagement, MFA.",
-          "relevance": "hoch",
-          "typicalQuestion": "Ransomware-Angriff beschreiben und Schutzmaßnahmen nennen. Phishing erkennen.",
-          "difficulty": "mittel"
+          "nummer": "04",
+          "titel": "Umweltschutz",
+          "quelle": "Systemintegration_AP2_S.10.pdf",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Umweltbelastungen wahrnehmen und vermeiden helfen",
+              "unterpunkte": [
+                "Spezifische Risiken der IT-Prozesse sowie von IT-beteiligten Prozessen, z. B. USV-Anlagen",
+                "Rationelle Energie- und Ressourcenverwendung, z. B. unnötige Gerätlaufzeiten vermeiden, Umgang mit Speicher- und Printmedien",
+                "Wiederverwertung (Recycling)",
+                "Abfalltrennung und -vermeidung"
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Umgang mit Abfällen",
+              "unterpunkte": [
+                "Branchenspezifische Abfälle: Erfassung",
+                "Lagerung und Entsorgung von z. B. Datenträgern oder Kabeln"
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Öffentliche Systeme und Verordnungen/Gesetze",
+              "unterpunkte": [
+                "Teilnahme am Dualen System im Hinblick auf Verpackungsentsorgung",
+                "Immissionsschutzgesetz, technische Anleitungen, z. B. zu Lärm, Luft, Abfall"
+              ]
+            },
+            {
+              "nummer": "04",
+              "titel": "Externe Auswirkungen",
+              "unterpunkte": [
+                "Im Rahmen von Nachhaltigkeit sind auch Auswirkungen auf Umwelt, Pflanzen, Tiere, Lebensräume zu reflektieren"
+              ]
+            },
+            {
+              "nummer": "05",
+              "titel": "Umweltschonende Ressourcennutzung",
+              "unterpunkte": [
+                "Berücksichtigen wirtschaftlicher Nachhaltigkeit bereits bei Einkauf und Lieferantenauswahl",
+                "Sparsamer und selektiver Umgang mit Roh-, Hilfs- und Betriebsstoffen (ggf. erforderliche Kennzeichnung und getrennte Lagerung beachten)",
+                "Ressourcenverbrauch und Umweltschutz in Kombination denken, z. B. Nutzung von Strom aus regenerativen Quellen"
+              ]
+            },
+            {
+              "nummer": "06",
+              "titel": "Abfallvermeidung und -reduzierung",
+              "unterpunkte": []
+            },
+            {
+              "nummer": "07",
+              "titel": "Rechtsfolgen bei Nichteinhaltung",
+              "unterpunkte": []
+            }
+          ]
+        },
+        {
+          "nummer": "05",
+          "titel": "Vernetztes Zusammenarbeiten unter Nutzung digitaler Medien",
+          "quelle": "Systemintegration_AP2_S.11.pdf (linke Katalogseite)",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Wertschätzende Zusammenarbeit",
+              "unterpunkte": [
+                "Interdisziplinarität, Interkulturalität",
+                "Fähigkeit, effektiv, integer und respektvoll mit verschiedenen Teams zusammenzuarbeiten",
+                "Übernahme gemeinsamer Verantwortung für die Zusammenarbeit und Wertschätzung der einzelnen Beiträge jedes Teammitglieds",
+                "Unternehmenswerte beachten und betriebliche Ethikregeln anwenden"
+              ]
+            },
+            {
+              "nummer": "02",
+              "titel": "Informationstechnische Schutzziele bei der Kommunikation kennen und umsetzen",
+              "unterpunkte": [
+                "Die Notwendigkeit zur Entwicklung eines Sicherheitsbewusstseins bei der Nutzung von IT-Technik im privaten und betrieblichen Bereich entwickeln",
+                "Reflexion von Erfahrungen in virtuellen Räumen",
+                "Bei der Nutzung von Social Media die Gefahren für die IT-Sicherheit im privaten und betrieblichen Bereich kennen und beachten",
+                "Im Umgang mit Kommunikation und Information Zuständigkeitsabgrenzung verdeutlichen",
+                "Sicherer Umgang mit dienstlichen E-Mails, kurzer, zielführender, höflicher und korrekter Informationsaustausch per E-Mail, Regeln für die richtige 'Netikette'",
+                "Nachrichten und Inhalte auch aus Sicht der Empfänger betrachten",
+                "Sensibler Umgang mit Adressatenlisten in der digitalen Kommunikation",
+                "Die möglichen (auch juristischen) Konsequenzen von Äußerungen über den eigenen Arbeitgeber in sozialen Netzwerken berücksichtigen",
+                "Die Gefahren des 'Social Engineering' kennen und Schäden vermeiden"
+              ]
+            },
+            {
+              "nummer": "03",
+              "titel": "Ethische Aspekte und Compliance-Regelungen berücksichtigen",
+              "unterpunkte": [
+                "'Diversity' gewährleisten und unterschiedliche Perspektiven und Befindlichkeiten berücksichtigen",
+                "Gender-Neutralität gewährleisten, aber auch z. B. das dritte Geschlecht berücksichtigen",
+                "Im Zentrum ethischer Aspekte steht die Würde aller Menschen sowie deren Integrität. Diese ist für alle direkt und indirekt Betroffenen der IT-Lösungen kurz-, mittel- und langfristig zu gewährleisten.",
+                "Im Rahmen von Nachhaltigkeit sind auch Auswirkungen auf alles Lebendige (Umwelt, Pflanzen, Tiere, Lebensräume) zu reflektieren.",
+                "Ergänzend dazu sind auch allgemeine und betriebliche Compliance-Regelungen zu berücksichtigen."
+              ]
+            }
+          ]
+        },
+        {
+          "nummer": "08",
+          "titel": "Grundlagen der IT-Sicherheit kennen und umsetzen",
+          "quelle": "Systemintegration_AP2_S.10.pdf (linke Katalogseite)",
+          "themenkreise": [
+            {
+              "nummer": "01",
+              "titel": "Die Ziele von Informationssicherheit und Datenschutz kennen und unterscheiden",
+              "unterpunkte": []
+            },
+            {
+              "nummer": "02",
+              "titel": "Die Ziele der europäischen Datenschutz-Grundverordnung (DSGVO) kennen",
+              "unterpunkte": []
+            },
+            {
+              "nummer": "03",
+              "titel": "Die Verfügbarkeit, Integrität, Vertraulichkeit und Authentizität von Daten berücksichtigen",
+              "unterpunkte": []
+            },
+            {
+              "nummer": "04",
+              "titel": "Die Aufgaben des Bundesamtes für Sicherheit in der Informationstechnik (BSI) kennen",
+              "unterpunkte": []
+            },
+            {
+              "nummer": "05",
+              "titel": "Die Empfehlungen und Standards des BSI beachten und einhalten",
+              "unterpunkte": []
+            },
+            {
+              "nummer": "06",
+              "titel": "Das betriebliche IT-Sicherheitskonzept kennen und beachten",
+              "unterpunkte": []
+            },
+            {
+              "nummer": "07",
+              "titel": "Technisch-organisatorische Maßnahmen (TOM) zur Gewährleistung der IT-Sicherheit kennen und umsetzen",
+              "unterpunkte": []
+            }
+          ]
         }
-      ],
-      "traps": [
-        "Gewährleistung (gesetzlich, 2 Jahre) ≠ Garantie (freiwillig vom Hersteller).",
-        "Matrix-Organisation: Mitarbeiter hat zwei Vorgesetzte – Konfliktpotenzial!",
-        "Ransomware: Backup allein reicht nicht – Backup muss offline/isoliert sein."
-      ]
-    },
-    {
-      "week": 5,
-      "title": "AP2 – Netzwerkmodelle & Grundlagen",
-      "tasks": [
-        {
-          "id": "w5t1",
-          "area": "Netzwerk",
-          "exam": "AP1/AP2",
-          "topic": "Netzwerkmodelle",
-          "subtopic": "OSI-Modell (7 Schichten), TCP/IP-Modell, Protokollzuordnung",
-          "detail": "OSI: Bitübertragung, Sicherung, Vermittlung, Transport, Sitzung, Darstellung, Anwendung. TCP/IP: 4 Schichten (Netzzugang, Internet, Transport, Anwendung). Protokolle zuordnen: HTTP→7, TCP→4, IP→3, Ethernet→2.",
-          "relevance": "hoch",
-          "typicalQuestion": "Protokoll einer OSI-Schicht zuordnen. Unterschied OSI vs. TCP/IP.",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w5t2",
-          "area": "Netzwerk",
-          "exam": "AP1/AP2",
-          "topic": "Netzwerkkomponenten",
-          "subtopic": "Switch, Router, Firewall, Bridge, Hub, Access Point, Loadbalancer",
-          "detail": "Hub: überträgt an alle (Kollisionsdomäne). Switch: Schicht 2, lernt MAC-Adressen. Router: Schicht 3, verbindet Netzwerke, kennt IP. Firewall: filtert Pakete nach Regeln. Bridge: verbindet zwei Segmente.",
-          "relevance": "hoch",
-          "typicalQuestion": "Welche Komponente arbeitet auf welcher OSI-Schicht? Switch vs. Router.",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w5t3",
-          "area": "Netzwerk",
-          "exam": "AP2",
-          "topic": "Netzwerktopologien & -typen",
-          "subtopic": "LAN/WAN/MAN/GAN, VLAN, Peer-to-Peer, Client-Server, Topologien",
-          "detail": "Bus, Ring, Stern, Mesh. LAN: lokal. WAN: weiträumig. MAN: städtisch. VLAN: logische Trennung im Switch. Client-Server: zentrale Ressource. Peer-to-Peer: gleichwertige Partner.",
-          "relevance": "mittel",
-          "typicalQuestion": "Netzwerktypen unterscheiden. Wann VLAN, wann physische Trennung?",
-          "difficulty": "leicht"
-        }
-      ],
-      "traps": [
-        "Hub ≠ Switch: Hub überträgt an alle Ports, Switch nur an den Ziel-Port.",
-        "OSI nur aufsagen reicht nicht – Protokolle und Geräte müssen den Schichten zugeordnet werden können.",
-        "VLAN trennt Broadcast-Domänen, nicht physische Netzwerke."
-      ]
-    },
-    {
-      "week": 6,
-      "title": "AP2 – Netzwerkdienste & VPN",
-      "tasks": [
-        {
-          "id": "w6t1",
-          "area": "Netzwerk",
-          "exam": "AP1/AP2",
-          "topic": "Netzwerkdienste",
-          "subtopic": "DNS, DHCP, Proxy, NAT/PAT, NTP",
-          "detail": "DNS: Namensauflösung (Hostname → IP). DHCP: automatische IP-Vergabe, Lease-Zeit. Proxy: Stellvertreter (Caching, Filterung). NAT: private IP → öffentliche IP. PAT: mehrere Geräte teilen eine IP über Ports.",
-          "relevance": "hoch",
-          "typicalQuestion": "DNS vs. DHCP erklären. Was passiert bei DNS-Ausfall? NAT/PAT beschreiben.",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w6t2",
-          "area": "Netzwerk",
-          "exam": "AP2",
-          "topic": "VPN & Tunneling",
-          "subtopic": "Site-to-Site, Remote-Access, IPSec (Tunnel/Transport), OpenVPN, WireGuard",
-          "detail": "Site-to-Site: verbindet ganze Netzwerke. Remote-Access: Einzelgerät ins Firmennetz. IPSec-Modi: Tunnel (ganzes Paket verschlüsselt) vs. Transport (nur Payload). Protokolle: IKE für Schlüsselaustausch.",
-          "relevance": "hoch",
-          "typicalQuestion": "VPN-Typen unterscheiden. IPSec Tunnel vs. Transport-Modus. Wann welchen Typ?",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w6t3",
-          "area": "Netzwerk",
-          "exam": "AP1/AP2",
-          "topic": "WLAN-Sicherheit & Funknetze",
-          "subtopic": "WPA2/WPA3, 802.1X, SSID, Bluetooth, WLAN-Controller, Access Point",
-          "detail": "WPA2 (AES/CCMP) vs. WPA3 (SAE, Forward Secrecy). 802.1X: Enterprise-Authentifizierung mit RADIUS. SSID verstecken allein schützt nicht. WLAN-Controller verwaltet mehrere APs zentral.",
-          "relevance": "mittel",
-          "typicalQuestion": "WLAN absichern – welche Maßnahmen empfehlen? WPA2 vs. WPA3.",
-          "difficulty": "leicht"
-        }
-      ],
-      "traps": [
-        "DNS/DHCP verwechseln – DNS = Namen auflösen, DHCP = IP-Adressen vergeben (Punktkiller!).",
-        "NAT ≠ PAT: NAT übersetzt eine IP, PAT teilt eine IP über verschiedene Ports.",
-        "IPSec Tunnel-Modus verschlüsselt das gesamte Paket inkl. Original-IP-Header."
-      ]
-    },
-    {
-      "week": 7,
-      "title": "AP2 – IP-Adressierung & Subnetting",
-      "tasks": [
-        {
-          "id": "w7t1",
-          "area": "Netzwerk",
-          "exam": "AP1/AP2",
-          "topic": "IP-Adressierung",
-          "subtopic": "CIDR-Notation, Subnetzmaske, IPv4 vs. IPv6, private Adressbereiche",
-          "detail": "Präfixlänge: /24 = 255.255.255.0. Private IPv4: 10.x.x.x, 172.16-31.x.x, 192.168.x.x. IPv6: 128 Bit, Hexadezimal, ::1 = Loopback. APIPA: 169.254.x.x wenn kein DHCP.",
-          "relevance": "hoch",
-          "typicalQuestion": "Subnetzmaske aus CIDR ableiten. Private vs. öffentliche IP-Bereiche nennen.",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w7t2",
-          "area": "Netzwerk",
-          "exam": "AP1/AP2",
-          "topic": "Netz- & Broadcastadresse",
-          "subtopic": "Netzadresse, Broadcastadresse, nutzbare Hosts berechnen",
-          "detail": "Netzadresse: erste Adresse (Host-Teil = 0). Broadcast: letzte Adresse (Host-Teil = alle 1). Nutzbare Hosts = 2^n - 2. Beispiel /26: 2^6 - 2 = 62 Hosts.",
-          "relevance": "hoch",
-          "typicalQuestion": "Broadcastadresse aus IP und Subnetzmaske bestimmen. Nutzbare Hosts bei /26?",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w7t3",
-          "area": "Netzwerk",
-          "exam": "AP1/AP2",
-          "topic": "Subnetting",
-          "subtopic": "Netz aufteilen, Präfix wählen, Subnetzadressen berechnen",
-          "detail": "Vorgehensweise: Hostbedarf → 2^n ≥ Hosts+2 → Präfix = 32-n. /24 in 4 Subnetze: /26. Subnetzadressen in Schritten berechnen. Schritt = 256 - Subnetzmaske letztes Oktett.",
-          "relevance": "hoch",
-          "typicalQuestion": "Netz 192.168.1.0/24 in 4 Subnetze aufteilen. Welcher Präfix für 100 Hosts?",
-          "difficulty": "schwer"
-        }
-      ],
-      "traps": [
-        "IHK fragt nach nutzbaren Hosts → immer -2 (Netzadresse + Broadcast nicht nutzbar)!",
-        "Subnetzmaske /26 in Binär: 11000000 im letzten Oktett = 192 → 255.255.255.192.",
-        "2^n vergessen: /26 hat 6 Host-Bits → 2^6 = 64 Adressen, nicht 26!"
-      ]
-    },
-    {
-      "week": 8,
-      "title": "AP2 – Netzwerkinstallation & -konfiguration",
-      "tasks": [
-        {
-          "id": "w8t1",
-          "area": "Netzwerk",
-          "exam": "AP2",
-          "topic": "Netzwerkkomponenten installieren & konfigurieren",
-          "subtopic": "Router, Switch, WLAN-Controller, Access Point, Firewall, Loadbalancer",
-          "detail": "Switch-Konfiguration: VLAN, Trunk-Port (802.1Q), Spanning Tree (STP). Router: statische/dynamische Routen. Firewall: Regelwerk (von oben nach unten). Loadbalancer: Anfragen verteilen.",
-          "relevance": "hoch",
-          "typicalQuestion": "VLAN auf Switch konfigurieren. Trunk-Port vs. Access-Port. STP-Funktion erklären.",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w8t2",
-          "area": "Netzwerk",
-          "exam": "AP2",
-          "topic": "Netzwerkdienste administrieren",
-          "subtopic": "Spanning Tree, Routing, NAT/PAT, QoS, First Hop Redundancy (HSRP/VRRP)",
-          "detail": "Spanning Tree: verhindert Schleifen im Netz. QoS: Priorisierung von Datenverkehr (z.B. VoIP). HSRP/VRRP: Redundanz beim Default Gateway. Routing: statisch vs. dynamisch (OSPF, BGP).",
-          "relevance": "mittel",
-          "typicalQuestion": "Wofür ist Spanning Tree zuständig? QoS erklären. HSRP beschreiben.",
-          "difficulty": "schwer"
-        },
-        {
-          "id": "w8t3",
-          "area": "Netzwerk",
-          "exam": "AP2",
-          "topic": "Übertragungsmedien & Topologien",
-          "subtopic": "Glasfaser (LWL), Kupfer (Cat5e/6/7), Funk (WLAN), WAN-Anbindung",
-          "detail": "Kupfer: Cat5e bis 1 GBit, Cat6 bis 10 GBit (55m), Cat7 abgeschirmt. Glasfaser: Single-Mode (weit) vs. Multi-Mode (kürzer). Funk: 2,4 GHz (Reichweite) vs. 5 GHz (Geschwindigkeit). WAN: DSL, Glasfaser, Richtfunk.",
-          "relevance": "mittel",
-          "typicalQuestion": "Übertragungsmedium für Szenario auswählen. Single-Mode vs. Multi-Mode Glasfaser.",
-          "difficulty": "leicht"
-        },
-        {
-          "id": "w8t4",
-          "area": "Netzwerk",
-          "exam": "AP2",
-          "topic": "Netzwerkanalyse & Optimierung",
-          "subtopic": "Redundanz, Load Balancing, Ping, Traceroute, Wireshark, Nmap",
-          "detail": "Ping: Erreichbarkeit (ICMP). Traceroute: Pfad zum Ziel. Wireshark: Paketanalyse. Nmap: Port-Scan. Redundanz: mehrere Wege/Geräte. Load Balancing: Last verteilen.",
-          "relevance": "mittel",
-          "typicalQuestion": "Welches Tool für welche Diagnose? Ping vs. Traceroute. Netzwerkredundanz beschreiben.",
-          "difficulty": "leicht"
-        }
-      ],
-      "traps": [
-        "Trunk-Port ≠ Access-Port: Trunk trägt mehrere VLANs (getaggt), Access nur eines (ungetaggt).",
-        "Spanning Tree verhindert Layer-2-Schleifen – ohne STP bricht das Netz zusammen.",
-        "Ping nutzt ICMP – kein TCP oder UDP!"
-      ]
-    },
-    {
-      "week": 9,
-      "title": "AP2 – Netzwerksicherheit & Berechtigungen",
-      "tasks": [
-        {
-          "id": "w9t1",
-          "area": "IT-Sicherheit",
-          "exam": "AP2",
-          "topic": "Netzwerksicherheit",
-          "subtopic": "Firewall, NGFW, IDS/IPS, DMZ, Portsecurity, Webfilter",
-          "detail": "DMZ: entmilitarisierte Zone zwischen internem Netz und Internet. IDS: erkennt passiv. IPS: blockiert aktiv. NGFW: Next-Gen Firewall mit Deep Packet Inspection. Portsecurity: MAC-basierte Zugangskontrolle am Switch.",
-          "relevance": "hoch",
-          "typicalQuestion": "DMZ-Aufbau skizzieren. IDS vs. IPS. Webserver in DMZ oder internem Netz?",
-          "difficulty": "schwer"
-        },
-        {
-          "id": "w9t2",
-          "area": "IT-Sicherheit",
-          "exam": "AP2",
-          "topic": "Berechtigungskonzepte",
-          "subtopic": "RBAC, LDAP, ACL, AGDLP, Minimalprinzip, User Accounts, Sicherheitsgruppen",
-          "detail": "RBAC: Rechte an Rollen, nicht direkt an Personen. LDAP: verzeichnisbasierte Benutzerverwaltung. ACL: Access Control List. AGDLP: Account → Global → Domain Local → Permission. Minimalprinzip: nur nötige Rechte.",
-          "relevance": "hoch",
-          "typicalQuestion": "RBAC erklären. AGDLP-Prinzip beschreiben. Was ist das Minimalprinzip?",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w9t3",
-          "area": "IT-Sicherheit",
-          "exam": "AP1/AP2",
-          "topic": "Authentifizierung & Zertifikate",
-          "subtopic": "MFA, PKI, SSO, RADIUS, OTP, Hardwaretoken, Zertifikate",
-          "detail": "Faktoren: Wissen (Passwort), Besitz (Token), Biometrie. MFA = mind. 2 Faktoren. PKI: CA stellt Zertifikate aus (X.509). SSO: einmal anmelden. RADIUS: Authentifizierungsserver für Netzwerkzugang.",
-          "relevance": "hoch",
-          "typicalQuestion": "MFA-Faktoren erklären. PKI-Ablauf beschreiben. Authentifizierung vs. Autorisierung.",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w9t4",
-          "area": "IT-Sicherheit",
-          "exam": "AP2",
-          "topic": "Sicherheitsrichtlinien & Compliance",
-          "subtopic": "BSI-Richtlinien, BYOD, DLP, Nutzerordnung, Betriebsvereinbarungen",
-          "detail": "BYOD (Bring Your Own Device): private Geräte im Firmennetz – Risiken und Regelungen. DLP (Data Loss Prevention): verhindert unautorisierten Datenabfluss. Betriebsvereinbarung: Mitbestimmung des Betriebsrats.",
-          "relevance": "mittel",
-          "typicalQuestion": "BYOD-Risiken nennen. Was regelt DLP? Sicherheitsrichtlinie beschreiben.",
-          "difficulty": "leicht"
-        }
-      ],
-      "traps": [
-        "DMZ-Aufbau: Webserver in DMZ, Datenbankserver im internen Netz – nie umgekehrt!",
-        "Authentifizierung (wer bist du?) ≠ Autorisierung (was darfst du?).",
-        "LDAP speichert Identitäten, ist selbst kein Authentifizierungsprotokoll."
-      ]
-    },
-    {
-      "week": 10,
-      "title": "AP2 – Speichersysteme, RAID & Backup",
-      "tasks": [
-        {
-          "id": "w10t1",
-          "area": "Infrastruktur",
-          "exam": "AP2",
-          "topic": "Speichersysteme",
-          "subtopic": "NAS, SAN, DAS, Cloud-Storage, blockbasiert vs. dateibasiert",
-          "detail": "DAS: direkt angeschlossen. NAS: Dateibasiert per Netzwerk (SMB/NFS). SAN: Blockbasiert per FC/iSCSI, wirkt wie lokale Festplatte. Cloud: skalierbar, unveränderlich (WORM) oder veränderlich.",
-          "relevance": "hoch",
-          "typicalQuestion": "NAS vs. SAN – Unterschied und Einsatzgebiet. Wann SAN, wann NAS?",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w10t2",
-          "area": "Infrastruktur",
-          "exam": "AP2",
-          "topic": "RAID",
-          "subtopic": "RAID 0, 1, 5, 6, 10 – Kapazität, Ausfalltoleranz, Nutzspeicher berechnen",
-          "detail": "RAID 0: Striping, kein Schutz. RAID 1: Spiegelung, 1 Ausfall. RAID 5: 1 Parität, min. 3 Disks, (n-1)×Disk. RAID 6: 2 Paritäten, 2 Ausfälle, (n-2)×Disk. RAID 10: 1+0, min. 4 Disks.",
-          "relevance": "hoch",
-          "typicalQuestion": "Nutzspeicher bei RAID 5 mit 4×2TB berechnen. Wie viele Disks dürfen ausfallen?",
-          "difficulty": "schwer"
-        },
-        {
-          "id": "w10t3",
-          "area": "Infrastruktur",
-          "exam": "AP1/AP2",
-          "topic": "Backup-Strategien",
-          "subtopic": "Vollbackup, Differenziell, Inkrementell, Snapshot, 3-2-1-Regel, Aufbewahrungsfristen",
-          "detail": "Voll: alles. Differenziell: seit letztem Vollbackup (wächst). Inkrementell: seit letztem Backup (kleiner). Snapshot: Zustandsabbild, kein echtes Backup! 3-2-1: 3 Kopien, 2 Medien, 1 offsite. Backupdauer + Wiederherstellungsdauer berechnen können.",
-          "relevance": "hoch",
-          "typicalQuestion": "Backup-Arten vergleichen. Wiederherstellungsaufwand: Vollbackup vs. inkrementell.",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w10t4",
-          "area": "Infrastruktur",
-          "exam": "AP2",
-          "topic": "Business Continuity & Disaster Recovery",
-          "subtopic": "Disaster Recovery Plan, Hot/Warm/Cold Standby, RTO, RPO",
-          "detail": "RTO: max. Ausfallzeit bis Wiederherstellung. RPO: max. Datenverlust. Hot-Standby: sofort bereit. Warm-Standby: kurze Anlaufzeit. Cold-Standby: manuelle Aktivierung. DR-Plan: wer macht was im Notfall.",
-          "relevance": "hoch",
-          "typicalQuestion": "RTO/RPO aus Anforderungen ableiten. Hot vs. Warm vs. Cold Standby.",
-          "difficulty": "mittel"
-        }
-      ],
-      "traps": [
-        "RAID ≠ Backup! RAID schützt vor Hardwareausfall, nicht vor versehentlichem Löschen oder Ransomware.",
-        "Snapshot ≠ Backup: Snapshot liegt auf demselben System – bei Hardwareausfall weg.",
-        "GiB vs. GB: 1 GiB = 1,073 GB – IHK rechnet meist mit GiB.",
-        "RTO = wann läuft's wieder? RPO = wie viel Datenverlust ist akzeptabel?"
-      ]
-    },
-    {
-      "week": 11,
-      "title": "AP2 – Hochverfügbarkeit & Monitoring",
-      "tasks": [
-        {
-          "id": "w11t1",
-          "area": "Infrastruktur",
-          "exam": "AP2",
-          "topic": "Verfügbarkeitskennzahlen",
-          "subtopic": "MTBF, MTTR, Verfügbarkeit in %, USV, Redundanzen",
-          "detail": "MTBF: mittlere Zeit zwischen Ausfällen. MTTR: mittlere Reparaturzeit. Verfügbarkeit = MTBF / (MTBF + MTTR) × 100. USV: unterbrechungsfreie Stromversorgung. Redundanz reduziert MTTR.",
-          "relevance": "hoch",
-          "typicalQuestion": "Verfügbarkeit aus MTBF und MTTR berechnen. Was bewirkt Redundanz auf MTBF/MTTR?",
-          "difficulty": "schwer"
-        },
-        {
-          "id": "w11t2",
-          "area": "Monitoring",
-          "exam": "AP2",
-          "topic": "Monitoring & SNMP",
-          "subtopic": "SNMP, MIB/OID, Traps, Metriken (CPU/RAM/Disk), SMART, Schwellenwerte",
-          "detail": "SNMP: Simple Network Management Protocol. Polling (pull): Manager fragt Gerät ab. Trap (push): Gerät sendet aktiv bei Ereignis. MIB: Management Information Base. SMART: Festplattendiagnose. Metriken: CPU, RAM, Disk I/O, Netzauslastung.",
-          "relevance": "hoch",
-          "typicalQuestion": "SNMP-Funktion erklären. SNMP-Trap vs. Polling. Was sind Schwellenwerte?",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w11t3",
-          "area": "Support",
-          "exam": "AP2",
-          "topic": "Incident Management & Ticketsystem",
-          "subtopic": "Incident vs. Problem, Ticket-Workflow, 1st/2nd/3rd Level, SLA, Priorisierung",
-          "detail": "Incident: einzelne Störung. Problem: Ursache hinter mehreren Incidents. Ticket-Workflow: Erstellt → Zugewiesen → In Bearbeitung → Gelöst → Geschlossen. SLA-Reaktionszeiten einhalten.",
-          "relevance": "hoch",
-          "typicalQuestion": "Incident vs. Problem unterscheiden. Ticket-Workflow beschreiben. SLA erklären.",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w11t4",
-          "area": "Support",
-          "exam": "AP2",
-          "topic": "Eskalation & Support-Stufen",
-          "subtopic": "1st/2nd/3rd Level, technische vs. hierarchische Eskalation",
-          "detail": "1st Level: Erstannahme, einfache Lösungen. 2nd Level: technischer Experte. 3rd Level: Hersteller/Spezialist. Technische Eskalation: mehr Fachwissen benötigt. Hierarchische Eskalation: Entscheidungsbefugnis nötig (Budget, Priorität).",
-          "relevance": "hoch",
-          "typicalQuestion": "Technische vs. hierarchische Eskalation. Wann eskaliere ich auf 2nd Level?",
-          "difficulty": "mittel"
-        }
-      ],
-      "traps": [
-        "SNMP-Trap: Gerät sendet aktiv (push) – Polling ist pull. Nicht verwechseln!",
-        "Incident ≠ Problem: Incident ist die Störung, Problem ist die dahinter liegende Ursache.",
-        "MTTR senken = Verfügbarkeit steigt. RAID hilft bei MTTR, nicht direkt bei MTBF."
-      ]
-    },
-    {
-      "week": 12,
-      "title": "AP2 – Systeme konzipieren & betreiben",
-      "tasks": [
-        {
-          "id": "w12t1",
-          "area": "Systembetrieb",
-          "exam": "AP2",
-          "topic": "Virtualisierung & Container",
-          "subtopic": "Hypervisor Typ 1 / Typ 2, VM, Container (Docker), Vor-/Nachteile",
-          "detail": "Typ 1 (bare-metal): direkt auf Hardware (ESXi, Hyper-V). Typ 2 (hosted): auf OS (VirtualBox, VMware Workstation). Container: teilen OS-Kernel, leichter/schneller als VMs, Docker/Kubernetes.",
-          "relevance": "hoch",
-          "typicalQuestion": "Hypervisor Typ 1 vs. Typ 2. VM vs. Container Vor-/Nachteile.",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w12t2",
-          "area": "Systembetrieb",
-          "exam": "AP2",
-          "topic": "Cloud-Modelle & Betriebsmodelle",
-          "subtopic": "IaaS, PaaS, SaaS, Public/Private/Hybrid Cloud, On-Premises",
-          "detail": "IaaS: VMs und Netzwerk. PaaS: Laufzeitumgebung. SaaS: fertige Anwendung. Shared Responsibility: Wer verantwortet was? On-Prem: volle Kontrolle, hohe Kosten. Cloud: flexibel, Abhängigkeit.",
-          "relevance": "hoch",
-          "typicalQuestion": "IaaS/PaaS/SaaS Verantwortlichkeiten zuordnen. Cloud vs. On-Prem empfehlen.",
-          "difficulty": "leicht"
-        },
-        {
-          "id": "w12t3",
-          "area": "Systembetrieb",
-          "exam": "AP2",
-          "topic": "Systemarchitektur & Konzeption",
-          "subtopic": "2-Tier, 3-Tier, Multi-Tier, Anforderungen definieren, Schnittstellen",
-          "detail": "2-Tier: Client + Server. 3-Tier: Präsentation, Logik, Daten (typisch für Webanwendungen). Multi-Tier: weitere Schichten. Anforderungen: Bandbreite, Latenz, Verfügbarkeit, Skalierbarkeit.",
-          "relevance": "mittel",
-          "typicalQuestion": "3-Tier-Architektur erklären. Für welches Szenario welche Architektur?",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w12t4",
-          "area": "Systembetrieb",
-          "exam": "AP2",
-          "topic": "IT-Lifecycle & Patchmanagement",
-          "subtopic": "Lifecycle-Phasen, Rolling Update, Canary, Blue-Green, Migration, Green IT",
-          "detail": "Lifecycle: Planung → Beschaffung → Betrieb → Wartung → Entsorgung (DIN 66399). TCO: Gesamtkosten über Lebenszyklus. Blue-Green: 2 Umgebungen, sofortiger Wechsel. Canary: kleiner Nutzeranteil zuerst.",
-          "relevance": "mittel",
-          "typicalQuestion": "Blue-Green vs. Canary Deployment. Lifecycle-Phasen nennen. Datenschutz bei Entsorgung.",
-          "difficulty": "mittel"
-        }
-      ],
-      "traps": [
-        "Container ≠ VM: Container haben kein eigenes OS-Kernel.",
-        "Shared Responsibility in der Cloud: IaaS = Kunde verantwortet OS und App, SaaS = fast alles beim Anbieter.",
-        "Blue-Green: zwei identische Umgebungen, nicht schrittweise wie Rolling Update."
-      ]
-    },
-    {
-      "week": 13,
-      "title": "AP2 – Modellierung & Algorithmen",
-      "tasks": [
-        {
-          "id": "w13t1",
-          "area": "Programmierung",
-          "exam": "AP1/AP2",
-          "topic": "UML-Diagramme",
-          "subtopic": "Klassendiagramm, Use-Case, Sequenz-, Aktivitäts-, Zustandsdiagramm",
-          "detail": "Klassendiagramm: Klassen, Attribute, Methoden, Beziehungen (Assoziation, Vererbung, Aggregation). Use-Case: Akteure und Anwendungsfälle. Sequenzdiagramm: Interaktionen über Zeit. Aktivitätsdiagramm: Ablauf.",
-          "relevance": "hoch",
-          "typicalQuestion": "UML-Diagramm lesen oder ergänzen. Beziehungstypen im Klassendiagramm.",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w13t2",
-          "area": "Programmierung",
-          "exam": "AP1/AP2",
-          "topic": "ERM & Datenmodellierung",
-          "subtopic": "Entity-Relationship-Modell, Kardinalitäten (1:1, 1:n, m:n), relationales Modell",
-          "detail": "Entitäten, Attribute, Beziehungen. Kardinalitäten: 1:1 (Person-Ausweis), 1:n (Abteilung-Mitarbeiter), m:n (Student-Kurs). m:n → Zwischentabelle. ERM in relationales Modell überführen.",
-          "relevance": "hoch",
-          "typicalQuestion": "ERM zeichnen oder Kardinalitäten bestimmen. ERM in Tabellen überführen.",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w13t3",
-          "area": "Programmierung",
-          "exam": "AP1/AP2",
-          "topic": "Algorithmen & Pseudocode",
-          "subtopic": "Pseudocode, Struktogramm (Nassi-Shneiderman), Schreibtischtest, Flowchart",
-          "detail": "Algorithmen in Pseudocode formulieren. Struktogramm: Sequenz, Auswahl (if/else), Schleife (while/for). Schreibtischtest: Algorithmus manuell durchlaufen. Grundlegende Konzepte: Variablen, Schleifen, Bedingungen.",
-          "relevance": "mittel",
-          "typicalQuestion": "Algorithmus in Pseudocode schreiben. Struktogramm lesen oder ergänzen.",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w13t4",
-          "area": "Programmierung",
-          "exam": "AP1/AP2",
-          "topic": "Schnittstellen & Datenaustausch",
-          "subtopic": "REST, JSON, XML, HTTP-Methoden, API",
-          "detail": "REST: zustandslose API, Ressourcen über HTTP-Verben. GET (lesen), POST (erstellen), PUT (ersetzen), PATCH (ändern), DELETE (löschen). JSON: {key: value}, leichtgewichtig. XML: tags-basiert, schwergewichtiger.",
-          "relevance": "mittel",
-          "typicalQuestion": "HTTP-Methoden und ihre Funktion. JSON vs. XML. REST-API erklären.",
-          "difficulty": "leicht"
-        }
-      ],
-      "traps": [
-        "ERM: m:n-Beziehungen brauchen in der Implementierung immer eine Zwischentabelle.",
-        "REST: GET hat keinen Request-Body. PUT ersetzt komplett, PATCH nur teilweise.",
-        "Klassendiagramm: Vererbung (Dreieck, geschlossen) ≠ Assoziation (Linie)."
-      ]
-    },
-    {
-      "week": 14,
-      "title": "AP2 – SQL, Testing & Versionskontrolle",
-      "tasks": [
-        {
-          "id": "w14t1",
-          "area": "Datenbanken",
-          "exam": "AP1/AP2",
-          "topic": "SQL-Grundlagen & JOIN",
-          "subtopic": "SELECT, FROM, WHERE, JOIN (INNER/LEFT/RIGHT), Aggregatfunktionen, GROUP BY",
-          "detail": "INNER JOIN: nur übereinstimmende Datensätze. LEFT JOIN: alle links + Übereinstimmungen rechts. GROUP BY mit COUNT, SUM, AVG, MAX, MIN. HAVING filtert nach Aggregation. ORDER BY für Sortierung.",
-          "relevance": "hoch",
-          "typicalQuestion": "SQL-Abfrage mit JOIN schreiben. GROUP BY mit COUNT. LEFT vs. INNER JOIN.",
-          "difficulty": "schwer"
-        },
-        {
-          "id": "w14t2",
-          "area": "Datenbanken",
-          "exam": "AP1/AP2",
-          "topic": "Datenbankdesign & Normalisierung",
-          "subtopic": "1NF, 2NF, 3NF, Anomalien vermeiden, Primärschlüssel, Fremdschlüssel",
-          "detail": "1NF: atomare Werte, kein Wiederholen. 2NF: kein partieller Abhängigkeit vom Schlüssel. 3NF: kein transitiver Abhängigkeit. Anomalien: Einfüge-, Änderungs-, Löschanomalie.",
-          "relevance": "hoch",
-          "typicalQuestion": "Tabelle normalisieren. Welche Normalform verletzt diese Tabelle? Anomalie beschreiben.",
-          "difficulty": "schwer"
-        },
-        {
-          "id": "w14t3",
-          "area": "Softwarequalität",
-          "exam": "AP1/AP2",
-          "topic": "Softwaretests & Debugging",
-          "subtopic": "Blackbox, Whitebox, Greybox, TDD, Unit-/Integrations-/Systemtest, Debugging",
-          "detail": "Blackbox: nur Ein-/Ausgabe bekannt. Whitebox: Quellcode bekannt. TDD: Test vor Implementierung. Testpyramide: Unit → Integration → System. Debugging: Breakpoints, Logging, Ablaufverfolgung. Extremwerttests.",
-          "relevance": "hoch",
-          "typicalQuestion": "Testarten unterscheiden und zuordnen. Was ist TDD? Blackbox vs. Whitebox.",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w14t4",
-          "area": "Softwarequalität",
-          "exam": "AP1/AP2",
-          "topic": "Versionskontrolle & Softwareanforderungen",
-          "subtopic": "Git: Branches, Merge, Pull Request, Konflikte; Softwarequalitätskriterien",
-          "detail": "Git-Workflow: Feature-Branch → Commit → PR → Review → Merge. Merge-Konflikte manuell lösen. Tags für Releases. Softwarequalität (ISO 25010): Änderbarkeit, Effizienz, Zuverlässigkeit, Wartbarkeit.",
-          "relevance": "mittel",
-          "typicalQuestion": "Git-Workflow beschreiben. Was ist ein Merge-Konflikt? Softwarequalitätskriterien nennen.",
-          "difficulty": "leicht"
-        }
-      ],
-      "traps": [
-        "HAVING filtert nach GROUP BY, WHERE filtert vor der Aggregation.",
-        "3NF: kein transitiver Abhängigkeit – PLZ → Stadt ist eine transitive Abhängigkeit von Kunden-ID.",
-        "LEFT JOIN ≠ INNER JOIN: LEFT JOIN behält alle Zeilen der linken Tabelle."
-      ]
-    },
-    {
-      "week": 15,
-      "title": "WISO I – Arbeits- & Sozialrecht",
-      "tasks": [
-        {
-          "id": "w15t1",
-          "area": "WISO",
-          "exam": "AP1/AP2",
-          "topic": "Berufsausbildung & Ausbildungsrecht",
-          "subtopic": "Ausbildungsvertrag, Rechte & Pflichten Azubi/Betrieb, duales System",
-          "detail": "Ausbildungsvertrag: Beginn, Dauer, Vergütung, Urlaub, Kündigungsfristen. Rechte Azubi: Ausbildung, Zeugnis, Vergütung, Urlaub. Pflichten: Lernpflicht, Berichtsheft, Schweigepflicht. Duales System: Betrieb + Berufsschule.",
-          "relevance": "mittel",
-          "typicalQuestion": "Pflichten des Azubis nennen. Was regelt der Ausbildungsvertrag?",
-          "difficulty": "leicht"
-        },
-        {
-          "id": "w15t2",
-          "area": "WISO",
-          "exam": "AP1/AP2",
-          "topic": "Tarifrecht & Arbeitskampf",
-          "subtopic": "Tarifvertrag, Günstigkeitsprinzip, Tarifautonomie, Betriebsrat, Betriebsvereinbarung",
-          "detail": "Tarifvertrag: regelt Löhne/Arbeitszeiten für Branchen/Betriebe. Günstigkeitsprinzip: Abweichung nur zugunsten des AN. Tarifvertrag steht NICHT über dem Gesetz! Betriebsrat: Mitbestimmung bei Arbeitszeit, Urlaub, Datenschutz.",
-          "relevance": "mittel",
-          "typicalQuestion": "Günstigkeitsprinzip erklären. Wann hat der Betriebsrat Mitbestimmungsrecht?",
-          "difficulty": "leicht"
-        },
-        {
-          "id": "w15t3",
-          "area": "WISO",
-          "exam": "AP1/AP2",
-          "topic": "Sozialversicherung & Lohnabrechnung",
-          "subtopic": "5 Säulen der SV, Brutto/Netto, Steuerklassen, Lohnsteuer, Sozialabgaben",
-          "detail": "5 Säulen: Kranken-, Renten-, Pflege-, Arbeitslosen-, Unfallversicherung. Alle 50/50 (AG+AN) außer Unfallversicherung (nur AG). Bruttolohn - Steuern - SV-Beiträge = Nettolohn. Steuerklassen I–VI.",
-          "relevance": "hoch",
-          "typicalQuestion": "Sozialversicherungszweige nennen. Unfallversicherung: wer zahlt? Nettolohn berechnen.",
-          "difficulty": "leicht"
-        },
-        {
-          "id": "w15t4",
-          "area": "WISO",
-          "exam": "AP1/AP2",
-          "topic": "Allgemeines Arbeitsrecht",
-          "subtopic": "Kündigungsschutz, Arbeitszeiten, Urlaubsanspruch, Probezeit",
-          "detail": "Probezeit max. 6 Monate. Mindesturlaub 24 Werktage (6-Tage-Woche) = 20 Tage (5-Tage-Woche). Arbeitszeit: max. 8h/Tag, max. 10h Ausnahme. Kündigungsfristen variieren nach Betriebszugehörigkeit.",
-          "relevance": "mittel",
-          "typicalQuestion": "Gesetzliche Regelungen zu Urlaub oder Arbeitszeit nennen. Kündigungsfristen.",
-          "difficulty": "leicht"
-        }
-      ],
-      "traps": [
-        "Tarifvertrag steht NICHT über dem Gesetz – Gesetze setzen die Untergrenze.",
-        "Unfallversicherung wird NUR vom Arbeitgeber bezahlt – Ausnahme von der 50/50-Regel!",
-        "Günstigkeitsprinzip: vom Tarifvertrag darf nur abgewichen werden, wenn es für den AN besser ist."
-      ]
-    },
-    {
-      "week": 16,
-      "title": "WISO II – Betrieb, Organisation & Umwelt",
-      "tasks": [
-        {
-          "id": "w16t1",
-          "area": "WISO",
-          "exam": "AP1/AP2",
-          "topic": "Betrieb & Rechtsformen",
-          "subtopic": "GbR, KG, OHG, GmbH, AG, Haftung, Unternehmensorganisation",
-          "detail": "Einzelunternehmen: volle Haftung. GbR: Gesellschaft bürgerlichen Rechts, persönliche Haftung. KG: Komplementär (voll) + Kommanditist (begrenzt). GmbH: Haftung auf Stammkapital beschränkt (mind. 25.000€). AG: Aktionäre, Vorstand, Aufsichtsrat.",
-          "relevance": "mittel",
-          "typicalQuestion": "Rechtsform für Szenario wählen und begründen. Haftungsunterschiede nennen.",
-          "difficulty": "leicht"
-        },
-        {
-          "id": "w16t2",
-          "area": "WISO",
-          "exam": "AP1/AP2",
-          "topic": "Wirtschaftlichkeit & Ziele",
-          "subtopic": "Produktivität, Wirtschaftlichkeit, Rentabilität, Zielkonflikte, Globalisierung",
-          "detail": "Produktivität = Output / Input. Wirtschaftlichkeit = Ertrag / Aufwand (>1 = wirtschaftlich). Rentabilität = Gewinn / eingesetztes Kapital × 100. Ökonomisch, ökologisch, sozial – Zielkonflikte beachten.",
-          "relevance": "mittel",
-          "typicalQuestion": "Wirtschaftlichkeit berechnen. Produktivität vs. Rentabilität unterscheiden.",
-          "difficulty": "mittel"
-        },
-        {
-          "id": "w16t3",
-          "area": "WISO",
-          "exam": "AP1/AP2",
-          "topic": "Arbeitsschutz & Gesundheit",
-          "subtopic": "ArbSchG, ArbZG, Gefährdungsbeurteilung, Ergonomie, Bildschirmarbeitsplatz",
-          "detail": "ArbSchG: Arbeitgeber muss Gefährdungsbeurteilung erstellen. Ergonomische Arbeitsplatzgestaltung (Bildschirmabstand, Beleuchtung). Unfallversicherung = Berufsgenossenschaft. Sicherheitsbeauftragte.",
-          "relevance": "mittel",
-          "typicalQuestion": "Was muss der Arbeitgeber beim Arbeitsschutz beachten? Gefährdungsbeurteilung erklären.",
-          "difficulty": "leicht"
-        },
-        {
-          "id": "w16t4",
-          "area": "WISO",
-          "exam": "AP1/AP2",
-          "topic": "Umweltschutz & Nachhaltigkeit",
-          "subtopic": "WEEE, RoHS, Kreislaufwirtschaft, Entsorgung, Green IT",
-          "detail": "WEEE-Richtlinie: Hersteller haftet für Rücknahme von Elektroaltgeräten. RoHS: schränkt Schadstoffe in Elektrogeräten ein (Blei, Quecksilber). Kreislaufwirtschaft: Wiederverwertung. Green IT: energieeffiziente Rechenzentren.",
-          "relevance": "mittel",
-          "typicalQuestion": "Wie werden Elektroaltgeräte entsorgt? Was regelt WEEE vs. RoHS?",
-          "difficulty": "leicht"
-        }
-      ],
-      "traps": [
-        "GmbH-Haftung: nur auf Stammkapital begrenzt, nicht auf Privatvermögen der Gesellschafter.",
-        "Wirtschaftlichkeit ≠ Rentabilität: Wirtschaftlichkeit = Ertrag/Aufwand, Rentabilität = Gewinn/Kapital.",
-        "WEEE = Rücknahme von Altgeräten, RoHS = Verbotene Schadstoffe in Neugeräten."
-      ]
-    },
-    {
-      "week": 17,
-      "title": "Vernetztes Zusammenarbeiten & digitale Medien",
-      "tasks": [
-        {
-          "id": "w17t1",
-          "area": "Digitale Zusammenarbeit",
-          "exam": "AP1/AP2",
-          "topic": "Digitale Kommunikation & Kollaborationstools",
-          "subtopic": "E-Mail, Chat, Videokonferenzen, Teams, SharePoint, Git",
-          "detail": "E-Mail: asynchron, formell. Chat/Messenger (Teams): synchron, schnell. Videokonferenz: Bild+Ton, Protokoll. SharePoint: gemeinsame Dokumentablage. Teams: kombiniert Chat, Meetings, Dateien. Git: Versionsverwaltung für Code und Dokumente.",
-          "relevance": "mittel",
-          "typicalQuestion": "Welches Tool für welches Kommunikationsszenario? Vor-/Nachteile synchron vs. asynchron.",
-          "difficulty": "leicht"
-        },
-        {
-          "id": "w17t2",
-          "area": "Digitale Zusammenarbeit",
-          "exam": "AP1/AP2",
-          "topic": "Versionsverwaltung & Dokumentenmanagement",
-          "subtopic": "Git, gemeinsame Dokumentbearbeitung, Versionierung, Synchronisation, Datenkonsistenz",
-          "detail": "Git: Branches, Merge, Konflikte, Pull Requests. Gemeinsame Bearbeitung (z.B. Office Online/SharePoint): gleichzeitiger Zugriff, Versionsverlauf. Synchronisation: lokale Änderungen mit zentralem Stand abgleichen. Konflikte bei gleichzeitiger Bearbeitung vermeiden.",
-          "relevance": "mittel",
-          "typicalQuestion": "Wie verhindert man Versionskonflikte bei gemeinsamer Bearbeitung? Git-Workflow beschreiben.",
-          "difficulty": "leicht"
-        },
-        {
-          "id": "w17t3",
-          "area": "Digitale Zusammenarbeit",
-          "exam": "AP1/AP2",
-          "topic": "Datenschutz & Sicherheit in der Zusammenarbeit",
-          "subtopic": "Zugriffsrechte in Kollaborationstools, Remote-Arbeit, DSGVO, Netiquette",
-          "detail": "Zugriffsrechte: wer darf lesen/schreiben/verwalten (z.B. in Teams/SharePoint). Remote-Arbeit: VPN-Pflicht, Endgerätesicherheit, Heimnetz-Risiken. Netiquette: respektvoller Umgang, Antwortzeiten, Betreffzeile. DSGVO: keine personenbezogenen Daten in ungesicherten Clouds.",
-          "relevance": "hoch",
-          "typicalQuestion": "Welche Risiken entstehen bei Remote-Arbeit? Zugriffsrechte in Kollaborationstools beschreiben.",
-          "difficulty": "leicht"
-        }
-      ],
-      "traps": [
-        "Synchron (Chat, Video) ≠ Asynchron (E-Mail, Kommentare) – beide haben ihren Einsatzbereich.",
-        "Gemeinsame Bearbeitung ≠ kein Versionsverlauf – Änderungen sollten nachvollziehbar bleiben.",
-        "Remote-Arbeit: privates WLAN ist kein sicheres Firmennetz → VPN Pflicht!"
       ]
     }
   ]

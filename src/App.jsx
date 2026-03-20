@@ -29,16 +29,179 @@ function saveProgress(progress) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
 }
 
-const difficultyConfig = {
-  leicht: { label: "Leicht", cls: "bg-emerald-900/60 text-emerald-300" },
-  mittel: { label: "Mittel", cls: "bg-amber-900/60 text-amber-300" },
-  schwer: { label: "Schwer", cls: "bg-red-900/60 text-red-300" },
-};
+// Wochenplan: jede Woche enthält Abschnitte mit ptIdx (Prüfungsteil-Index),
+// fkIdx (Fragenkomplex-Index) und optionalem tkRange [von, bis] (0-basiert, inklusiv).
+const WEEK_PLAN = [
+  {
+    week: 1,
+    title: "AP1 – Projektmanagement & Kundenkommunikation",
+    sections: [
+      { ptIdx: 0, fkIdx: 0 },          // AP1 FK01 komplett
+      { ptIdx: 0, fkIdx: 1 },          // AP1 FK02 komplett
+    ],
+  },
+  {
+    week: 2,
+    title: "AP1 – IT-Systeme beurteilen & IT-Lösungen (Teil 1)",
+    sections: [
+      { ptIdx: 0, fkIdx: 2 },                    // AP1 FK03 komplett
+      { ptIdx: 0, fkIdx: 3, tkRange: [0, 3] },   // AP1 FK04 TK01–04
+    ],
+  },
+  {
+    week: 3,
+    title: "AP1 – IT-Lösungen (Teil 2), Qualitätssicherung & IT-Sicherheit",
+    sections: [
+      { ptIdx: 0, fkIdx: 3, tkRange: [4, 7] },   // AP1 FK04 TK05–08
+      { ptIdx: 0, fkIdx: 4 },                    // AP1 FK05 komplett
+      { ptIdx: 0, fkIdx: 5 },                    // AP1 FK06 komplett
+    ],
+  },
+  {
+    week: 4,
+    title: "AP1 – Auftragsabschluss & Leistungserbringung",
+    sections: [
+      { ptIdx: 0, fkIdx: 6 },          // AP1 FK07 komplett
+    ],
+  },
+  {
+    week: 5,
+    title: "AP2 – Übergreifend: Kunden, IT-Lösungen & Qualität",
+    sections: [
+      { ptIdx: 1, fkIdx: 0 },          // AP2 übergreifend FK01
+      { ptIdx: 1, fkIdx: 1 },          // AP2 übergreifend FK02
+      { ptIdx: 1, fkIdx: 2 },          // AP2 übergreifend FK03
+    ],
+  },
+  {
+    week: 6,
+    title: "AP2 – Übergreifend: IT-Sicherheit & Datenschutz",
+    sections: [
+      { ptIdx: 1, fkIdx: 3 },          // AP2 übergreifend FK04
+    ],
+  },
+  {
+    week: 7,
+    title: "AP2 SI – Betreiben von IT-Systemen (Teil 1)",
+    sections: [
+      { ptIdx: 2, fkIdx: 0, tkRange: [0, 6] },   // AP2 SI FK01 TK01–07
+    ],
+  },
+  {
+    week: 8,
+    title: "AP2 SI – Betreiben von IT-Systemen (Teil 2) & Speicherlösungen (Teil 1)",
+    sections: [
+      { ptIdx: 2, fkIdx: 0, tkRange: [7, 12] },  // AP2 SI FK01 TK08–13
+      { ptIdx: 2, fkIdx: 1, tkRange: [0, 2] },   // AP2 SI FK02 TK01–03
+    ],
+  },
+  {
+    week: 9,
+    title: "AP2 SI – Speicherlösungen (Teil 2) & Programmieren von Softwarelösungen",
+    sections: [
+      { ptIdx: 2, fkIdx: 1, tkRange: [3, 5] },   // AP2 SI FK02 TK04–06
+      { ptIdx: 2, fkIdx: 2 },                    // AP2 SI FK03 komplett
+    ],
+  },
+  {
+    week: 10,
+    title: "AP2 SI – Konzipieren & Realisieren von IT-Systemen (Teil 1)",
+    sections: [
+      { ptIdx: 2, fkIdx: 3, tkRange: [0, 8] },   // AP2 SI FK04 TK01–09
+    ],
+  },
+  {
+    week: 11,
+    title: "AP2 SI – Konzipieren & Realisieren von IT-Systemen (Teil 2)",
+    sections: [
+      { ptIdx: 2, fkIdx: 3, tkRange: [9, 17] },  // AP2 SI FK04 TK10–18
+    ],
+  },
+  {
+    week: 12,
+    title: "AP2 SI – Installieren & Konfigurieren von Netzwerken",
+    sections: [
+      { ptIdx: 2, fkIdx: 4 },          // AP2 SI FK05 komplett
+    ],
+  },
+  {
+    week: 13,
+    title: "AP2 SI – Administrieren von IT-Systemen (Teil 1)",
+    sections: [
+      { ptIdx: 2, fkIdx: 5, tkRange: [0, 5] },   // AP2 SI FK06 TK01–06
+    ],
+  },
+  {
+    week: 14,
+    title: "AP2 SI – Administrieren von IT-Systemen (Teil 2)",
+    sections: [
+      { ptIdx: 2, fkIdx: 5, tkRange: [6, 11] },  // AP2 SI FK06 TK07–12
+    ],
+  },
+  {
+    week: 15,
+    title: "AP2 WiSo – Berufsausbildung & Arbeitsrecht (Teil 1)",
+    sections: [
+      { ptIdx: 3, fkIdx: 0, tkRange: [0, 8] },   // WiSo FK01 TK01–09
+    ],
+  },
+  {
+    week: 16,
+    title: "AP2 WiSo – Berufsausbildung & Arbeitsrecht (Teil 2) & Unternehmensorganisation (Teil 1)",
+    sections: [
+      { ptIdx: 3, fkIdx: 0, tkRange: [9, 13] },  // WiSo FK01 TK10–14
+      { ptIdx: 3, fkIdx: 1, tkRange: [0, 3] },   // WiSo FK02 TK01–04
+    ],
+  },
+  {
+    week: 17,
+    title: "AP2 WiSo – Unternehmensorganisation (Teil 2) & Arbeitsschutz",
+    sections: [
+      { ptIdx: 3, fkIdx: 1, tkRange: [4, 8] },   // WiSo FK02 TK05–09
+      { ptIdx: 3, fkIdx: 2 },                    // WiSo FK03 komplett
+    ],
+  },
+  {
+    week: 18,
+    title: "AP2 WiSo – Umweltschutz & Vernetztes Zusammenarbeiten",
+    sections: [
+      { ptIdx: 3, fkIdx: 3 },          // WiSo FK04 komplett
+      { ptIdx: 3, fkIdx: 4 },          // WiSo FK05 komplett
+    ],
+  },
+  {
+    week: 19,
+    title: "AP2 WiSo – Grundlagen der IT-Sicherheit (WiSo)",
+    sections: [
+      { ptIdx: 3, fkIdx: 5 },          // WiSo FK08 komplett
+    ],
+  },
+];
 
-const relevanceConfig = {
-  hoch: { label: "Relevanz: hoch", cls: "bg-sky-900/60 text-sky-300" },
-  mittel: { label: "Relevanz: mittel", cls: "bg-zinc-700/60 text-zinc-400" },
-};
+function buildWeeks(weekPlan, catalog) {
+  return weekPlan.map((wp) => {
+    const tasks = [];
+    for (const section of wp.sections) {
+      const pt = catalog[section.ptIdx];
+      const fk = pt.fragenkomplexe[section.fkIdx];
+      const tks = section.tkRange
+        ? fk.themenkreise.slice(section.tkRange[0], section.tkRange[1] + 1)
+        : fk.themenkreise;
+
+      for (const tk of tks) {
+        const id = `pt${section.ptIdx}_fk${section.fkIdx}_tk${tk.nummer}`;
+        tasks.push({
+          id,
+          topic: tk.titel,
+          subtopic: `${pt.pruefungsteil} · FK ${fk.nummer}`,
+          fkTitel: fk.titel,
+          unterpunkte: tk.unterpunkte || [],
+        });
+      }
+    }
+    return { week: wp.week, title: wp.title, tasks };
+  });
+}
 
 export default function App() {
   const [progress, setProgress] = useState(() => loadProgress());
@@ -49,15 +212,20 @@ export default function App() {
     saveProgress(progress);
   }, [progress]);
 
+  const weeks = useMemo(
+    () => buildWeeks(WEEK_PLAN, plan.pruefungskatalog),
+    []
+  );
+
   const allTasks = useMemo(() => {
     const flat = [];
-    for (const w of plan.weeks) {
+    for (const w of weeks) {
       for (const t of w.tasks) {
         flat.push({ week: w.week, weekTitle: w.title, ...t });
       }
     }
     return flat;
-  }, []);
+  }, [weeks]);
 
   const doneCount = allTasks.filter((t) => progress[t.id]?.done).length;
   const totalCount = allTasks.length;
@@ -128,7 +296,10 @@ export default function App() {
             </div>
 
             <div className="mt-3 w-full h-3 bg-zinc-800 rounded-full overflow-hidden">
-              <div className="h-3 bg-emerald-500" style={{ width: `${percent}%` }} />
+              <div
+                className="h-3 bg-emerald-500 transition-all"
+                style={{ width: `${percent}%` }}
+              />
             </div>
 
             <div className="mt-4">
@@ -140,9 +311,9 @@ export default function App() {
                   </div>
                   <div className="text-zinc-200">
                     {nextTask.topic}
-                    {nextTask.subtopic && (
-                      <span className="text-zinc-400"> – {nextTask.subtopic}</span>
-                    )}
+                    <span className="text-zinc-500 text-sm ml-2">
+                      {nextTask.subtopic}
+                    </span>
                   </div>
                 </div>
               ) : (
@@ -154,21 +325,40 @@ export default function App() {
           </div>
         </header>
 
-        <main className="space-y-4">
-          {plan.weeks.map((w) => {
+        <main className="space-y-4 p-6 pt-0">
+          {weeks.map((w) => {
             const tasks = showOpenOnly
               ? w.tasks.filter((t) => !progress[t.id]?.done)
               : w.tasks;
 
+            const weekDone = w.tasks.filter((t) => progress[t.id]?.done).length;
+
             return (
-              <section key={w.week} className="bg-zinc-900 rounded-2xl p-4 shadow">
+              <section
+                key={w.week}
+                className="bg-zinc-900 rounded-2xl p-4 shadow"
+              >
                 <div className="flex items-baseline justify-between gap-3">
                   <h2 className="text-xl font-semibold">
-                    Woche {w.week}: {w.title}
+                    <span className="text-zinc-500 text-base font-normal mr-2">
+                      Woche {w.week}
+                    </span>
+                    {w.title}
                   </h2>
-                  <div className="text-sm text-zinc-400">
-                    {w.tasks.filter((t) => progress[t.id]?.done).length}/{w.tasks.length}
+                  <div className="text-sm text-zinc-400 shrink-0">
+                    {weekDone}/{w.tasks.length}
                   </div>
+                </div>
+
+                <div className="mt-2 w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden">
+                  <div
+                    className="h-1.5 bg-emerald-600 transition-all"
+                    style={{
+                      width: w.tasks.length
+                        ? `${Math.round((weekDone / w.tasks.length) * 100)}%`
+                        : "0%",
+                    }}
+                  />
                 </div>
 
                 <div className="mt-3 space-y-2">
@@ -178,17 +368,16 @@ export default function App() {
                     </div>
                   ) : (
                     tasks.map((t) => {
-                      const diff = difficultyConfig[t.difficulty];
-                      const rel = relevanceConfig[t.relevance];
                       const isExpanded = !!expanded[t.id];
                       const isDone = !!progress[t.id]?.done;
+                      const isReview = !!progress[t.id]?.review;
 
                       return (
                         <div
                           key={t.id}
                           className={`rounded-xl bg-zinc-800/60 hover:bg-zinc-800 transition-colors ${
-                            isDone ? "opacity-60" : ""
-                          }`}
+                            isDone ? "opacity-50" : ""
+                          } ${isReview ? "ring-1 ring-amber-500/40" : ""}`}
                         >
                           <div className="flex items-start gap-3 p-3">
                             <input
@@ -199,51 +388,44 @@ export default function App() {
                             />
 
                             <div
-                              className="flex-1 cursor-pointer"
+                              className="flex-1 cursor-pointer min-w-0"
                               onClick={() => toggleExpand(t.id)}
                             >
                               <div className="flex flex-wrap items-center gap-2">
-                                <span className={`font-medium ${isDone ? "line-through text-zinc-500" : ""}`}>
+                                <span
+                                  className={`font-medium ${
+                                    isDone
+                                      ? "line-through text-zinc-500"
+                                      : "text-zinc-100"
+                                  }`}
+                                >
                                   {t.topic}
                                 </span>
-                                {t.exam && (
-                                  <span className="text-xs px-1.5 py-0.5 rounded bg-zinc-700 text-zinc-300">
-                                    {t.exam}
-                                  </span>
-                                )}
-                                {diff && (
-                                  <span className={`text-xs px-1.5 py-0.5 rounded ${diff.cls}`}>
-                                    {diff.label}
-                                  </span>
-                                )}
-                                {rel && t.relevance === "hoch" && (
-                                  <span className={`text-xs px-1.5 py-0.5 rounded ${rel.cls}`}>
-                                    {rel.label}
-                                  </span>
-                                )}
+                                <span className="text-xs px-1.5 py-0.5 rounded bg-zinc-700 text-zinc-400">
+                                  {t.subtopic}
+                                </span>
                               </div>
 
-                              {t.subtopic && (
-                                <div className="text-sm text-zinc-400 mt-0.5">
-                                  {t.subtopic}
-                                </div>
+                              <div className="text-xs text-zinc-500 mt-0.5 truncate">
+                                {t.fkTitel}
+                              </div>
+
+                              {isExpanded && t.unterpunkte.length > 0 && (
+                                <ul className="mt-2 text-sm text-zinc-300 list-disc pl-4 space-y-0.5">
+                                  {t.unterpunkte.map((u, i) => (
+                                    <li key={i}>{u}</li>
+                                  ))}
+                                </ul>
                               )}
 
-                              {isExpanded && (
-                                <div className="mt-2 space-y-1.5">
-                                  {t.detail && (
-                                    <p className="text-sm text-zinc-300">{t.detail}</p>
-                                  )}
-                                  {t.typicalQuestion && (
-                                    <p className="text-xs text-amber-200/80 italic">
-                                      IHK-Frage: {t.typicalQuestion}
-                                    </p>
-                                  )}
-                                </div>
+                              {isExpanded && t.unterpunkte.length === 0 && (
+                                <p className="mt-2 text-sm text-zinc-500 italic">
+                                  Keine Unterpunkte hinterlegt.
+                                </p>
                               )}
 
                               <div className="text-xs text-zinc-600 mt-1">
-                                {isExpanded ? "▲ einklappen" : "▼ Details"}
+                                {isExpanded ? "▲ einklappen" : "▼ Unterpunkte"}
                               </div>
                             </div>
 
@@ -251,11 +433,13 @@ export default function App() {
                               <input
                                 type="checkbox"
                                 className="accent-amber-500"
-                                checked={!!progress[t.id]?.review}
+                                checked={isReview}
                                 onChange={() => toggleReview(t.id)}
                                 title="Unsicher / Später wiederholen"
                               />
-                              <span className="text-xs text-amber-300">Review</span>
+                              <span className="text-xs text-amber-300">
+                                Review
+                              </span>
                             </label>
                           </div>
                         </div>
@@ -263,19 +447,6 @@ export default function App() {
                     })
                   )}
                 </div>
-
-                {w.traps?.length ? (
-                  <div className="mt-4 border border-zinc-800 rounded-xl p-3">
-                    <div className="text-sm font-semibold text-amber-300">
-                      Typische IHK-Fallen
-                    </div>
-                    <ul className="mt-2 text-sm text-zinc-300 list-disc pl-5 space-y-1">
-                      {w.traps.map((x, i) => (
-                        <li key={i}>{x}</li>
-                      ))}
-                    </ul>
-                  </div>
-                ) : null}
               </section>
             );
           })}
@@ -297,19 +468,12 @@ export default function App() {
                 allTasks
                   .filter((t) => progress[t.id]?.review)
                   .map((t) => (
-                    <div key={t.id} className="p-3 rounded-xl bg-zinc-800/60">
+                    <div key={t.id} className="p-3 rounded-xl bg-zinc-800/60 ring-1 ring-amber-500/30">
                       <div className="text-xs text-zinc-400">
                         Woche {t.week}: {t.weekTitle}
                       </div>
-                      <div className="font-medium">{t.topic}</div>
-                      {t.subtopic && (
-                        <div className="text-sm text-zinc-400">{t.subtopic}</div>
-                      )}
-                      {t.typicalQuestion && (
-                        <div className="text-xs text-amber-200/80 italic mt-1">
-                          IHK-Frage: {t.typicalQuestion}
-                        </div>
-                      )}
+                      <div className="font-medium mt-0.5">{t.topic}</div>
+                      <div className="text-xs text-zinc-500">{t.subtopic} · {t.fkTitel}</div>
                     </div>
                   ))
               )}
