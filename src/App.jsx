@@ -7,8 +7,8 @@ const LEGACY_KEY = "lernplan-progress-v1";
 function normalizeProgress(rawObj) {
   const out = {};
   for (const [id, v] of Object.entries(rawObj || {})) {
-    if (typeof v === "boolean") out[id] = { done: v, review: false };
-    else out[id] = { done: !!v?.done, review: !!v?.review };
+    if (typeof v === "boolean") out[id] = { done: v, review: false, sub: {} };
+    else out[id] = { done: !!v?.done, review: !!v?.review, sub: v?.sub || {} };
   }
   return out;
 }
@@ -169,13 +169,6 @@ const WEEK_PLAN = [
       { ptIdx: 3, fkIdx: 4 },          // WiSo FK05 komplett
     ],
   },
-  {
-    week: 19,
-    title: "AP2 WiSo – Grundlagen der IT-Sicherheit (WiSo)",
-    sections: [
-      { ptIdx: 3, fkIdx: 5 },          // WiSo FK08 komplett
-    ],
-  },
 ];
 
 function buildWeeks(weekPlan, catalog) {
@@ -234,15 +227,36 @@ export default function App() {
 
   function toggleDone(id) {
     setProgress((prev) => {
-      const cur = prev[id] || { done: false, review: false };
+      const cur = prev[id] || { done: false, review: false, sub: {} };
       return { ...prev, [id]: { ...cur, done: !cur.done } };
     });
   }
 
   function toggleReview(id) {
     setProgress((prev) => {
-      const cur = prev[id] || { done: false, review: false };
+      const cur = prev[id] || { done: false, review: false, sub: {} };
       return { ...prev, [id]: { ...cur, review: !cur.review } };
+    });
+  }
+
+  function toggleSubDone(id, idx, total) {
+    setProgress((prev) => {
+      const cur = prev[id] || { done: false, review: false, sub: {} };
+      const sub = { ...cur.sub };
+      const curSub = sub[idx] || { done: false, review: false };
+      sub[idx] = { ...curSub, done: !curSub.done };
+      const allDone = Array.from({ length: total }, (_, i) => !!sub[i]?.done).every(Boolean);
+      return { ...prev, [id]: { ...cur, sub, done: allDone } };
+    });
+  }
+
+  function toggleSubReview(id, idx) {
+    setProgress((prev) => {
+      const cur = prev[id] || { done: false, review: false, sub: {} };
+      const sub = { ...cur.sub };
+      const curSub = sub[idx] || { done: false, review: false };
+      sub[idx] = { ...curSub, review: !curSub.review };
+      return { ...prev, [id]: { ...cur, sub } };
     });
   }
 
@@ -253,6 +267,16 @@ export default function App() {
   function resetAll() {
     setProgress({});
   }
+
+  // Tasks oder Sub-Items mit Review
+  const reviewItems = allTasks.flatMap((t) => {
+    const items = [];
+    if (progress[t.id]?.review) items.push({ type: "task", t });
+    t.unterpunkte.forEach((u, i) => {
+      if (progress[t.id]?.sub?.[i]?.review) items.push({ type: "sub", t, u, i });
+    });
+    return items;
+  });
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-black text-zinc-100">
@@ -411,10 +435,34 @@ export default function App() {
                               </div>
 
                               {isExpanded && t.unterpunkte.length > 0 && (
-                                <ul className="mt-2 text-sm text-zinc-300 list-disc pl-4 space-y-0.5">
-                                  {t.unterpunkte.map((u, i) => (
-                                    <li key={i}>{u}</li>
-                                  ))}
+                                <ul className="mt-2 space-y-1" onClick={(e) => e.stopPropagation()}>
+                                  {t.unterpunkte.map((u, i) => {
+                                    const subDone = !!progress[t.id]?.sub?.[i]?.done;
+                                    const subReview = !!progress[t.id]?.sub?.[i]?.review;
+                                    return (
+                                      <li key={i} className={`flex items-start gap-2 text-sm rounded-lg px-2 py-1 ${subReview ? "ring-1 ring-amber-500/30" : ""}`}>
+                                        <input
+                                          type="checkbox"
+                                          className="mt-0.5 accent-emerald-500 shrink-0"
+                                          checked={subDone}
+                                          onChange={() => toggleSubDone(t.id, i, t.unterpunkte.length)}
+                                        />
+                                        <span className={`flex-1 ${subDone ? "line-through text-zinc-500" : "text-zinc-300"}`}>
+                                          {u}
+                                        </span>
+                                        <label className="flex items-center gap-1 cursor-pointer shrink-0">
+                                          <input
+                                            type="checkbox"
+                                            className="accent-amber-500"
+                                            checked={subReview}
+                                            onChange={() => toggleSubReview(t.id, i)}
+                                            title="Unsicher / Später wiederholen"
+                                          />
+                                          <span className="text-xs text-amber-400">R</span>
+                                        </label>
+                                      </li>
+                                    );
+                                  })}
                                 </ul>
                               )}
 
@@ -454,28 +502,33 @@ export default function App() {
           <section className="bg-zinc-900 rounded-2xl p-4 shadow">
             <div className="flex items-baseline justify-between">
               <h2 className="text-xl font-semibold">Wiederholen (Review)</h2>
-              <div className="text-sm text-zinc-400">
-                {allTasks.filter((t) => progress[t.id]?.review).length}
-              </div>
+              <div className="text-sm text-zinc-400">{reviewItems.length}</div>
             </div>
 
             <div className="mt-3 space-y-2">
-              {allTasks.filter((t) => progress[t.id]?.review).length === 0 ? (
+              {reviewItems.length === 0 ? (
                 <div className="text-sm text-zinc-400">
                   Keine markierten Themen. Entweder stabil – oder mutig.
                 </div>
               ) : (
-                allTasks
-                  .filter((t) => progress[t.id]?.review)
-                  .map((t) => (
-                    <div key={t.id} className="p-3 rounded-xl bg-zinc-800/60 ring-1 ring-amber-500/30">
+                reviewItems.map((item, idx) =>
+                  item.type === "task" ? (
+                    <div key={idx} className="p-3 rounded-xl bg-zinc-800/60 ring-1 ring-amber-500/30">
                       <div className="text-xs text-zinc-400">
-                        Woche {t.week}: {t.weekTitle}
+                        Woche {item.t.week}: {item.t.weekTitle}
                       </div>
-                      <div className="font-medium mt-0.5">{t.topic}</div>
-                      <div className="text-xs text-zinc-500">{t.subtopic} · {t.fkTitel}</div>
+                      <div className="font-medium mt-0.5">{item.t.topic}</div>
+                      <div className="text-xs text-zinc-500">{item.t.subtopic} · {item.t.fkTitel}</div>
                     </div>
-                  ))
+                  ) : (
+                    <div key={idx} className="p-3 rounded-xl bg-zinc-800/60 ring-1 ring-amber-500/20 pl-5 border-l-2 border-amber-500/30">
+                      <div className="text-xs text-zinc-400">
+                        Woche {item.t.week} · {item.t.topic}
+                      </div>
+                      <div className="text-sm text-zinc-200 mt-0.5">{item.u}</div>
+                    </div>
+                  )
+                )
               )}
             </div>
           </section>

@@ -1846,49 +1846,7 @@
               ]
             }
           ]
-        },
-        {
-          "nummer": "08",
-          "titel": "Grundlagen der IT-Sicherheit kennen und umsetzen",
-          "quelle": "Systemintegration_AP2_S.10.pdf (linke Katalogseite)",
-          "themenkreise": [
-            {
-              "nummer": "01",
-              "titel": "Die Ziele von Informationssicherheit und Datenschutz kennen und unterscheiden",
-              "unterpunkte": []
-            },
-            {
-              "nummer": "02",
-              "titel": "Die Ziele der europäischen Datenschutz-Grundverordnung (DSGVO) kennen",
-              "unterpunkte": []
-            },
-            {
-              "nummer": "03",
-              "titel": "Die Verfügbarkeit, Integrität, Vertraulichkeit und Authentizität von Daten berücksichtigen",
-              "unterpunkte": []
-            },
-            {
-              "nummer": "04",
-              "titel": "Die Aufgaben des Bundesamtes für Sicherheit in der Informationstechnik (BSI) kennen",
-              "unterpunkte": []
-            },
-            {
-              "nummer": "05",
-              "titel": "Die Empfehlungen und Standards des BSI beachten und einhalten",
-              "unterpunkte": []
-            },
-            {
-              "nummer": "06",
-              "titel": "Das betriebliche IT-Sicherheitskonzept kennen und beachten",
-              "unterpunkte": []
-            },
-            {
-              "nummer": "07",
-              "titel": "Technisch-organisatorische Maßnahmen (TOM) zur Gewährleistung der IT-Sicherheit kennen und umsetzen",
-              "unterpunkte": []
-            }
-          ]
-        }
+        }      
       ]
     }
   ]
