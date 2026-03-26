@@ -2,13 +2,12 @@ import { useEffect, useMemo, useState, useCallback, useRef } from "react";
 import plan from "./plan.json";
 
 const EDIT_SESSION_KEY = "lernplan-edit-pw";
-const API_BASE = import.meta.env.VITE_API_BASE || "";
 
 // --- API-Helfer ---
 
 async function fetchProgress() {
   try {
-    const res = await fetch(`${API_BASE}/api/progress`);
+    const res = await fetch("api/progress");
     if (!res.ok) return {};
     return await res.json();
   } catch {
@@ -18,7 +17,7 @@ async function fetchProgress() {
 
 async function saveProgressToServer(progress, password) {
   try {
-    const res = await fetch(`${API_BASE}/api/progress`, {
+    const res = await fetch("api/progress", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -166,7 +165,7 @@ export default function App() {
 
   async function handlePasswordSubmit(e) {
     e.preventDefault();
-    const res = await fetch(`${API_BASE}/api/progress`, { method: "POST", headers: { "Content-Type": "application/json", "X-Edit-Password": passwordInput }, body: JSON.stringify(progress) });
+    const res = await fetch("api/progress", { method: "POST", headers: { "Content-Type": "application/json", "X-Edit-Password": passwordInput }, body: JSON.stringify(progress) });
     if (res.ok) { setEditMode(true); setEditPassword(passwordInput); sessionStorage.setItem(EDIT_SESSION_KEY, passwordInput); setShowPasswordModal(false); setPasswordInput(""); setPasswordError(""); }
     else { setPasswordError("Falsches Passwort!"); setPasswordInput(""); }
   }
