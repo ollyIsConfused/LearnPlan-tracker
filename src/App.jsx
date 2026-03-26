@@ -110,17 +110,22 @@ export default function App() {
   // Session-Passwort wiederherstellen
   useEffect(() => { if (editPassword) setEditMode(true); }, []);
 
-  // Speichern mit Debounce
-  const debouncedSave = useCallback((newProgress) => {
-    if (!editPassword) return;
+  // Speichern mit Debounce — als useEffect statt in setProgress
+  const needsSave = useRef(false);
+  const editPasswordRef = useRef(editPassword);
+  editPasswordRef.current = editPassword;
+
+  useEffect(() => {
+    if (!needsSave.current || !editPasswordRef.current) return;
+    needsSave.current = false;
     if (saveTimer.current) clearTimeout(saveTimer.current);
     saveTimer.current = setTimeout(async () => {
       setSaving(true);
-      const ok = await saveProgressToServer(newProgress, editPassword);
+      const ok = await saveProgressToServer(progress, editPasswordRef.current);
       setSaving(false);
       if (!ok) { setEditMode(false); setEditPassword(""); sessionStorage.removeItem(EDIT_SESSION_KEY); alert("Speichern fehlgeschlagen – bitte neu einloggen."); }
     }, 500);
-  }, [editPassword]);
+  }, [progress]);
 
   const weeks = useMemo(() => buildWeeks(WEEK_PLAN, plan.pruefungskatalog), []);
   const allTasks = useMemo(() => { const flat = []; for (const w of weeks) for (const t of w.tasks) flat.push({ week: w.week, weekTitle: w.title, ...t }); return flat; }, [weeks]);
@@ -129,7 +134,7 @@ export default function App() {
   const percent = totalCount ? Math.round((doneCount / totalCount) * 100) : 0;
   const nextTask = allTasks.find((t) => !progress[t.id]?.done);
 
-  function updateProgress(updater) { setProgress((prev) => { const next = updater(prev); debouncedSave(next); return next; }); }
+  function updateProgress(updater) { needsSave.current = true; setProgress(updater); }
   function toggleDone(id) { if (!editMode) return; updateProgress((prev) => { const cur = prev[id] || { done: false, review: false, sub: {} }; return { ...prev, [id]: { ...cur, done: !cur.done } }; }); }
   function toggleReview(id) { if (!editMode) return; updateProgress((prev) => { const cur = prev[id] || { done: false, review: false, sub: {} }; return { ...prev, [id]: { ...cur, review: !cur.review } }; }); }
   function toggleSubDone(id, idx, total) { if (!editMode) return; updateProgress((prev) => { const cur = prev[id] || { done: false, review: false, sub: {} }; const sub = { ...cur.sub }; const curSub = sub[idx] || { done: false, review: false }; sub[idx] = { ...curSub, done: !curSub.done }; const allDone = Array.from({ length: total }, (_, i) => !!sub[i]?.done).every(Boolean); return { ...prev, [id]: { ...cur, sub, done: allDone } }; }); }
