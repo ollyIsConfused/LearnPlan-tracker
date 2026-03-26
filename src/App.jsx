@@ -93,13 +93,13 @@ export default function App() {
 
   const skipNextFetch = useRef(false);
 
-  // Fortschritt vom Server laden
+  // Fortschritt vom Server laden (einmalig + Polling im Lese-Modus)
   useEffect(() => {
-    // Beim Wechsel von Edit→Lesen NICHT sofort fetchen (wir haben gerade gespeichert)
     if (!skipNextFetch.current) {
       fetchProgress().then((data) => { setProgress(normalizeProgress(data)); setLoading(false); });
     } else {
       skipNextFetch.current = false;
+      setLoading(false);
     }
     const interval = setInterval(async () => {
       if (!editMode) { const data = await fetchProgress(); setProgress(normalizeProgress(data)); }
@@ -110,23 +110,6 @@ export default function App() {
   // Session-Passwort wiederherstellen
   useEffect(() => { if (editPassword) setEditMode(true); }, []);
 
-  // Speichern mit Debounce — als useEffect statt in setProgress
-  const needsSave = useRef(false);
-  const editPasswordRef = useRef(editPassword);
-  editPasswordRef.current = editPassword;
-
-  useEffect(() => {
-    if (!needsSave.current || !editPasswordRef.current) return;
-    needsSave.current = false;
-    if (saveTimer.current) clearTimeout(saveTimer.current);
-    saveTimer.current = setTimeout(async () => {
-      setSaving(true);
-      const ok = await saveProgressToServer(progress, editPasswordRef.current);
-      setSaving(false);
-      if (!ok) { setEditMode(false); setEditPassword(""); sessionStorage.removeItem(EDIT_SESSION_KEY); alert("Speichern fehlgeschlagen – bitte neu einloggen."); }
-    }, 500);
-  }, [progress]);
-
   const weeks = useMemo(() => buildWeeks(WEEK_PLAN, plan.pruefungskatalog), []);
   const allTasks = useMemo(() => { const flat = []; for (const w of weeks) for (const t of w.tasks) flat.push({ week: w.week, weekTitle: w.title, ...t }); return flat; }, [weeks]);
   const doneCount = allTasks.filter((t) => progress[t.id]?.done).length;
@@ -134,13 +117,28 @@ export default function App() {
   const percent = totalCount ? Math.round((doneCount / totalCount) * 100) : 0;
   const nextTask = allTasks.find((t) => !progress[t.id]?.done);
 
-  function updateProgress(updater) { needsSave.current = true; setProgress(updater); }
-  function toggleDone(id) { if (!editMode) return; updateProgress((prev) => { const cur = prev[id] || { done: false, review: false, sub: {} }; return { ...prev, [id]: { ...cur, done: !cur.done } }; }); }
-  function toggleReview(id) { if (!editMode) return; updateProgress((prev) => { const cur = prev[id] || { done: false, review: false, sub: {} }; return { ...prev, [id]: { ...cur, review: !cur.review } }; }); }
-  function toggleSubDone(id, idx, total) { if (!editMode) return; updateProgress((prev) => { const cur = prev[id] || { done: false, review: false, sub: {} }; const sub = { ...cur.sub }; const curSub = sub[idx] || { done: false, review: false }; sub[idx] = { ...curSub, done: !curSub.done }; const allDone = Array.from({ length: total }, (_, i) => !!sub[i]?.done).every(Boolean); return { ...prev, [id]: { ...cur, sub, done: allDone } }; }); }
-  function toggleSubReview(id, idx) { if (!editMode) return; updateProgress((prev) => { const cur = prev[id] || { done: false, review: false, sub: {} }; const sub = { ...cur.sub }; const curSub = sub[idx] || { done: false, review: false }; sub[idx] = { ...curSub, review: !curSub.review }; return { ...prev, [id]: { ...cur, sub } }; }); }
+  function saveNow(newProgress) {
+    if (!editPassword) return;
+    setSaving(true);
+    saveProgressToServer(newProgress, editPassword).then((ok) => {
+      setSaving(false);
+      if (!ok) { setEditMode(false); setEditPassword(""); sessionStorage.removeItem(EDIT_SESSION_KEY); alert("Speichern fehlgeschlagen."); }
+    });
+  }
+
+  function updateAndSave(updater) {
+    setProgress((prev) => {
+      const next = updater(prev);
+      saveNow(next);
+      return next;
+    });
+  }
+  function toggleDone(id) { if (!editMode) return; updateAndSave((prev) => { const cur = prev[id] || { done: false, review: false, sub: {} }; return { ...prev, [id]: { ...cur, done: !cur.done } }; }); }
+  function toggleReview(id) { if (!editMode) return; updateAndSave((prev) => { const cur = prev[id] || { done: false, review: false, sub: {} }; return { ...prev, [id]: { ...cur, review: !cur.review } }; }); }
+  function toggleSubDone(id, idx, total) { if (!editMode) return; updateAndSave((prev) => { const cur = prev[id] || { done: false, review: false, sub: {} }; const sub = { ...cur.sub }; const curSub = sub[idx] || { done: false, review: false }; sub[idx] = { ...curSub, done: !curSub.done }; const allDone = Array.from({ length: total }, (_, i) => !!sub[i]?.done).every(Boolean); return { ...prev, [id]: { ...cur, sub, done: allDone } }; }); }
+  function toggleSubReview(id, idx) { if (!editMode) return; updateAndSave((prev) => { const cur = prev[id] || { done: false, review: false, sub: {} }; const sub = { ...cur.sub }; const curSub = sub[idx] || { done: false, review: false }; sub[idx] = { ...curSub, review: !curSub.review }; return { ...prev, [id]: { ...cur, sub } }; }); }
   function toggleExpand(id) { setExpanded((prev) => ({ ...prev, [id]: !prev[id] })); }
-  function resetAll() { if (!editMode) return; if (window.confirm("Wirklich ALLE Häkchen zurücksetzen?")) updateProgress(() => ({})); }
+  function resetAll() { if (!editMode) return; if (window.confirm("Wirklich ALLE Häkchen zurücksetzen?")) { const empty = {}; setProgress(empty); saveNow(empty); } }
 
   async function handlePasswordSubmit(e) {
     e.preventDefault();
@@ -149,10 +147,8 @@ export default function App() {
     else { setPasswordError("Falsches Passwort!"); setPasswordInput(""); }
   }
 
-  async function handleEditClick() {
+  function handleEditClick() {
     if (editMode) {
-      if (saveTimer.current) { clearTimeout(saveTimer.current); saveTimer.current = null; }
-      await saveProgressToServer(progress, editPassword);
       skipNextFetch.current = true;
       setEditMode(false);
       setEditPassword("");
