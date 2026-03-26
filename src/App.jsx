@@ -126,17 +126,41 @@ export default function App() {
     });
   }
 
-  function updateAndSave(updater) {
-    setProgress((prev) => {
-      const next = updater(prev);
-      saveNow(next);
-      return next;
-    });
+  function toggleDone(id) {
+    if (!editMode) return;
+    const cur = progress[id] || { done: false, review: false, sub: {} };
+    const next = { ...progress, [id]: { ...cur, done: !cur.done } };
+    setProgress(next);
+    saveNow(next);
   }
-  function toggleDone(id) { if (!editMode) return; updateAndSave((prev) => { const cur = prev[id] || { done: false, review: false, sub: {} }; return { ...prev, [id]: { ...cur, done: !cur.done } }; }); }
-  function toggleReview(id) { if (!editMode) return; updateAndSave((prev) => { const cur = prev[id] || { done: false, review: false, sub: {} }; return { ...prev, [id]: { ...cur, review: !cur.review } }; }); }
-  function toggleSubDone(id, idx, total) { if (!editMode) return; updateAndSave((prev) => { const cur = prev[id] || { done: false, review: false, sub: {} }; const sub = { ...cur.sub }; const curSub = sub[idx] || { done: false, review: false }; sub[idx] = { ...curSub, done: !curSub.done }; const allDone = Array.from({ length: total }, (_, i) => !!sub[i]?.done).every(Boolean); return { ...prev, [id]: { ...cur, sub, done: allDone } }; }); }
-  function toggleSubReview(id, idx) { if (!editMode) return; updateAndSave((prev) => { const cur = prev[id] || { done: false, review: false, sub: {} }; const sub = { ...cur.sub }; const curSub = sub[idx] || { done: false, review: false }; sub[idx] = { ...curSub, review: !curSub.review }; return { ...prev, [id]: { ...cur, sub } }; }); }
+  function toggleReview(id) {
+    if (!editMode) return;
+    const cur = progress[id] || { done: false, review: false, sub: {} };
+    const next = { ...progress, [id]: { ...cur, review: !cur.review } };
+    setProgress(next);
+    saveNow(next);
+  }
+  function toggleSubDone(id, idx, total) {
+    if (!editMode) return;
+    const cur = progress[id] || { done: false, review: false, sub: {} };
+    const sub = { ...cur.sub };
+    const curSub = sub[idx] || { done: false, review: false };
+    sub[idx] = { ...curSub, done: !curSub.done };
+    const allDone = Array.from({ length: total }, (_, i) => !!sub[i]?.done).every(Boolean);
+    const next = { ...progress, [id]: { ...cur, sub, done: allDone } };
+    setProgress(next);
+    saveNow(next);
+  }
+  function toggleSubReview(id, idx) {
+    if (!editMode) return;
+    const cur = progress[id] || { done: false, review: false, sub: {} };
+    const sub = { ...cur.sub };
+    const curSub = sub[idx] || { done: false, review: false };
+    sub[idx] = { ...curSub, review: !curSub.review };
+    const next = { ...progress, [id]: { ...cur, sub } };
+    setProgress(next);
+    saveNow(next);
+  }
   function toggleExpand(id) { setExpanded((prev) => ({ ...prev, [id]: !prev[id] })); }
   function resetAll() { if (!editMode) return; if (window.confirm("Wirklich ALLE Häkchen zurücksetzen?")) { const empty = {}; setProgress(empty); saveNow(empty); } }
 
