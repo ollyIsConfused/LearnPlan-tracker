@@ -137,9 +137,20 @@ export default function App() {
     else { setPasswordError("Falsches Passwort!"); setPasswordInput(""); }
   }
 
-  function handleEditClick() {
-    if (editMode) { setEditMode(false); setEditPassword(""); sessionStorage.removeItem(EDIT_SESSION_KEY); }
-    else { setShowPasswordModal(true); setPasswordError(""); setPasswordInput(""); }
+  async function handleEditClick() {
+    if (editMode) {
+      // Pending debounce abbrechen
+      if (saveTimer.current) { clearTimeout(saveTimer.current); saveTimer.current = null; }
+      // Sofort speichern bevor wir sperren
+      await saveProgressToServer(progress, editPassword);
+      setEditMode(false);
+      setEditPassword("");
+      sessionStorage.removeItem(EDIT_SESSION_KEY);
+    } else {
+      setShowPasswordModal(true);
+      setPasswordError("");
+      setPasswordInput("");
+    }
   }
 
   const reviewItems = allTasks.flatMap((t) => {
