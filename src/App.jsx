@@ -91,9 +91,16 @@ export default function App() {
   const [passwordError, setPasswordError] = useState("");
   const saveTimer = useRef(null);
 
+  const skipNextFetch = useRef(false);
+
   // Fortschritt vom Server laden
   useEffect(() => {
-    fetchProgress().then((data) => { setProgress(normalizeProgress(data)); setLoading(false); });
+    // Beim Wechsel von Edit→Lesen NICHT sofort fetchen (wir haben gerade gespeichert)
+    if (!skipNextFetch.current) {
+      fetchProgress().then((data) => { setProgress(normalizeProgress(data)); setLoading(false); });
+    } else {
+      skipNextFetch.current = false;
+    }
     const interval = setInterval(async () => {
       if (!editMode) { const data = await fetchProgress(); setProgress(normalizeProgress(data)); }
     }, 15000);
@@ -139,10 +146,9 @@ export default function App() {
 
   async function handleEditClick() {
     if (editMode) {
-      // Pending debounce abbrechen
       if (saveTimer.current) { clearTimeout(saveTimer.current); saveTimer.current = null; }
-      // Sofort speichern bevor wir sperren
       await saveProgressToServer(progress, editPassword);
+      skipNextFetch.current = true;
       setEditMode(false);
       setEditPassword("");
       sessionStorage.removeItem(EDIT_SESSION_KEY);
